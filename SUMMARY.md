@@ -50,7 +50,6 @@
 - [Governance](governance.md)
 - [Contracts](contracts.md)
 
-  - [Overview](contracts/overview.md)
   - [Lending & Borrowing](contracts/lending-borrowing.md)
     - [Earnings](contracts/earnings.md)
     - [Stargate Borrow](contract/stargate.md)
