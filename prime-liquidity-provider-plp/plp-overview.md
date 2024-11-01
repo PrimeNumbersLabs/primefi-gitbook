@@ -1,6 +1,6 @@
 # pLP Overview
 
-
+<figure><img src="../.gitbook/assets/PF Whitepaper (3) (4).jpg" alt=""><figcaption></figcaption></figure>
 
 Below, you can see **natural market rates** highlighted in red, and **PRFI emissions** directly underneath, in blue/purple. Users that simply deposit but don't add value to the protocol will continue to earn natural market rates, but will not be eligible for PRFI emissions.
 

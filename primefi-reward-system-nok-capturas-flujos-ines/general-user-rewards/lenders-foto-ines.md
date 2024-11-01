@@ -1,4 +1,4 @@
-# Lenders
+# Lenders foto ines
 
 ## Rewards for lenders
 
@@ -10,6 +10,3 @@ Each asset operates within its unique market of supply and demand, featuring its
 
 To assess rate evolution, check the average annual rate over the past 30 days. Additionally, find comprehensive data on the reserve overview of each asset in the home section of the app.
 
-### <mark style="color:green;">Borrowing fees</mark>&#x20;
-
-<mark style="color:green;">The 29,75% of the total borrowing fees will be distributed along all lenders depending on their lendings positions.</mark>
