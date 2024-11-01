@@ -52,7 +52,7 @@
 
   - [Lending & Borrowing](contracts/lending-borrowing.md)
     - [Earnings](contracts/earnings.md)
-    - [Stargate Borrow](contract/stargate.md)
+    - [Stargate Borrow](contracts/stargate.md)
     - [Flik Flow](contracts/flikflow.md)
   - [Staking](contracts/staking.md)
     - [Stake](contracts/stake.md)
