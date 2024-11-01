@@ -8,6 +8,5 @@ Please note that the actual interactions are much more complicated and numerous.
 
 - [Lending & Borrowing](contracts/lending-borrowing.md)
 - [Staking](contracts/staking.md)
-- [Rewards](contracts/rewards.md)
 
 ![Contract Highover](contracts/diagrams/contract-overview.drawio.svg)
