@@ -10,29 +10,25 @@ Banners across the PrimeFi platform will indicate when your lock expires. Expire
 The default lock duration is configured to 3 months (4x multiplier) unless you have chosen a different default lock duration from the Manage page.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Select the Lock Lenght
 
-
-
-<figure><img src="../.gitbook/assets/image (1).png" alt="" width="489"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt="" width="489"><figcaption></figcaption></figure>
 
 Choose "Relock."
 
-<figure><img src="../.gitbook/assets/image (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Examine the transaction details, choose "Relock pLP," and confirm the transaction in your wallet.
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
+## Auto-relock
 
+To prevent the loss of platform fees and maintain eligibility for PRFI emissions, contemplate employing the "Auto-Relock" feature on the Manage PrimeFi page.
 
-## Auto-relock&#x20;
-
-To prevent the loss of platform fees and maintain eligibility for PRFI emissions, contemplate employing the "Auto-Relock" feature on the Manage PrimeFi page.&#x20;
-
-To activate auto-relock, shift the toggle to the right and confirm the transaction in your wallet.&#x20;
+To activate auto-relock, shift the toggle to the right and confirm the transaction in your wallet.
 
 To deactivate auto-relock, shift the toggle to the left and confirm the transaction in your wallet.
 
