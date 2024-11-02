@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Bounty for Disqualification rodolfo
 
 {% hint style="warning" %}
@@ -14,7 +10,7 @@ A "bounty" is assigned to the account, which eligible pLPs can claim as a base r
 
 Watchful bounty hunters can keep track of available disqualification bounties on the Manage PrimeFi page and disqualify ineligible users by selecting "claim" and confirming the transaction.
 
-(Screenshot)
+<figure><img src="../.gitbook/assets/image.png" alt="" width="488"><figcaption></figcaption></figure>
 
 The disqualification system serves to prevent expired pLP accounts from receiving platform fees that have been illegitimately earned and stops ineligible users from receiving $PRFI emissions that fall below the 5% pLP threshold.
 
@@ -27,7 +23,9 @@ To reduce the risk of disqualification, it is advisable to maintain eligibility 
 To avoid disqualifications related to expired locked pLP, users can toggle the "auto-relock" function on the Manage page, ensuring the continuous receipt of platform fees without interruption.
 
 \
-(Screenshot)
+
+
+<figure><img src="../.gitbook/assets/image (1).png" alt="" width="491"><figcaption></figcaption></figure>
 
 Additional Information Bounty hunters are required to maintain the 5% pLP threshold status and have deposited assets to be eligible for claiming bounties.
 
