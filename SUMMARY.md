@@ -51,14 +51,12 @@
 - [Contracts](contracts.md)
 
   - [Lending & Borrowing](contracts/lending-borrowing.md)
+    - [Flik Flow](contracts/flikflow.md)
     - [Earnings](contracts/earnings.md)
     - [Stargate Borrow](contracts/stargate.md)
-    - [Flik Flow](contracts/flikflow.md)
   - [Staking](contracts/stake.md)
-    - [Chef Incentives](contracts/chef-incentives.md)
     - [Flik Flow](contracts/flikflow.md)
     - [Rewards](contracts/rewards.md)
-    - [Multifee Distribution](contracts/multifee-distribution.md)
     - [Bounty System](contracts/bounty.md)
 
 - [Audits](audits.md)
