@@ -6,11 +6,11 @@ Liquidation is a procedure triggered when a borrower's Health Factor falls to 1 
 
 To mitigate the risk of liquidation, you can either repay outstanding loans or deposit additional collateral to increase your Health Factor.
 
-## Liquidators&#x20;
+## Liquidators
 
-Liquidators are adept DeFi users who employ automated systems, such as bots, to monitor collateralized positions. These bots interact with the protocol's L2Pool contract and initiate a liquidationCall().&#x20;
+Liquidators are adept DeFi users who employ automated systems, such as bots, to monitor collateralized positions. These bots interact with the protocol's L2Pool contract and initiate a liquidationCall().
 
-This process allows liquidators to pays off a portion of the debt and receive discounted collateral as a liquidation bonus.&#x20;
+This process allows liquidators to pay off a portion of the debt and receive discounted collateral as a liquidation bonus.
 
 The incentive structure encourages third parties to participate in maintaining the protocol's health, ensuring that borrows across the protocol maintain sufficient collateralization.
 

@@ -14,7 +14,7 @@ In order to initiate PRFI emissions for both deposits and loans, you must lock a
 
 * **What is it?**
 
-Liquidity pools are fundamental to many DeFi protocols, enabling users to contribute liquidity in the form of paired assets (such as PRNT & BNB) in exchange for a share of the pool’s potential yield. pLP tokens can be locked through the protocol to activate PRNT emissions in the money market, receive protocol revenue.
+Liquidity pools are fundamental to many DeFi protocols, enabling users to contribute liquidity in the form of paired assets (such as PRFI & BNB) in exchange for a share of the pool’s potential yield. pLP tokens can be locked through the protocol to activate PRFI emissions in the money market, and receive protocol revenue.
 
 #### How it works?
 
@@ -25,7 +25,7 @@ Example 2: Deposit $10,000 USDT and lock $500 in pLP tokens to meet the 5% thres
 The requirement to lock liquidity tokens in pLP form benefits the PrimeFi money market in several ways:
 
 1. Long-Term Participation: Locking pLP tokens commits users to a specific period, increasing the likelihood of them maintaining their deposited collateral.
-2. PRFI Emissions Activation: This commitment enables PRNT emissions, rewarding those invested in the protocol's long-term vision.
+2. PRFI Emissions Activation: This commitment enables PRFI emissions, rewarding those invested in the protocol's long-term vision.
 3. Attracting New Users: These dynamics enhance the PrimeFi money market's appeal to potential liquidity providers, fostering growth and development.
 
 This strategic cycle not only sustains long-term liquidity but also attracts new inflows, creating a mutually beneficial scenario for individual users and the protocol as a whole.

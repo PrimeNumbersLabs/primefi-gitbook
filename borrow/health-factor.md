@@ -22,7 +22,5 @@ Take, for instance, a situation where BTC is your collateral for a USDC loan. If
 
 Maintaining a robust Health Factor benefits your portfolio in two distinct ways:
 
-1. &#x20;It reduces the likelihood of liquidation, especially when using volatile assets as collateral, aligning with a low-risk investment strategy.
-2. It enhances your capacity to borrow, allowing you to leverage more collateral, which is a strategy that entails higher risk.&#x20;
-
-\
+1. It reduces the likelihood of liquidation, especially when using volatile assets as collateral, aligning with a low-risk investment strategy.
+2. It enhances your capacity to borrow, allowing you to leverage more collateral, which is a strategy that entails higher risk.

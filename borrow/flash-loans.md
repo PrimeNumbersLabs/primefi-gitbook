@@ -13,5 +13,3 @@ Despite their utility in enabling swift and convenient access to significant cap
 To engage in a flash loan, a contract must be constructed to request the loan. Subsequently, the contract needs to execute the specified steps and repay the loan along with accrued interest and fees, all within the confines of a single transaction.
 
 For a more in-depth understanding, refer to the flash loan procedure inherited from Aave within their [documentation](https://docs.aave.com/developers/guides/flash-loans).
-
-##
