@@ -52,7 +52,7 @@ Alternatively, exit individual vests with their respective penalty amounts by cl
 
 ### Vest to Maturity
 
-RDNT that has completed the 90-day maturation period can be withdrawn in full from the vested panel on the Manage PrimeFi page.
+PRFI that has completed the 90-day maturation period can be withdrawn in full from the vested panel on the Manage PrimeFi page.
 
 <figure><img src="../.gitbook/assets/image (82).png" alt="" width="563"><figcaption></figcaption></figure>
 

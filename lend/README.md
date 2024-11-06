@@ -11,7 +11,7 @@ There is no minimum supply amount required. However, for very low amounts, the t
 
 **Borrowing Options:**
 
-You can only choose ~~between a stable or variable borrowing rate~~ for a single asset. Switching rates will apply to your entire debt for that asset. However, you can opt for different borrowing rates for different assets.
+Thanks to LayerZero, you will have different options when borrowing. You can withdraw an asset different from the one deposited on various networks according to your needs. Switching rates will apply to your entire debt for that asset. However, you can opt for different borrowing rates for different assets.
 
 **Withdrawing Funds:**
 

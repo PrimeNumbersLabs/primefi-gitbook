@@ -8,13 +8,13 @@ To leverage borrowing, an asset must be pledged as collateral. This function all
 
 After securing collateral, navigate to the Markets section to assess borrowing availability and yields.
 
-Select the specific asset you intend to borrow. Access the Reserve Status & Configuration screen and click on the borrow option.&#x20;
+Select the specific asset you intend to borrow. Access the Reserve Status & Configuration screen and click on the borrow option.
 
 <figure><img src="../.gitbook/assets/image (87).png" alt="" width="336"><figcaption></figcaption></figure>
 
-In the provided illustration, 0.79BNB is available for borrowing (calculated from the deposited collateral) against the supported assets.&#x20;
+In the provided illustration, 0.79BNB is available for borrowing (calculated from the deposited collateral) against the supported assets.
 
-Specify the desired borrowing amount based on your available collateral balance, and proceed to confirm the transaction. It's important to note that the extent of your borrowing has a proportional impact on your overall \[details elaborated below].
+Specify the desired borrowing amount based on your available collateral balance, and proceed to confirm the transaction. It's important to note that the extent of your borrowing has a proportional impact on your overall Health Factor \[details elaborated below].
 
 <figure><img src="../.gitbook/assets/image (88).png" alt="" width="375"><figcaption></figcaption></figure>
 

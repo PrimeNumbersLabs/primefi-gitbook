@@ -4,13 +4,13 @@ description: Utility token
 
 # PRFI
 
-It is the official token of the entire Prime Numbers Labs ecosystem.&#x20;
+It is the official token of the entire Prime Numbers Labs ecosystem.
 
 <figure><img src=".gitbook/assets/Copia de PF Whitepaper (1).jpg" alt=""><figcaption></figcaption></figure>
 
 As a utility token, it will enable various interactions for each of the components that make up our ecosystem.
 
-<figure><img src=".gitbook/assets/TOKENOMICS.jpg" alt=""><figcaption><p>ESTA FOTO ESTA DESACTUALIZADO EL TOKEN USE CASES</p></figcaption></figure>
+<figure><img src=".gitbook/assets/TOKENOMICS (1).jpg" alt=""><figcaption></figcaption></figure>
 
 If you want to learn more about the utilization of each part of the allocation, visit the official Prime Numbers Labs WhitePaper:
 

@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Innovations in Lending and Borrowing
 
 **Innovations in Lending and Borrowing**:

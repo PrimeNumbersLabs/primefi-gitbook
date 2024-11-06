@@ -1,20 +1,6 @@
 # LP Provider Rewards foto ines
 
-## Rewards for liquidity providers - pLP users
-
-PrimeFi will offer different liquidity pools for receiving platform fees:
-
-&#x20;1.-On Ethereum chain: with an 80/20 composition (80% PRFI & 20% ETH).
-
-(enlace al LP)
-
-2.-XDC Network: with an 50/50 composition (50% PRFI & 50% XDC).
-
-(enlace al LP)
-
-No need to undergo any lock-up period
-
-
+##
 
 ## Concentrated liquidity rewards
 
