@@ -4,7 +4,7 @@
 
 pTokens holders enjoy continuous earnings that dynamically adjust to market conditions, driven by:
 
-1. Interest rate payments on loans: Suppliers participate in the interests paid by borrowers, proportional to the average borrow rate multiplied by the utilization rate. The higher the utilization of a reserve, the greater the yield for suppliers.
+* Interest rate payments on loans: Suppliers participate in the interests paid by borrowers, proportional to the average borrow rate multiplied by the utilization rate. The higher the utilization of a reserve, the greater the yield for suppliers.
 
 <figure><img src="../../.gitbook/assets/Copia de PF Whitepaper (3).jpg" alt="" width="563"><figcaption></figcaption></figure>
 

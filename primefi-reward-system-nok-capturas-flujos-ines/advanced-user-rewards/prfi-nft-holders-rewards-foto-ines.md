@@ -1,4 +1,4 @@
-# PRFI NFT Holders Rewards foto ines
+# PRFI NFT Holders Rewards
 
 PRFI NFT collection is one of the two main NFT collections created through Prime Numbers Labs.
 
@@ -7,6 +7,8 @@ This collection has the advantage of earning a percentage of the fees generated 
 ### **Quantity to Earn**
 
 The total amount that users owning a PRFI NFT can earn will be fixed and correspond to 40% of the total user rewards. This percentage will be distributed to the holders of the NFTs.
+
+<figure><img src="../../.gitbook/assets/Copia de PF Whitepaper (8).jpg" alt="" width="563"><figcaption></figcaption></figure>
 
 The NFTs display:
 
