@@ -39,7 +39,7 @@
   * [Relock pLP](manage-primefi/relock-plp.md)
   * [Auto-compound](manage-primefi/auto-compound.md)
 * [PRFI](prfi.md)
-* [PrimeFi Reward System nok capturas flujos (ines)](primefi-reward-system-nok-capturas-flujos-ines/README.md)
+* [PrimeFi Reward System](primefi-reward-system-nok-capturas-flujos-ines/README.md)
   * [Introduction](primefi-reward-system-nok-capturas-flujos-ines/introduction.md)
   * [General User Rewards](primefi-reward-system-nok-capturas-flujos-ines/general-user-rewards/README.md)
     * [Lenders](primefi-reward-system-nok-capturas-flujos-ines/general-user-rewards/lenders-foto-ines.md)
