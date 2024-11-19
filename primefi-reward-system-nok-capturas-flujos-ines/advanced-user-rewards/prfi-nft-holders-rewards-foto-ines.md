@@ -39,12 +39,6 @@ PrimeFi manages an anti-sniping process, aiming to prevent users who appear just
 The conditions must be met to receive the benefits distributed by the protocol.
 {% endhint %}
 
-\
-\
-Extra rewards para los PRFI NFTs holders (mira la imagen de abajo):
-
-
-
 To learn more about PRFI NFTs, visit:\
 [https://docs.primenumbers.xyz/the-ecosystem/nft-staking-reward-system/prfi-staking-nfts](https://docs.primenumbers.xyz/the-ecosystem/nft-staking-reward-system/prfi-staking-nfts)
 
