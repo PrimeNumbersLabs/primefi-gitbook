@@ -4,7 +4,7 @@ hidden: true
 
 # Flik into pLP nok imagenes + texto
 
-## What is Fliking?&#x20;
+## What is Fliking?
 
 Imagine you have tBNB and want to enter the PRFI-tBNB pool. The traditional process for doing so is quite cumbersome.
 
@@ -12,7 +12,7 @@ Initially, you need to provide PRFI and tBNB in the correct ratios, which requir
 
 _**Fliking**_ simplifies this process by allowing you to complete it with a single click.
 
-## Which assets can be Hopped?&#x20;
+## Which assets can be Hopped?
 
 Currently, we have the Flik option available only from the BNB Testnet Chain, which supports the following assets:
 
@@ -25,13 +25,11 @@ Prior to the launch of the protocol on Mainnet, the assets that will be availabl
 
 (PEDIR A INES QUE HAGA EL CUADRO)
 
-## How It Operates?&#x20;
+## How It Operates?
 
 When you use _**Flik**_ with one of these assets, the system automatically converts it to tBNB behind the scenes. This tBNB is then combined with PRFI to create and lock the LP.
 
 This feature is designed to give you increased flexibility with the protocol, making it easier and more efficient to earn and lock LP.
-
-
 
 ## How to Flik via Prime Finance UI:
 
@@ -65,26 +63,24 @@ There is a minimum amount of $5 USD worth of pLP required to initiate a Flik.
 Let's review how the locking APR is calculated for a locking duration of 1 month:
 
 **Example: 1 month locking APR:**\
-\- Definition: Current locking APR for 1 month \
+\- Definition: Current locking APR for 1 month\
 \- Calculation: (Total 1 Month Lockers’ Share of Annualized Protocol Fees) / (Total 1 Month Lockers’ Share of pLP Pool Size)\
 \
 **1 Month Locker Share of Protocol Fees:**\
-**-**Calculation: (1 Month Locker Share of Protocol Power / Total Protocol Locking Power)\
+\*\*-\*\*Calculation: (1 Month Locker Share of Protocol Power / Total Protocol Locking Power)\
 \
 **Total Protocol Locking Power:**\
-**-** Calculation: (1 Month Lockers Share of pLP Pool Size \* 1 Month Locker Multiplier (currently 1x)) + (3 Month Lockers’ Share of pLP Pool Size \* 3 Month Locker Multipler (currently 4x)) + (6 month Lockers’ Share of pLP Pool Size \* 6 month Lockers’ Multiplier (currently 10x)) + (12 month Lockers Share of pLP Pool Size \* 12 Month Locker Multipler)) = Total Protocol Locking Power\
+&#xNAN;**-** Calculation: (1 Month Lockers Share of pLP Pool Size \* 1 Month Locker Multiplier (currently 1x)) + (3 Month Lockers’ Share of pLP Pool Size \* 3 Month Locker Multipler (currently 4x)) + (6 month Lockers’ Share of pLP Pool Size \* 6 month Lockers’ Multiplier (currently 10x)) + (12 month Lockers Share of pLP Pool Size \* 12 Month Locker Multipler)) = Total Protocol Locking Power\
 \
 **Your New Annual Rewards:**\
-**-** Definition: User projected annual rewards, in USD terms, based on both PRFI rewards and Protocol fees:\
-\-Calculation: (Projected user daily PRFI rewards \* 365) + (Projected user daily protocol fees \* 365)\
+&#xNAN;**-** Definition: User projected annual rewards, in USD terms, based on both PRFI rewards and Protocol fees:\
+-Calculation: (Projected user daily PRFI rewards \* 365) + (Projected user daily protocol fees \* 365)\
 \
 (IMAGEN)
 
-
-
 ## ~~Confirm Your Hopp~~
 
-In this concluding step, users can verify their final hopping details.&#x20;
+In this concluding step, users can verify their final hopping details.
 
 In the provided example, 21 ETH is utilized from the wallet to hop into cLP, and the chosen locking duration is also displayed.
 
@@ -99,4 +95,3 @@ A friendly reminder that fliking into pLP will lock your LP tokens for the speci
 To manage slippage, click the icon at the top right. Then, input your slippage tolerance and the maximum percentage you're willing to lose. Setting your maximum tolerance for slippage safeguards you up to that amount. When you hit "Confirm" to execute a Flik, an error may prompt you to reload the page or increase your slippage tolerance.
 
 Keep in mind that providing liquidity carries some risk, as the value of your LPs may fluctuate, and impermanent loss is possible. ~~Balancer explains the reduced impermanent loss in their Medium article, which also applies to Prime Finance's pLP on Arbitrum.~~
-
