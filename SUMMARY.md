@@ -59,3 +59,4 @@
     * [Rewards](contracts/rewards.md)
     * [Bounty System](contracts/bounty.md)
 * [Audits](audits.md)
+* [Testnet Faucets](testnet-faucets.md)
