@@ -1,4 +1,4 @@
-# PrimeFi YouTube Tutorial
+# PrimeFi Youtube Tutorial
 
 As part of our commitment to **making DeFi more accessible**, we’ve created a series of **video tutorials** that break down **PrimeFi Testnet** and its key features in a simple, easy-to-follow format.
 

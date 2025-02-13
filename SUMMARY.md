@@ -59,7 +59,7 @@
     * [Rewards](contracts/rewards.md)
     * [Bounty System](contracts/bounty.md)
 * [Audits](audits.md)
-* [PrimeFi YouTube Tutorial](audits-1.md)
+* [PrimeFi Youtube Tutorial](primefi-youtube-tutorial.md)
 * [Testnet Faucets](testnet-faucets/README.md)
   * [1.-Hyperliquid Test](testnet-faucets/1.-hyperliquid-test.md)
   * [2.-Base Sepolia](testnet-faucets/2.-base-sepolia.md)
