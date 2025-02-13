@@ -1,8 +1,8 @@
 # PrimeFi YouTube Tutorial
 
-As part of our commitment to **education and accessibility in DeFi**, we have developed a **video tutorial** that clearly and concisely explains the functionality of **PrimeFi Testnet** and its key features.
+As part of our commitment to **making DeFi more accessible**, we’ve created a series of **video tutorials** that break down **PrimeFi Testnet** and its key features in a simple, easy-to-follow format.
 
-This tutorial, available on our YouTube channel, consists of **9 short videos** of **2 to 3 minutes each**, designed to help any user, regardless of experience level, understand:
+This YouTube series includes **9 short videos** (2-3 minutes each) designed for users of all experience levels, covering:
 
 🔹 **How PrimeFi Testnet works** and its role in the DeFi ecosystem.\
 🔹 **Key concepts of lending and borrowing in an omnichain environment**.\
@@ -10,7 +10,7 @@ This tutorial, available on our YouTube channel, consists of **9 short videos** 
 
 Through this tutorial, we aim to lower the entry barriers to DeFi and provide an **accessible educational tool** for everyone interested in maximizing PrimeFi’s potential.
 
-You can watch the full tutorial at the following link:\
+Watch the full tutorial here:\
 ▶️ [**PrimeFi YouTube Tutorial**](https://www.youtube.com/playlist?list=PLhJ8SNhjVjfmsBCc9Lti2yFzCWPdhKWHK)
 
-This is just **the first step in our educational initiative**. We will continue to create informative content to **enhance DeFi knowledge and drive broader adoption** of PrimeFi as it progresses towards Mainnet.
+This is just the beginning. We’re committed to **expanding our educational content** **to drive DeFi adoption** and prepare for PrimeFi’s journey to Mainnet!
