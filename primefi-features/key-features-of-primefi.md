@@ -10,3 +10,18 @@
 {% hint style="warning" %}
 The integration of NFTs will take place after the main features of the protocol are launched on Mainnet.
 {% endhint %}
+
+* Safeguard Your Investments:&#x20;
+
+All our loans are overcollateralized, making your loans safer. However, it's crucial to maintain your Health Factor above 1 as a safety net to prevent your loan from being liquidated.
+
+* Institutional-Grade Security:&#x20;
+
+Through continuous audits, we ensure our platform maintains ironclad security to protect our users.
+
+* Inclusive Access:&#x20;
+
+Our platform and community are packed with fun, accessible ways to learn about DeFi, ensuring you have the knowledge you need.
+
+
+
