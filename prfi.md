@@ -10,7 +10,7 @@ It is the official token of the entire Prime Numbers Labs ecosystem.
 
 As a utility token, it will enable various interactions for each of the components that make up our ecosystem.
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 If you want to learn more about the utilization of each part of the allocation, visit the official Prime Numbers Labs WhitePaper:
 
