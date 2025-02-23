@@ -1,4 +1,4 @@
-# Manual
+# Manual Positions
 
 * **How it works**
 
@@ -6,7 +6,9 @@ To manually create a position in the pLP, we need to go to the PRFI/native token
 
 This LP token can be locked through the PrimeFi interface for different periods of time.
 
+{% hint style="warning" %}
 _Note: This feature is only available on Mainnet._
+{% endhint %}
 
 * **Lock Length**
 

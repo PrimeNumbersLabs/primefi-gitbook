@@ -1,15 +1,5 @@
 # pLP Overview
 
-<figure><img src="../.gitbook/assets/image (93).png" alt=""><figcaption></figcaption></figure>
-
-Below, you can see **natural market rates** highlighted in red, and **PRFI emissions** directly underneath, in blue/purple. Users that simply deposit but don't add value to the protocol will continue to earn natural market rates, but will not be eligible for PRFI emissions.
-
-<figure><img src="../.gitbook/assets/image (92).png" alt=""><figcaption></figcaption></figure>
-
-{% hint style="info" %}
-In order to initiate PRFI emissions for both deposits and loans, you must lock a minimum of 5% of your deposit's USD value in pLP tokens.
-{% endhint %}
-
 ### Prime Liquidity Provider (pLP) <a href="#id-42a6" id="id-42a6"></a>
 
 * **What is it?**
@@ -29,3 +19,14 @@ The requirement to lock liquidity tokens in pLP form benefits the PrimeFi money 
 3. Attracting New Users: These dynamics enhance the PrimeFi money market's appeal to potential liquidity providers, fostering growth and development.
 
 This strategic cycle not only sustains long-term liquidity but also attracts new inflows, creating a mutually beneficial scenario for individual users and the protocol as a whole.
+
+<figure><img src="../.gitbook/assets/image (93).png" alt=""><figcaption></figcaption></figure>
+
+Below, you can see **natural market rates** highlighted in red, and **PRFI emissions** directly underneath, in blue/purple. Users that simply deposit but don't add value to the protocol will continue to earn natural market rates, but will not be eligible for PRFI emissions.
+
+<figure><img src="../.gitbook/assets/image (92).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+In order to initiate PRFI emissions for both deposits and loans, you must lock a minimum of 5% of your deposit's USD value in pLP tokens.
+{% endhint %}
+
