@@ -1,9 +1,19 @@
 # Introducing PrimeFi
 
-Keeping your pocket in mind, we've developed a platform for lending and borrowing that boasts the most user-friendly rates, a quick and easy-to-use interface, and the most educational community to help you navigate DeFi correctly.\
-\
-PrimeFi represents the pinnacle of innovation in Decentralized Finance. The protocol leverages the innovative Layer Zero technology, eliminating any issues with data interconnection across different chains.
+Prime Numbers Labs has launched PrimeFi, the first omnichain lending and borrowing protocol on Hyperliquid EVM.&#x20;
 
-This forward-thinking platform empowers users to supply liquidity for generating passive income or borrowing with a flexible collateralization approach, setting a new standard in the DeFi space.
+Powered by LayerZero, PrimeFi enhances DeFi liquidity across multiple EVM networks. Currently available on the Hyperliquid, Arbitrum, Base, and BNB Chain testnets.
 
-We provide thorough documentation, a specific video course to learn about the protocol, a chat with a trained AI, and a website that serves as a forum for any user.
+{% hint style="success" %}
+PrimeFi's mainnet launch is coming soon
+{% endhint %}
+
+### Why PrimeFi?
+
+| Advantage                   | What it means for you                                                                                                 |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| **True Omnichain**          | Operates natively on Hyperliquid, Arbitrum, Base and BNB Chain with more chains coming soon.                          |
+| **Deposit ≠ Loan**          | Use your collateral where you hold it and receive liquidity where you need it.                                        |
+| **Proven Security**         | Audited smart contracts and LayerZero architecture provide secure cross-chain messaging.                              |
+| **PRFI Rewards**            | Earn $PRFI tokens by providing liquidity, participating in liquidations, or holding NFTs from the PrimeFi collection. |
+| **Prime Numbers Ecosystem** | Direct synergies with PrimeStaking and PrimePort that multiply returns.                                               |
