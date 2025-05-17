@@ -1,4 +1,10 @@
+---
+description: Welcome to PrimeFi omnichain lending and borrowing DeFi protocol.
+---
+
 # Introducing PrimeFi
+
+Created with your assets in mind, PrimeFi is the omnichain platform that streamlines borrowing and lending with the most competitive terms in DeFi. Powered by LayerZero, your assets move natively across chains, no bridges, no extra risk.
 
 Prime Numbers Labs has launched PrimeFi, the first omnichain lending and borrowing protocol on Hyperliquid EVM.&#x20;
 
