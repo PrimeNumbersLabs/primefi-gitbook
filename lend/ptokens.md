@@ -1,9 +1,15 @@
 # pTokens
 
-pTokens are interest-bearing tokens displayed as 'pXXXX' in your wallet (example: pUSDT for USDT).&#x20;
+### pTokens: Interest-Bearing Deposit Tokens
 
-These tokens are created and eliminated when you deposit and withdraw funds.&#x20;
+PrimeFi issues a _pToken_ for every supported asset you supply.\
+For example, a USDT deposit mints **pUSDT** to your wallet.
 
-The value of pTokens is directly linked to the value of the respective deposited asset, maintaining a 1:1 ratio. All accrued interest is allocated to pTokens holders by progressively increasing the balance in their wallets.&#x20;
-
-To exchange your pTokens back into the original asset, go to your deposits section on the Dashboard and follow the instructions for withdrawal.
+| Topic                 | Detail                                                                                                                                                                           |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Symbol format**     | `p<ASSET>`, e.g. `pWETH`, `pUSDC`                                                                                                                                                |
+| **Lifecycle**         | <p>• <strong>Minted</strong> when you supply the underlying asset.</p><p>• <strong>Burned</strong> when you withdraw or when your collateral is liquidated.</p>                  |
+| **Valuation**         | Maintains a **1:1 peg** to the underlying asset. Your pToken balance grows over time as interest accrues.                                                                        |
+| **Interest accrual**  | Each reserve has a _liquidity index_. When the index increases, your pToken balance is scaled up proportionally—no action required.                                              |
+| **Wallet visibility** | pTokens are standard ERC-20 tokens and appear in most wallets; you may need to add the contract address manually.                                                                |
+| **Redeeming**         | Navigate to **Dashboard → Deposits → Withdraw** to convert pTokens back to the original asset. The protocol burns the pTokens and transfers the corresponding underlying amount. |

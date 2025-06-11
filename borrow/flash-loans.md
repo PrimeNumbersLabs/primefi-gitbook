@@ -4,12 +4,31 @@ description: Available on Mainnet
 
 # Flash Loans
 
-Designed primarily for developers with the requisite technical expertise, flash loans provide the capability to borrow available assets without the need for collateral, provided that the liquidity is restored to the protocol within a single block transaction.
+Flash loans allow a user to borrow any liquid asset in the PrimeFi pools without posting collateral, as long as the loan is opened and fully repaid within the same blockchain transaction (i.e., within one block).\
+If the repayment plus a small fee does not arrive before the transaction ends, the entire operation is automatically cancelled and the chain reverts to its previous state, so the pool remains intact and depositors stay protected.
 
-In the realm of decentralized finance (DeFi), flash loans serve as a tool for executing intricate financial transactions. For instance, a user might opt for a flash loan to conduct a trade on a decentralized exchange (DEX) or engage in arbitrage across various DeFi protocols.
+**Why Flash Loans Exist**
 
-Despite their utility in enabling swift and convenient access to significant capital, flash loans entail a heightened level of risk due to their short-term nature. Should the borrower fail to repay the loan within the designated timeframe, a substantial penalty may be imposed.
+* **Arbitrage:** Momentarily source large liquidity to buy an asset where it is under-priced and sell where it is over-priced.
+* **Collateral Swaps / Debt Restructuring:** Replace volatile collateral with a stable asset, or migrate a loan between protocols, without needing upfront capital.
+* **Automated Liquidations:** Bots can cover an under-collateralised position, seize its collateral at a discount, repay the flash loan, and keep the difference, helping the protocol stay solvent.
 
-To engage in a flash loan, a contract must be constructed to request the loan. Subsequently, the contract needs to execute the specified steps and repay the loan along with accrued interest and fees, all within the confines of a single transaction.
+**Operating Principles**
 
-For a more in-depth understanding, refer to the flash loan procedure inherited from Aave within their [documentation](https://docs.aave.com/developers/guides/flash-loans).
+1. **Atomicity** – Borrow, use the funds, and repay (amount + fee) all happen in a single, indivisible transaction.
+2. **No Counterparty Risk** – Because the transaction reverts if repayment fails, the pool never carries outstanding debt.
+3. **Fee Structure** – A predefined premium (e.g., 0.05 %) is added to the repayment; the fee is shared between liquidity providers and the protocol treasury.
+4. **Liquidity Cap** – The maximum that can be borrowed equals the pool’s unused liquidity at that moment, ensuring ordinary lenders and borrowers are never starved of funds.
+
+
+
+**Risk & Mitigations**
+
+| Potential Concern           | Safeguard                                                                                            |
+| --------------------------- | ---------------------------------------------------------------------------------------------------- |
+| **Pool Drain**              | Loans are bounded by the pool’s real-time free liquidity.                                            |
+| **Smart-contract exploits** | The underlying flash-loan logic is inherited from Aave v3, which has been extensively audited.       |
+| **Market manipulation**     | The single-block window gives no time to influence oracle prices or markets before repayment is due. |
+| **Fee manipulation**        | Premiums are configurable only by authorised governance and are displayed to users up-front.         |
+
+Flash loans are a specialised tool intended for developers and sophisticated users who can author smart-contract logic and understand the atomicity requirement. They add capital efficiency and arbitrage-driven price alignment to the PrimeFi ecosystem without compromising lender safety.
