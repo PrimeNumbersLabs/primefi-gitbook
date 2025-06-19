@@ -35,5 +35,3 @@ To deactivate auto-relock, shift the toggle to the left and confirm the transact
 {% hint style="info" %}
 Auto-relocks will lock all expired pLP automatically for your default lock duration.
 {% endhint %}
-
-<figure><img src="../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
