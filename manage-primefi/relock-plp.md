@@ -32,6 +32,8 @@ To activate auto-relock, shift the toggle to the right and confirm the transacti
 
 To deactivate auto-relock, shift the toggle to the left and confirm the transaction in your wallet.
 
+<figure><img src="../.gitbook/assets/image (97).png" alt=""><figcaption></figcaption></figure>
+
 {% hint style="info" %}
 Auto-relocks will lock all expired pLP automatically for your default lock duration.
 {% endhint %}
