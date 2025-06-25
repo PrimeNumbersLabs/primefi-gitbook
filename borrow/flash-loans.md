@@ -27,7 +27,7 @@ If the repayment plus a small fee does not arrive before the transaction ends, t
 | Potential Concern           | Safeguard                                                                                            |
 | --------------------------- | ---------------------------------------------------------------------------------------------------- |
 | **Pool Drain**              | Loans are bounded by the pool’s real-time free liquidity.                                            |
-| **Smart-contract exploits** | The underlying flash-loan logic is inherited from Aave v3, which has been extensively audited.       |
+| **Smart-contract exploits** | The underlying flash-loan logic is inherited from Aave v2, which has been extensively audited.       |
 | **Market manipulation**     | The single-block window gives no time to influence oracle prices or markets before repayment is due. |
 | **Fee manipulation**        | Premiums are configurable only by authorised governance and are displayed to users up-front.         |
 
