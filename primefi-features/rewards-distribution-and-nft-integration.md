@@ -1,6 +1,6 @@
 # Rewards distribution and NFT Integration
 
-* A distinctive aspect of PrimeFi is the 40% profit sharing offered to PRFI token holders who stake their tokens with Prime Numbers NFTs.
+* A distinctive aspect of PrimeFi is the 40% of the borrowing fee distribution is offered to PRFI token holders who stake their tokens with Prime Numbers NFTs.
 * This integration of lending and borrowing with NFTs, coupled with the platform's comprehensive approach to yield optimization and asset management, underscores PrimeFi's commitment to innovation and versatility in the rapidly evolving DeFi ecosystem.
 
 {% hint style="info" %}
