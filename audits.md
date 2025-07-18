@@ -42,12 +42,12 @@ Below you’ll find each audit summarised in collapsible blocks, with public lin
 
 <summary><strong>🔍 Full Audit #2 — QuillAudits</strong></summary>
 
-| Field      | Detail                                                                |
-| ---------- | --------------------------------------------------------------------- |
-| **Scope**  | Cross-chain messaging (LayerZero), security-admin modules             |
-| **Date**   | May 2025                                                              |
-| **Status** | 🟠 Report in final layout — fixes delivered, awaiting formal sign-off |
-| **Report** | (Link will be added once Quill publishes the final PDF)               |
+| Field      | Detail                                                                               |
+| ---------- | ------------------------------------------------------------------------------------ |
+| **Scope**  | Cross-chain messaging (LayerZero), security-admin modules                            |
+| **Date**   | May 2025                                                                             |
+| **Status** | 🟠 Report in final layout — fixes delivered, awaiting formal sign-off                |
+| **Report** | [See report](https://www.quillaudits.com/leaderboard/prime-numbers/prime-numbers-v3) |
 
 </details>
 
