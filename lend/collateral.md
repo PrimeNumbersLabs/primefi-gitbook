@@ -4,9 +4,9 @@ After depositing an asset, you can choose whether to use it as collateral. Colla
 
 You can enable collateralization on the asset details page or through the Dashboard (shown below).
 
-<figure><img src="../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
+<div data-full-width="true"><figure><img src="../.gitbook/assets/image (101).png" alt=""><figcaption></figcaption></figure></div>
 
-By default, all deposits are enabled as collateral. However, you can opt out for individual assets in the "Deposits" section of the Dashboard.&#x20;
+By default, all deposits are enabled as collateral. However, you can opt out for individual assets in the "Deposits" section of the Dashboard.
 
 {% hint style="info" %}
 To exclude an asset from being used as collateral, simply toggle the "Collateral" button next to the asset and confirm the transaction.

@@ -2,7 +2,7 @@
 
 This functionality is the reverse of making a deposit. To use it, follow the same process but through the section labelled **“Withdraw”**.
 
-<figure><img src="../.gitbook/assets/image (68).png" alt="" width="563"><figcaption></figcaption></figure>
+<div data-full-width="true"><figure><img src="../.gitbook/assets/image (103).png" alt=""><figcaption></figcaption></figure></div>
 
 Select the desired amount and submit the transaction.
 

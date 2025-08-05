@@ -8,6 +8,7 @@
   * [Rewards distribution and NFT Integration](primefi-features/rewards-distribution-and-nft-integration.md)
 * [Lend](lend/README.md)
   * [How to Deposit?](lend/how-to-deposit.md)
+  * [Copy of How to Deposit?](lend/how-to-deposit-1.md)
   * [Collateral](lend/collateral.md)
   * [pTokens](lend/ptokens.md)
   * [Withdraw](lend/withdraw.md)
