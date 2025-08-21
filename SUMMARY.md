@@ -6,6 +6,7 @@
   * [Copy of Key Features of PrimeFi](primefi-features/key-features-of-primefi-1.md)
   * [Innovations in Lending and Borrowing](primefi-features/innovations-in-lending-and-borrowing.md)
   * [Rewards distribution and NFT Integration](primefi-features/rewards-distribution-and-nft-integration.md)
+  * [Oracles](primefi-features/oracles.md)
 * [Lend](lend/README.md)
   * [How to Deposit?](lend/how-to-deposit.md)
   * [Copy of How to Deposit?](lend/how-to-deposit-1.md)
