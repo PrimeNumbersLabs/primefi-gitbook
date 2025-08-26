@@ -1,4 +1,4 @@
-# Flik
+# Flik Positions
 
 ## **How it Works**
 
@@ -14,19 +14,19 @@ This feature is designed to give you increased flexibility with the protocol, ma
 
 ## **Methods for Building it**
 
-You can select between 2 _Flik_ sources.&#x20;
+You can select between 2 _Flik_ sources.
 
-### &#x20;**1.-Wallet**
+### **1.-Wallet**
 
-PrimeFi enables you to _Flik_ using supported assets from your wallet.&#x20;
+PrimeFi enables you to _Flik_ using supported assets from your wallet.
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt="" width="375"><figcaption><p>wait until mainnet</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (117).png" alt=""><figcaption></figcaption></figure>
 
-### 2.-Borrow
+2.-Borrow
 
 Alternatively, if you have deposited collateral, you can borrow directly from the protocol.
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (118).png" alt=""><figcaption></figcaption></figure>
 
 Be mindful of your Health Factor and the risk of liquidation before borrowing. Fliking will never lower your Health Factor below 1.1.
 

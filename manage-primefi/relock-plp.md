@@ -14,7 +14,7 @@ The default lock duration is configured to 3 months (4x multiplier) unless you h
 
 Select the Lock Lenght
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="489"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (127).png" alt=""><figcaption></figcaption></figure>
 
 Choose "Relock."
 

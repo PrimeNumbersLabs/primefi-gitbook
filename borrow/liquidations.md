@@ -2,7 +2,7 @@
 
 Liquidation is a procedure triggered when a borrower's Health Factor falls to 1 or below, as their collateral value fails to adequately cover their loan or debt value. This scenario may arise from a decline in the value of the collateralized asset or an increase in the borrowed debt.
 
-<figure><img src="../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (135).png" alt=""><figcaption></figcaption></figure>
 
 To mitigate the risk of liquidation, you can either repay outstanding loans or deposit additional collateral to increase your Health Factor.
 

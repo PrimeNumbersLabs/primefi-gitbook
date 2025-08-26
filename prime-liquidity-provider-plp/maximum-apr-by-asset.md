@@ -2,11 +2,11 @@
 
 ### Maximum APR by asset
 
-<figure><img src="../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (119).png" alt=""><figcaption></figcaption></figure>
 
 On the Markets Page, users have the ability to assess the Maximum pLP Locking APR. Additionally, there is an asset breakdown modal that provides a detailed view of the APR for each specific asset.
 
-<figure><img src="../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
 
 #### Maximum Lock APR:
 

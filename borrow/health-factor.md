@@ -6,7 +6,7 @@ description: Safeguarding Your Investments from Liquidation
 
 The Health Factor acts as a numerical measure of the security of your deposited assets in relation to your borrowed assets and their inherent value. A higher Health Factor indicates greater protection of your funds from potential liquidation.
 
-<figure><img src="../.gitbook/assets/image (63).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (131).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 Should the Health Factor fall to 1 or below, it triggers a liquidation event. In such a scenario, up to 50% of your outstanding borrowing is repaid, and the collateral, along with a liquidation fee, is used to cover this repayment. The amount liquidated from your debt is then considered settled.

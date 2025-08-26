@@ -25,7 +25,7 @@ To avoid disqualifications related to expired locked pLP, users can toggle the "
 \
 
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt="" width="491"><figcaption></figcaption></figure>
+<div align="center"><figure><img src="../.gitbook/assets/image (123).png" alt=""><figcaption></figcaption></figure></div>
 
 Additional Information Bounty hunters are required to maintain the 5% pLP threshold status and have deposited assets to be eligible for claiming bounties.
 

@@ -2,7 +2,7 @@
 
 Access pertinent statistics concerning pLP from the Manage PrimeFi page.
 
-<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (137).png" alt=""><figcaption></figcaption></figure>
 
 Your Locked pLP: The variable value of pLP influenced by volatility in the underlying tokens - PRFI & ETH or PRFI & BNB.
 
@@ -30,7 +30,7 @@ Calculation Example for User 1:
 
 Calculation: (User Daily Protocol Fees \* 365)
 
-<figure><img src="../.gitbook/assets/image (18).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (124).png" alt=""><figcaption></figcaption></figure>
 
 **Your Present Lock APR:**
 
@@ -38,4 +38,4 @@ Calculation: (User Daily Protocol Fees \* 365)
 
 Calculation: (Global 1-month Locking APR \* User Avg Multiplier)
 
-**For computations related to "Max Locking APR" on the Markets page, **~~**refer to that section**~~**. For calculations associated with the Fliking Modal.**
+**For computations related to "Max Locking APR" on the Markets page, \~\~refer to that section**\~\~**. For calculations associated with the Fliking Modal.**
