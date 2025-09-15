@@ -12,7 +12,7 @@ By default, all deposits are enabled as collateral. However, you can opt out for
 To exclude an asset from being used as collateral, simply toggle the "Collateral" button next to the asset and confirm the transaction.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Frame 157 (1).jpg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
 Please be cautious if you decide to withdraw assets as collateral. Market volatility can lead to liquidation risks.

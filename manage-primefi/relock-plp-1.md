@@ -1,8 +1,9 @@
 ---
 description: Maintain a continuous stream of platform fees
+hidden: true
 ---
 
-# Relock pLP
+# Copy of Relock pLP
 
 Banners across the PrimeFi platform will indicate when your lock expires. Expired locks will not receive platform fees and may impact your PRFI emission eligibility within the money market. From the top banner on the PrimeFi platform, choose "Relock pLP," and confirm the transaction.
 
@@ -12,13 +13,15 @@ The default lock duration is configured to 3 months (4x multiplier) unless you h
 
 <figure><img src="../.gitbook/assets/Frame 738 (2).jpg" alt=""><figcaption></figcaption></figure>
 
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+
 Select the Lock Lenght
 
 <figure><img src="../.gitbook/assets/image (127).png" alt=""><figcaption></figcaption></figure>
 
 Choose "Relock."
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Examine the transaction details, choose "Relock pLP," and confirm the transaction in your wallet.
 

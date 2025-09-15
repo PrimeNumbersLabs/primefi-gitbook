@@ -40,6 +40,7 @@
   * [Locked pLP](manage-primefi/locked-plp.md)
   * [Protocol fees](manage-primefi/protocol-fees.md)
   * [Relock pLP](manage-primefi/relock-plp.md)
+  * [Copy of Relock pLP](manage-primefi/relock-plp-1.md)
   * [Auto-compound](manage-primefi/auto-compound.md)
 * [Know Your Algorithm](know-your-algorithm/README.md)
   * [Key Components](know-your-algorithm/key-components.md)

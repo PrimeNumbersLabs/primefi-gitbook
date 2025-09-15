@@ -30,4 +30,4 @@ The total liquidation penalty is 15%, with half (7.5%) allocated as a bonus to l
 
 Each asset within PrimeFi l has specific risk-related values that influence their supply and borrowing dynamics.
 
-<figure><img src="../.gitbook/assets/Copia de PF Whitepaper.jpg" alt=""><figcaption><p>Final information available on mainnet.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/PF-WP (5).jpg" alt=""><figcaption></figcaption></figure>
