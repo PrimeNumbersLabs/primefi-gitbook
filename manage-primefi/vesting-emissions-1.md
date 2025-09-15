@@ -1,4 +1,8 @@
-# Vesting Emissions
+---
+hidden: true
+---
+
+# Copy of Vesting Emissions
 
 {% hint style="info" %}
 Kindly be aware that this choice is accessible exclusively to users who fulfill the pLP eligibility requirements.
@@ -20,7 +24,7 @@ To fully vest PRFI and unlock its full value, a 90-day maturation period is requ
 2. **Eligibility:** If you haven't met the pLP requirements, the 'Start vesting' button will be disabled.
 3. **Activation:** Eligible users can click 'Start vesting' and confirm the transaction in their wallet.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (77).png" alt="" width="563"><figcaption></figcaption></figure>
 
 After activation, the 'Vesting Overview' panel provides diverse management functions for monitoring and overseeing your vesting process.
 

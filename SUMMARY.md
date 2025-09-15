@@ -37,6 +37,7 @@
 * [Manage PrimeFi](manage-primefi/README.md)
   * [Statistics for pLP](manage-primefi/statistics-for-plp.md)
   * [Vesting Emissions](manage-primefi/vesting-emissions.md)
+  * [Copy of Vesting Emissions](manage-primefi/vesting-emissions-1.md)
   * [Locked pLP](manage-primefi/locked-plp.md)
   * [Protocol fees](manage-primefi/protocol-fees.md)
   * [Relock pLP](manage-primefi/relock-plp.md)

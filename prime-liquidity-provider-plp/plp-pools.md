@@ -9,7 +9,7 @@ Testnet networks:
 * Base Sepolia
 * Arbitrum Sepolia
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 The official pools and their composition for Mainnet will be announced prior to their launch.
