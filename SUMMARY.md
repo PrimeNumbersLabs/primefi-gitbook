@@ -43,6 +43,7 @@
   * [Relock pLP](manage-primefi/relock-plp.md)
   * [Copy of Relock pLP](manage-primefi/relock-plp-1.md)
   * [Auto-compound](manage-primefi/auto-compound.md)
+  * [Activity Log](manage-primefi/activity-log.md)
 * [Know Your Algorithm](know-your-algorithm/README.md)
   * [Key Components](know-your-algorithm/key-components.md)
   * [Operational Flow](know-your-algorithm/operational-flow/README.md)
