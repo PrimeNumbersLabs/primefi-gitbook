@@ -20,7 +20,7 @@ To fully vest PRFI and unlock its full value, a 90-day maturation period is requ
 2. **Eligibility:** If you haven't met the pLP requirements, the 'Start vesting' button will be disabled.
 3. **Activation:** Eligible users can click 'Start vesting' and confirm the transaction in their wallet.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Vesting (2).jpg" alt=""><figcaption></figcaption></figure>
 
 After activation, the 'Vesting Overview' panel provides diverse management functions for monitoring and overseeing your vesting process.
 
@@ -30,7 +30,7 @@ Once PRFI is in the vesting phase, initiate fliking into locked pLP without incu
 
 Within the "currently vesting" section, opt for "Flik into pLP."
 
-<figure><img src="../.gitbook/assets/image (78).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Frame 872.jpg" alt=""><figcaption></figcaption></figure>
 
 The Flik with vesting PrimeFi modal will appear:
 
@@ -44,7 +44,7 @@ After clicking continue, choose the lock duration and corresponding multiplier, 
 
 Exiting early incurs a penalty to receive PRFI immediately. Vests can be exited collectively for the penalty displayed under the "exit early" button below.
 
-<figure><img src="../.gitbook/assets/image (80).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Frame 872 (1).jpg" alt=""><figcaption></figcaption></figure>
 
 Alternatively, exit individual vests with their respective penalty amounts by clicking the right arrow below each vest you wish to exit.
 
@@ -54,7 +54,7 @@ Alternatively, exit individual vests with their respective penalty amounts by cl
 
 PRFI that has completed the 90-day maturation period can be withdrawn in full from the vested panel on the Manage PrimeFi page.
 
-<figure><img src="../.gitbook/assets/image (82).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Vested.jpg" alt=""><figcaption></figcaption></figure>
 
 #### Additional Notes
 
