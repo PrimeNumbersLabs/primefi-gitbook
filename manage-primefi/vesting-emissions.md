@@ -30,13 +30,13 @@ Once PRFI is in the vesting phase, initiate fliking into locked pLP without incu
 
 Within the "currently vesting" section, opt for "Flik into pLP."
 
-<figure><img src="../.gitbook/assets/Frame 872.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Vested (2).jpg" alt=""><figcaption></figcaption></figure>
 
 The Flik with vesting PrimeFi modal will appear:
 
-<figure><img src="../.gitbook/assets/image (79).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Frame 157 (7).jpg" alt=""><figcaption></figcaption></figure>
 
-Please be aware that the PRFI and ETH/BNB input fields will be automatically populated. Fliking with vesting PRFI can only be performed for the entire vesting amount. Therefore, the ETH/BNB calculation (borrowed from the money market or paired from your wallet) is automated based on the required ratio to form the liquidity token.
+Please be aware that the PRFI and ETH input fields will be automatically populated. Fliking with vesting PRFI can only be performed for the entire vesting amount. Therefore, the ETH calculation (borrowed from the money market or paired from your wallet) is automated based on the required ratio to form the liquidity token.
 
 After clicking continue, choose the lock duration and corresponding multiplier, then proceed by clicking continue. Verify that the Fliking information is accurate and click "Flik into pLP" to confirm the necessary transactions in your wallet.
 
@@ -44,7 +44,7 @@ After clicking continue, choose the lock duration and corresponding multiplier, 
 
 Exiting early incurs a penalty to receive PRFI immediately. Vests can be exited collectively for the penalty displayed under the "exit early" button below.
 
-<figure><img src="../.gitbook/assets/Frame 872 (1).jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Vested (2) (1).jpg" alt=""><figcaption></figcaption></figure>
 
 Alternatively, exit individual vests with their respective penalty amounts by clicking the right arrow below each vest you wish to exit.
 
@@ -54,7 +54,7 @@ Alternatively, exit individual vests with their respective penalty amounts by cl
 
 PRFI that has completed the 90-day maturation period can be withdrawn in full from the vested panel on the Manage PrimeFi page.
 
-<figure><img src="../.gitbook/assets/Vested.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Vested (1).jpg" alt=""><figcaption></figcaption></figure>
 
 #### Additional Notes
 

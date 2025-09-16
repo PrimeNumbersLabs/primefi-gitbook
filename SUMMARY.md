@@ -7,6 +7,7 @@
   * [Innovations in Lending and Borrowing](primefi-features/innovations-in-lending-and-borrowing.md)
   * [Rewards distribution and NFT Integration](primefi-features/rewards-distribution-and-nft-integration.md)
   * [Oracles](primefi-features/oracles.md)
+  * [Omnichain Gas Deposit Mechanism for Incentives Synchronization](primefi-features/omnichain-gas-deposit-mechanism-for-incentives-synchronization.md)
 * [Lend](lend/README.md)
   * [How to Deposit?](lend/how-to-deposit.md)
   * [Copy of How to Deposit?](lend/how-to-deposit-1.md)
