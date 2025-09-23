@@ -38,5 +38,5 @@ This is the sum of all lockers’ shares, each adjusted by its respective multip
 = (1 Month Lockers' Share of pLP Pool Size * 1 Month Locker Multiplier (1x)) 
 + (3 Month Lockers’ Share of pLP Pool Size * 3 Month Locker Multiplier (4x))
 + (6 Month Lockers’ Share of pLP Pool Size * 6 Month Lockers’ Multiplier (10x))
-+ (12 Month Lockers' Share of pLP Pool Size * 12 Month Locker Multiplier)
++ (12 Month Lockers' Share of pLP Pool Size * 12 Month Locker Multiplier (25x))
 ```

@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Bounty for Disqualification
 
 {% hint style="warning" %}
