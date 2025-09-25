@@ -9,7 +9,7 @@ PrimeFi’s lending engine is **omnichain by design**. Thanks to LayerZero messa
 
 **How it works (high-level)**
 
-1. When you supply an asset (e.g., ETH on Arbitrum) PrimeFi records that collateral in a **global position ledger** that is synced across chains via LayerZero.
+1. When you supply an asset (e.g., ETH on Base) PrimeFi records that collateral in a **global position ledger** that is synced across chains via LayerZero.
 2. When you request a loan elsewhere (e.g., USDC on Hyperliquid) the protocol checks your unified LTV and health factor in real time, approves the borrow, and updates the same global position, so your risk profile is consistent no matter where you move liquidity.
 
 <figure><img src="../.gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
