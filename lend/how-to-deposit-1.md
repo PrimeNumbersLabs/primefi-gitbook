@@ -10,7 +10,7 @@ Let’s say you’ve chosen USDT. The initial setup will display the option to d
 
 Enter the amount of USDT you want to deposit and press **Continue**.
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 Next, you’ll see a prompt that says **“Approve”**. If you haven’t used this protocol before, you’ll need to approve the token, granting the protocol permission to manage this asset within your wallet. Click **“Approve”** — this is a simple signing transaction.
 

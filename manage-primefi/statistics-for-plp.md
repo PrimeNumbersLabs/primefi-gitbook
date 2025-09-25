@@ -4,10 +4,10 @@ Access pertinent statistics concerning pLP from the Manage PrimeFi page.
 
 <figure><img src="../.gitbook/assets/image (137).png" alt=""><figcaption></figcaption></figure>
 
-Your Locked pLP: The variable value of pLP influenced by volatility in the underlying tokens - PRFI & ETH or PRFI & BNB.
+Your Locked pLP: The variable value of pLP influenced by volatility in the underlying tokens - PRFI & HYPE or PRFI & ETH.
 
 {% hint style="success" %}
-pLP USD Value = (TWAP(PRFI, 1 hr) \* prfiInLp) + (ethPrice \* ethInLp) / LP Supply
+pLP USD Value = (TWAP(PRFI, 1 hr) \* prfiInLp) + (hypePrice \* hypeInLp) / LP Supply
 {% endhint %}
 
 **pLP Locked (global):** The cumulative value of all pLP locked on the chosen blockchain.
@@ -18,7 +18,7 @@ pLP USD Value = (TWAP(PRFI, 1 hr) \* prfiInLp) + (ethPrice \* ethInLp) / LP Supp
 
 Calculation: (User share of pLP \* user avg. pLP Multiplier) / (Total Protocol pLP \* Global Protocol avg. multiplier)
 
-The average multiplier is determined by your selected lock length each time you perform a lock/relock or zap/auto-compound into pLP.
+The average multiplier is determined by your selected lock length each time you perform a lock/relock or flik/auto-compound into pLP.
 
 Calculation Example for User 1:
 

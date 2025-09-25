@@ -4,7 +4,7 @@
 
 * **What is it?**
 
-Liquidity pools are fundamental to many DeFi protocols, enabling users to contribute liquidity in the form of paired assets (such as PRFI & BNB) in exchange for a share of the pool’s potential yield. pLP tokens can be locked through the protocol to activate PRFI emissions in the money market, and receive protocol revenue.
+Liquidity pools are fundamental to many DeFi protocols, enabling users to contribute liquidity in the form of paired assets (such as PRFI & HYPE) in exchange for a share of the pool’s potential yield. pLP tokens can be locked through the protocol to activate PRFI emissions in the money market, and receive protocol revenue.
 
 #### How it works?
 

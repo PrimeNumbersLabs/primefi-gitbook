@@ -42,7 +42,7 @@ This feature is designed to give you increased flexibility with the protocol, ma
 There is a minimum amount of $5 USD worth of pLP required to initiate a Flik.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (10).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 1. Choose your Flik source. Prime Finance enables you to Hopp with supported assets from your wallet. Alternatively, you can borrow directly from the money market if you have deposited collateral. Prioritize your health factor and the risk of liquidation before opting for borrowing. Fliking will ensure your health factor is never reduced below 1.1.
 2. Enter your desired amount. To swiftly fulfill the 5% eligibility requirement for PRFI emissions, utilize the Meet eligibility button on the Hopp wizard for an auto-fill option. Of course, manual input is also available for the amount.

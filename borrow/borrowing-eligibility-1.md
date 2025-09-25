@@ -3,8 +3,8 @@
 PrimeFi’s lending engine is **omnichain by design**. Thanks to LayerZero messaging, you can:
 
 * **Deposit collateral on any supported network**\
-  — HyperEVM, Arbitrum, Base, or BNB Chain.
-* **Borrow on a different network**\
+  — HyperEVM & Base. (Arbitrum & BNB Chain comming soon).
+* **Borrow into a different network**\
   — without manually bridging the collateral.
 
 **How it works (high-level)**

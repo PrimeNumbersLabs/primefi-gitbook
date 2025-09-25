@@ -13,7 +13,7 @@ The default lock duration is configured to 3 months (4x multiplier) unless you h
 
 <figure><img src="../.gitbook/assets/Frame 738 (2).jpg" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Select the Lock Lenght
 
@@ -21,11 +21,11 @@ Select the Lock Lenght
 
 Choose "Relock."
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Examine the transaction details, choose "Relock pLP," and confirm the transaction in your wallet.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Auto-relock
 

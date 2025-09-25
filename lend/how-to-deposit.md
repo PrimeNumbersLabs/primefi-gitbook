@@ -10,7 +10,7 @@ Enter the amount of USDC you want to deposit and press **Deposit USDC**.
 
 
 
-Next, you’ll see a prompt that says **“Approve”**. If you haven’t used this protocol before, you’ll need to approve the token, granting the protocol permission to manage this asset within your wallet. Click **“Approve”** — this is a simple signing transaction.
+Next, you’ll see a prompt that says **“Approve”**. If you haven’t used this protocol before, you’ll need to approve the token, granting the protocol permission to manage this asset within your wallet. Click **“Approve”,** this is a simple signing transaction.
 
 Now, wait for the approval to complete. Once it’s done, press **“Confirm Deposit”** and accept the subsequent transaction to deposit your USDC into the protocol. In return, you’ll receive an p\_Token\_ that tracks the interest you earn as a _lender_.
 

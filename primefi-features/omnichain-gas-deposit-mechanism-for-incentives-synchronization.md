@@ -2,7 +2,7 @@
 
 #### Abstract
 
-Incentive distribution across multiple blockchains requires a unified accounting system. To address this, PrimeFi introduces an **Omnichain Gas Deposit Mechanism** that allows users to seamlessly synchronize their activity on sidechains (e.g., Arbitrum) with the **Mainchain Incentives Controller** (e.g., Base). This design ensures that all user actions, such as deposits, borrows, transfers, and repayments, are consistently reflected in the global rewards calculation, independent of the originating chain.
+Incentive distribution across multiple blockchains requires a unified accounting system. To address this, PrimeFi introduces an **Omnichain Gas Deposit Mechanism** that allows users to seamlessly synchronize their activity on sidechains (e.g., HyperEVM) with the **Mainchain Incentives Controller** (e.g., Base). This design ensures that all user actions, such as deposits, borrows, transfers, and repayments, are consistently reflected in the global rewards calculation, independent of the originating chain.
 
 #### Motivation
 
@@ -11,7 +11,7 @@ As DeFi ecosystems become increasingly multichain, sidechains and rollups provid
 #### System Overview
 
 1. **User Action on Sidechain**
-   * A user performs an action (deposit, borrow, transfer, repay) on the Sidechain Incentives Controller (e.g., Arbitrum).
+   * A user performs an action (deposit, borrow, transfer, repay) on the Sidechain Incentives Controller (e.g., HyperEVM).
    * This action must be registered on the Mainchain Incentives Controller (e.g., Base) to update the global rewards ledger.
 2. **Gas Deposit for Omnichain Execution**
    * The user deposits a small amount of gas into the protocol.
@@ -34,7 +34,7 @@ As DeFi ecosystems become increasingly multichain, sidechains and rollups provid
 #### Example Flow
 
 * Alice deposits a small amount of gas into the omnichain mechanism.
-* She provides liquidity on Arbitrum.
+* She provides liquidity on HyperEVM.
 * The protocol relays her deposit action to the Mainchain Incentives Controller on Base.
 * The mainchain updates Alice’s rewards balance in the global ledger.
 * Alice’s contribution is now recognized in parity with users across all supported chains.

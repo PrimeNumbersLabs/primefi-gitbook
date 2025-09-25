@@ -2,13 +2,13 @@
 
 ## **How it Works**
 
-Imagine you have tBNB and want to enter the PRFI-tBNB pool. The traditional process for doing so is quite cumbersome.
+Imagine you have HYPE and want to enter the PRFI-HYPE pool. The traditional process for doing so is quite cumbersome.
 
-Initially, you need to provide PRFI and tBNB in the correct ratios, which requires four separate transactions.
+Initially, you need to provide PRFI and HYPE in the correct ratios, which requires four separate transactions.
 
 _**Fliking**_ simplifies this process by allowing you to complete it with a single click.
 
-When you use _**Flik**_ with one of these assets, the system automatically converts it to tBNB behind the scenes. This tBNB is then combined with PRFI to create and lock the LP.
+When you use _**Flik**_ with one of these assets, the system automatically converts it to HYPE behind the scenes. This HYPE is then combined with PRFI to create and lock the LP.
 
 This feature is designed to give you increased flexibility with the protocol, making it easier and more efficient to earn and lock LP.
 

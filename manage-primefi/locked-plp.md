@@ -18,7 +18,7 @@ Participants in the ecosystem who lock pLP (PrimeFi Liquidity) and meet the 5% t
 
 ### How to lock pLP
 
-Before locking pLP, generate liquidity tokens on Balancer or Pancakeswap. Alternatively, you can flik into pLP.
+Before locking pLP, generate liquidity tokens on Uniswap, PrjX or HyperSwap. Alternatively, you can flik into pLP.
 
 To manually lock pLP, navigate to the Manage PrimeFi page. Choose the amount of pLP tokens to lock and the lock duration of one, three, six, or twelve months. Each duration corresponds to a multiplier, with a 12-month lock earning 25X platform revenue compared to one month.
 

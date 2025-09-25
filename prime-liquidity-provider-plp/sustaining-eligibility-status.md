@@ -8,8 +8,8 @@ Being a risk asset, pricing volatility can cause users to fluctuate in and out o
 
 Example:
 
-* Boris holds $5 worth of pLP on Base (PRFI/ETH) and has $100 in USDT deposits, meeting the 5% requirement (eligible for emissions).
-* When the price of ETH decreases by 5%, the value of pLP falls below $5. Consequently, Boris falls below the 5% threshold required to earn emissions.
+* Boris holds $5 worth of pLP on Base (PRFI/HYPE) and has $100 in USDT deposits, meeting the 5% requirement (eligible for emissions).
+* When the price of HYPE decreases by 5%, the value of pLP falls below $5. Consequently, Boris falls below the 5% threshold required to earn emissions.
 
 {% hint style="info" %}
 The protocol must consistently assess the eligibility status to ascertain which users are included and which are excluded.

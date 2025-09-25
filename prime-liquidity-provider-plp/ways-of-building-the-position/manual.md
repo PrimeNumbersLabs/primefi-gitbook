@@ -15,7 +15,7 @@ _Note: This feature is only available on Mainnet._
 We can lock the position for different periods of time:\
 1, 3, 6, or 12 months.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 The longer the lock period, the greater the rewards we will receive from the protocol.
