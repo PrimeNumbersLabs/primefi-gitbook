@@ -2,8 +2,15 @@
 
 ### pTokens: Interest-Bearing Deposit Tokens
 
-PrimeFi issues a _pToken_ for every supported asset you supply.\
-For example, a USDT deposit mints **pUSDT** to your wallet.
+**pTokens** (interest-bearing tokens) are minted when users **deposit assets** into the protocol.\
+They act both as deposit receipts and as yield-accruing instruments.
+
+* **Primary function:** represent the user’s share of the liquidity pool.
+* **Interest accrual:** the value of each pToken increases relative to its underlying asset as the pool generates yield.
+* **Example:** when depositing USDC, the user receives `pUSDC`. These tokens can later be redeemed for the original deposit plus accrued interest.
+* **User role:** pTokens serve as the user’s “proof of deposit” and guarantee the right to reclaim funds with interest.
+
+👉 In short: **pTokens represent the creditor (lender) side of the protocol.**
 
 | Topic                 | Detail                                                                                                                                                                           |
 | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
