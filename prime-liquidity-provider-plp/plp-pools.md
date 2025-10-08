@@ -1,17 +1,41 @@
 # pLP Pools
 
-Currently, the pools available in the protocol are those on the Mainnet.
+PrimeFi supports two liquidity-pool types per network. Only one of them is eligible for **pLP** rewards.
 
-Mainnet networks:
+### Pool types
 
-* Hyperliquid EVM - HyperEVM
-* Base&#x20;
+* **v2 pool (eligible for pLP):**\
+  This is the pool used by pLP. Create your position with **Flik** or add liquidity manually. pLP emissions are distributed **only** to v2 LP tokens.
+* **v3 / v4 pools (concentrated liquidity):**\
+  For active LPs who want custom price ranges. These positions **do not** qualify for pLP emissions and earn **swap fees only**.
 
-There are more chains to come in the future:
+> Always verify pool addresses **inside the PrimeFi app** before adding liquidity.
 
-* BNB Chain Testnet
-* Arbitrum Sepolia
+***
 
-{% hint style="info" %}
-The official pools and their composition for Mainnet will be announced prior to their launch.
-{% endhint %}
+### Mainnet pools (live)
+
+#### Base
+
+* **PRFI-ETH v2 (Flik pool, pLP-eligible)**\
+  Uniswap: [https://app.uniswap.org/explore/pools/base/0x87b417af600312df37f551a05ae14bcc3d55bc36](https://app.uniswap.org/explore/pools/base/0x87b417af600312df37f551a05ae14bcc3d55bc36)\
+  Dexscreener: [https://dexscreener.com/base/0x87b417af600312df37f551a05ae14bcc3d55bc36](https://dexscreener.com/base/0x87b417af600312df37f551a05ae14bcc3d55bc36)
+* **PRFI-ETH v4 (concentrated, fees only)**\
+  Dexscreener: [https://dexscreener.com/base/0x2770c0d694da6f57f8919403de16ce4e18a278b7feb4b783179995e8e9f7761f](https://dexscreener.com/base/0x2770c0d694da6f57f8919403de16ce4e18a278b7feb4b783179995e8e9f7761f)
+
+#### HyperEVM
+
+* **PRFI–HYPE on PrjX (pLP-eligible via Flik/manual v2-style LP)**\
+  Add liquidity: [https://www.prjx.com/deposit?tokenA=0x0000000000000000000000000000000000000000\&tokenB=0x7bbcf1b600565ae023a1806ef637af4739de3255\&fee=3000](https://www.prjx.com/deposit?tokenA=0x0000000000000000000000000000000000000000\&tokenB=0x7bbcf1b600565ae023a1806ef637af4739de3255\&fee=3000)\
+  Dexscreener: [https://dexscreener.com/hyperevm/0xfae262d0384b3e1c58abe28ce8ac5678af874354](https://dexscreener.com/hyperevm/0xfae262d0384b3e1c58abe28ce8ac5678af874354)
+* **PRFI–HYPE on HyperSwap (concentrated, fees only)**\
+  Swap: [https://app.hyperswap.exchange/#/swap?inputCurrency=HYPE\&outputCurrency=0x7bbcf1b600565ae023a1806ef637af4739de3255](https://app.hyperswap.exchange/#/swap?inputCurrency=HYPE\&outputCurrency=0x7bbcf1b600565ae023a1806ef637af4739de3255)\
+  Dexscreener: [https://dexscreener.com/hyperevm/0x7bbcf1b600565ae023a1806ef637af4739de3255](https://dexscreener.com/hyperevm/0x7bbcf1b600565ae023a1806ef637af4739de3255)
+
+***
+
+### Notes & risk
+
+* **pLP rewards apply only to the v2 pool** on each network.
+* Concentrated LP (v3/v4) requires **range management** and is subject to **impermanent loss**.
+* Additional networks (e.g., Ethereum, Arbitrum, BNB Chain) may be added in future releases; official pool links will be published before going live.

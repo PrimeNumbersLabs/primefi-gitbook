@@ -36,6 +36,7 @@
     * [Flik Positions](prime-liquidity-provider-plp/ways-of-building-the-position/flik.md)
   * [Maximum APR by asset](prime-liquidity-provider-plp/maximum-apr-by-asset.md)
   * [pLP Pools](prime-liquidity-provider-plp/plp-pools.md)
+  * [Copy of pLP Pools](prime-liquidity-provider-plp/plp-pools-1.md)
   * [Flik into pLP nok imagenes + texto](prime-liquidity-provider-plp/flik-into-plp-nok-imagenes-+-texto.md)
   * [Sustaining Eligibility Status](prime-liquidity-provider-plp/sustaining-eligibility-status.md)
   * [Bounty for Disqualification](prime-liquidity-provider-plp/bounty-for-disqualification.md)
