@@ -20,13 +20,11 @@ This design removes cross-chain friction while keeping a **single, consistent ri
 
 ***
 
-### Repay from any network
+### Repay on the origin network
 
-You can repay on the **origin chain** directly, or repay **cross-chain**:
+
 
 * **Repay on origin**: send USDC on HyperEVM and call `repay()`.
-* **Repay from destination** (e.g., you hold USDC on Base): call **Repay Cross-Chain**.
-  * PrimeFi routes the USDC back to **HyperEVM via Stargate** and posts a LayerZero message so your **debt is reduced on the origin chain**.
 
 Interest and HF always update on the **origin**.
 
