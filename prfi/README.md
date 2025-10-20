@@ -6,11 +6,11 @@ description: Utility token
 
 It is the official token of the entire Prime Numbers Labs ecosystem.
 
-<figure><img src=".gitbook/assets/Copia de PF Whitepaper (1).jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Copia de PF Whitepaper (1).jpg" alt=""><figcaption></figcaption></figure>
 
 As a utility token, it will enable various interactions for each of the components that make up our ecosystem.
 
-<figure><img src=".gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
 
 If you want to learn more about the utilization of each part of the allocation, visit the official Prime Numbers Labs WhitePaper:
 
