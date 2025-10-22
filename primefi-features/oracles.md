@@ -34,7 +34,7 @@ _All oracles on XDC use **eOracles / ePRICE feeds**._
 | Asset | Oracle Type           | Notes                                 |
 | ----- | --------------------- | ------------------------------------- |
 | XDC   | eOracle / ePRICE Feed | Price via eOracles                    |
-| pxXDC | eOracle / ePRICE Feed | Synthetic / pegged derivative on XDC  |
+| psXDC | eOracle / ePRICE Feed | Synthetic / pegged derivative on XDC  |
 | USDC  | eOracle / ePRICE Feed | Stablecoin feed via eOracle           |
 | USDT0 | eOracle / ePRICE Feed | ePRICE feed for USDT0                 |
 | PRFI  | eOracle / ePRICE Feed | Treated as standard asset feed in XDC |
