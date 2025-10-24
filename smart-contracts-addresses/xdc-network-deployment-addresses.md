@@ -132,4 +132,4 @@ _Last update: October 24, 2025_
   * `ps` → staking derivative variant (e.g., psXDC)
 * **Bridged assets** include WXDC and PSXDC, representing wrapped and protocol-staked variants of the native XDC token.
 * **Cross-chain liquidity** support uses `stargateBorrow` and multiple `stargateRouter` endpoints, enabling omnichain borrowing across XDC and other supported networks.
-* Always **verify contract addresses** against official XDC network deployment logs or block explorers prior to integration or production use.
+

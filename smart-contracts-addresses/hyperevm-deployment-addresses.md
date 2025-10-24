@@ -89,4 +89,4 @@
   * `p` → interest-bearing token
   * `vd` → variable debt token
 * Ensure there are **no address collisions** when migrating or exporting values across networks — each network uses a distinct deployment namespace.
-* Always cross-check addresses with the official HyperEVM deployment records and explorer before use in production.
+

@@ -99,4 +99,4 @@
   * `vd` → variable debt token
   * `cb` → bridged/compound variant (e.g., cbBTC)
 * Multi-path routing and multi-version support are implied by multiple Stargate router addresses.
-* Always **verify contract addresses** against official deployment logs or explorer records before integrating or executing production scripts.
+
