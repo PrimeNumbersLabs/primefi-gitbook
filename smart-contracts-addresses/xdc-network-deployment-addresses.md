@@ -131,5 +131,9 @@ _Last update: October 24, 2025_
   * `vd` → variable debt token
   * `ps` → staking derivative variant (e.g., psXDC)
 * **Bridged assets** include WXDC and PSXDC, representing wrapped and protocol-staked variants of the native XDC token.
-* **Cross-chain liquidity** support uses `stargateBorrow` and multiple `stargateRouter` endpoints, enabling omnichain borrowing across XDC and other supported networks.
+* **Cross-chain liquidity** support uses `stargateBorrow` and multiple `stargateRouter` endpoints, enabling omnichain borrowing across XDC and other supported networks.\
 
+
+{% hint style="warning" %}
+Always verify contract addresses with our official deployment page or in the tokens official page (This for all the tokens used that are not part of PrimeFi ecosystem) prior to integration or production use.
+{% endhint %}

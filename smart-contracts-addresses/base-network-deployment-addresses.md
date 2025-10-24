@@ -100,3 +100,6 @@
   * `cb` → bridged/compound variant (e.g., cbBTC)
 * Multi-path routing and multi-version support are implied by multiple Stargate router addresses.
 
+{% hint style="warning" %}
+Always verify contract addresses with our official deployment page or in the tokens official page (This for all the tokens used that are not part of PrimeFi ecosystem) prior to integration or production use.
+{% endhint %}

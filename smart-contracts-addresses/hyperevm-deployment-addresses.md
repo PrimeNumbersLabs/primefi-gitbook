@@ -90,3 +90,7 @@
   * `vd` → variable debt token
 * Ensure there are **no address collisions** when migrating or exporting values across networks — each network uses a distinct deployment namespace.
 
+{% hint style="warning" %}
+Always verify contract addresses with our official deployment page or in the tokens official page (This for all the tokens used that are not part of PrimeFi ecosystem) prior to integration or production use.
+{% endhint %}
+
