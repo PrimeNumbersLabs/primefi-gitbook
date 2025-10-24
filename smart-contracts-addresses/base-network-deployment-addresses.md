@@ -1,7 +1,3 @@
----
-description: '(Environment: Base mainnet)'
----
-
 # Base Network Deployment Addresses
 
 ### Core Protocol

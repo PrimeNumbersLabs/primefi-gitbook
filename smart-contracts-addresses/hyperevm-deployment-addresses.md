@@ -1,7 +1,3 @@
----
-description: '(Environment: HyperEVM)'
----
-
 # HyperEVM Deployment Addresses
 
 ### Core Protocol

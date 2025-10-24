@@ -1,7 +1,3 @@
----
-description: '(Environment: HyperEVM)'
----
-
 # XDC Network Deployment Addresses
 
 ### XDC Network — Contract Addresses
