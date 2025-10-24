@@ -26,4 +26,14 @@
 | pUBTC  | 0x98b7056E0e0521b7bA32F4Ac8af8e1249789d2d6 |
 | pPRFI  | 0x07CB5Aa0c467Df9b3A38dF3fBfd465c454905690 |
 
-####
+## XDC Network– pTokens&#x20;
+
+#### Interest-Bearing pTokens
+
+| Symbol | Address                                    |
+| ------ | ------------------------------------------ |
+| pUSDC  | 0xB9a14B24C6E669D24E76dab65f7c4dc52f68741C |
+| pUSDT  | 0x2a50Be4Df06202A239384e828D6e67F9F2fA954e |
+| pWXDC  | 0x1fF5E0037B478547715a4CE337d9fcFF86A30401 |
+| ppsXDC | 0x834695A5d33967f8cC27E6d15684c0aA36cA4375 |
+| pPRFI  | 0x3A577f9789FC81C2Ea0B81B9e02B6Dbc67158A37 |

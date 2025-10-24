@@ -79,25 +79,11 @@
 
 #### Interest-Bearing pTokens
 
-| Symbol | Address                                    |
-| ------ | ------------------------------------------ |
-| pUSDC  | 0x386f40C2A8485d6572Cb74a736A0763c0521095B |
-| pUSD₮0 | 0x5Fc1737115eCB6850be0A4F0CE25B7F98231cAB9 |
-| pWHYPE | 0xCF4642EF89683D0299B59738b1Cc3AC0177348Ba |
-| pUETH  | 0x6E811Aa146F961c918d14BE9Ed9C0Cd68F447a6e |
-| pUBTC  | 0x98b7056E0e0521b7bA32F4Ac8af8e1249789d2d6 |
-| pPRFI  | 0x07CB5Aa0c467Df9b3A38dF3fBfd465c454905690 |
+{% embed url="https://docs.primefi.xyz/lend/ptokens/contract-addresses" %}
 
 #### Variable Debt vdTokens
 
-| Symbol  | Address                                    |
-| ------- | ------------------------------------------ |
-| vdUSDC  | 0x009A18797c9C7eB06811D4cDc44881F3C5fA748a |
-| vdUSD₮0 | 0xd00fe535B82F215989178609286610fe666E5365 |
-| vdWHYPE | 0x9601C465c3c404465d968a2dda10FD807f2B2d5C |
-| vdUETH  | 0x71f719166c403aC15F55567BABdd19b7dA1E8817 |
-| vdUBTC  | 0xD218a5F74aF42d9b1a879e2349e751DEaFe3114C |
-| vdPRFI  | 0x182CFb49ad159F8C770ef7ad9Ff56F3E61b9A9fa |
+{% embed url="https://docs.primefi.xyz/borrow/vdtokens/contract-addresses" %}
 
 ### Notes
 
