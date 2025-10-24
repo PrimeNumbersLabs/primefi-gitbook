@@ -2,7 +2,7 @@
 description: '(Environment: Base mainnet)'
 ---
 
-# Base Mainnet Deployment Addresses
+# Base Network Deployment Addresses
 
 ### Core Protocol
 
@@ -96,7 +96,11 @@ description: '(Environment: Base mainnet)'
 
 ### Notes
 
-* Diamond architecture in `incentivesControllerDiamond` centralizes incentive facets.
-* Prefix legend: `p` = interest-bearing token, `vd` = variable debt token, `cbBTC` = bridged/compound Bitcoin variant.
-* Multiple Stargate Routers indicate multi-path or versioned routing support.
-* Always verify addresses against official deployment logs before interacting in production scripts.
+* On the Base network deployment, the protocol inherits core contract modules from the Aave v2 architecture but adapts them to Base’s consensus and block-timing parameters.
+* Diamond architecture in `incentivesControllerDiamond` centralizes incentive facets into a single upgradeable contract endpoint.
+* **Prefix legend:**
+  * `p` → interest-bearing (aToken equivalent)
+  * `vd` → variable debt token
+  * `cb` → bridged/compound variant (e.g., cbBTC)
+* Multi-path routing and multi-version support are implied by multiple Stargate router addresses.
+* Always **verify contract addresses** against official deployment logs or explorer records before integrating or executing production scripts.

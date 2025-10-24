@@ -87,6 +87,10 @@ description: '(Environment: HyperEVM)'
 
 ### Notes
 
-* "Diamond" controller: `incentivesControllerDiamond` centralizes incentive facets.
-* Prefix legend: `p` = interest-bearing (aToken equivalent), `vd` = variable debt token.
-* Ensure no address collisions when migrating or exporting these values.
+* HyperEVM deployment leverages the EVM-compatible layer of the Hyperliquid ecosystem, with native access to its orderbooks and data infrastructure. [Messari+1](https://messari.io/copilot/share/understanding-hyperevm-852f32fb-bb9e-4aae-9eea-e2981faafe79?utm_source=chatgpt.com)
+* The protocol on HyperEVM uses its own oracle and feed architecture tailored for Hyperliquid’s liquidity environment (not simply a copy of Base or other network feeds).
+* **Prefix legend:**
+  * `p` → interest-bearing token
+  * `vd` → variable debt token
+* Ensure there are **no address collisions** when migrating or exporting values across networks — each network uses a distinct deployment namespace.
+* Always cross-check addresses with the official HyperEVM deployment records and explorer before use in production.

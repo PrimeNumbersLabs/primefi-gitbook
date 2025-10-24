@@ -1,6 +1,6 @@
 # Contract Addresses
 
-## Base Mainnet – pTokens & vdTokens
+## Base Mainnet – vdTokens
 
 #### Variable Debt vdTokens
 
@@ -13,7 +13,7 @@
 
 ***
 
-## HyperEVM – pTokens & vdTokens
+## HyperEVM – vdTokens
 
 #### Variable Debt vdTokens
 
@@ -26,7 +26,15 @@
 | vdUBTC  | 0xD218a5F74aF42d9b1a879e2349e751DEaFe3114C |
 | vdPRFI  | 0x182CFb49ad159F8C770ef7ad9Ff56F3E61b9A9fa |
 
-### Notes
+## XDC Network – vdTokens
 
-* Prefix legend: `p` = interest-bearing token, `vd` = variable debt token.
-* Usa siempre las direcciones oficiales de despliegue para producción.
+#### Variable Debt vdTokens
+
+| Symbol      | Address                                      |
+| ----------- | -------------------------------------------- |
+| **vdUSDC**  | `0xDBEd51F298901987651FaF1dAed8Bb575942d406` |
+| **vdUSDT**  | `0xaaE0D3C0b4aa454cEb5b5346ba1E95a86395D656` |
+| **vdWXDC**  | `0xC12bdD620A54149Df6B73Fad9726d387402a9066` |
+| **vdPRFI**  | `0xD9bA32E8a4955E4fbbbDD61F121b2f81ca7bBFE8` |
+| **vdpsXDC** | `0x47C4d740016411Bb8f5c9D9bDb3f866c9b46e0A4` |
+
