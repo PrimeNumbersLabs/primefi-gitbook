@@ -8,11 +8,7 @@ Created with your assets in mind, PrimeFi is the omnichain platform that streaml
 
 Prime Numbers Labs has launched PrimeFi, the first omnichain lending and borrowing protocol on Hyperliquid EVM.&#x20;
 
-Powered by LayerZero, PrimeFi enhances DeFi liquidity across multiple EVM networks. Currently available on the Hyperliquid, Arbitrum, Base, and BNB Chain testnets.
-
-{% hint style="success" %}
-PrimeFi's mainnet launch is coming soon
-{% endhint %}
+Powered by LayerZero, PrimeFi enhances DeFi liquidity across multiple EVM networks. C
 
 ### Why PrimeFi?
 
