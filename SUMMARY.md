@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Introducing PrimeFi](README.md)
+* [Introducing](README.md)
 * [PrimeFi Features](primefi-features/README.md)
   * [Key Features of PrimeFi](primefi-features/key-features-of-primefi.md)
   * [Omnichain Lending & Borrowing](primefi-features/omnichain-lending-and-borrowing/README.md)
@@ -98,3 +98,4 @@
   * [3.-Arbitrum Sepolia](testnet-faucets/3.-arbitrum-sepolia.md)
   * [4.-BNB Chain Testnet](testnet-faucets/4.-bnb-chain-testnet.md)
   * [In addition](testnet-faucets/in-addition.md)
+* [Prime Numbers Labs Docs](https://docs.primenumbers.xyz/)

@@ -56,4 +56,3 @@ Below you’ll find each audit summarised in collapsible blocks, with public lin
 #### Next steps & continuous security
 
 * **FailSafe Monitor (Quill)** — real-time monitoring, alerts, and auto-response layer will be enabled from launch, with three months of free setup provided by QuillAudits.
-* **Upcoming review (Q3 2025)** — a follow-up audit will cover the Cross-Chain Vaults module before main-net activation.
