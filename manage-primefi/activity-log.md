@@ -9,8 +9,7 @@ The **Activity Log** includes the following event types:
 * **Withdraw / Withdrawn:** Request and effective settlement of asset withdrawals previously deposited.
 * **Repay:** Execution of payments that reduce or fully settle outstanding debt obligations within the protocol.
 * **Relocked:** Re-locking of assets to extend their immobilization period or reinforce collateralization.
-* **Disqualified:** Status assigned to operations that fail to meet the parameters defined by the protocol (e.g., insufficient collateral).\
-
+* **Disqualified:** Status assigned to operations that fail to meet the parameters defined by the protocol (e.g., insufficient collateral).<br>
 
 <figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 

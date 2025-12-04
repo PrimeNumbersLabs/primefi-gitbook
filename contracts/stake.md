@@ -1,3 +1,3 @@
-# Stake Flow
+# Staking
 
-![Stake Flow](diagrams/stake.drawio.svg)
+![Stake Flow](../.gitbook/assets/stake.drawio.svg)

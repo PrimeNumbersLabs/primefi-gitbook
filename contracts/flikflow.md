@@ -2,12 +2,12 @@
 
 ## Flik Flow
 
-![Flik Flow](diagrams/flik.drawio.svg)
+![Flik Flow](../.gitbook/assets/flik.drawio.svg)
 
 ## Lock Flik
 
-![Lock Flik](diagrams/lock-flik.drawio.svg)
+![Lock Flik](../.gitbook/assets/lock-flik.drawio.svg)
 
 ## Uniswap Oracle
 
-![Uniswap Oracle](diagrams/uniswap-oracle.drawio.svg)
+![Uniswap Oracle](../.gitbook/assets/uniswap-oracle.drawio.svg)

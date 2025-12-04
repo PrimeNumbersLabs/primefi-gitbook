@@ -48,6 +48,7 @@
   * [Copy of Vesting Emissions](manage-primefi/vesting-emissions-1.md)
   * [Locked pLP](manage-primefi/locked-plp.md)
   * [Protocol fees](manage-primefi/protocol-fees.md)
+  * [Flik into pLP](manage-primefi/flik-into-plp.md)
   * [Relock pLP](manage-primefi/relock-plp.md)
   * [Copy of Relock pLP](manage-primefi/relock-plp-1.md)
   * [Auto-compound](manage-primefi/auto-compound.md)

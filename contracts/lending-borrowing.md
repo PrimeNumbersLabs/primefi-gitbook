@@ -2,5 +2,5 @@
 
 ## Lending and borrowing protocol
 
-![Contract Highover](diagrams/lending-borrowing.drawio.svg)
+![Contract Highover](../.gitbook/assets/lending-borrowing.drawio.svg)
 

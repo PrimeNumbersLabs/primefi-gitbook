@@ -22,7 +22,7 @@ PrimeFi enables you to _Flik_ using supported assets from your wallet.
 
 <figure><img src="../../.gitbook/assets/image (117).png" alt=""><figcaption></figcaption></figure>
 
-2.-Borrow
+### **2.-Borrow**
 
 Alternatively, if you have deposited collateral, you can borrow directly from the protocol.
 

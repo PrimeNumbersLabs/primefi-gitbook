@@ -1,3 +1,3 @@
 # Stargate Borrow
 
-![Stargate & LayerZero](../diagrams/stargate-layerzero.drawio.svg)
+![Stargate & LayerZero](../../.gitbook/assets/stargate-layerzero.drawio.svg)

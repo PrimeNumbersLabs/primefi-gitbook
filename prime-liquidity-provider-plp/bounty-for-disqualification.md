@@ -26,8 +26,7 @@ To reduce the risk of disqualification, it is advisable to maintain eligibility 
 
 To avoid disqualifications related to expired locked pLP, users can toggle the "auto-relock" function on the Manage page, ensuring the continuous receipt of platform fees without interruption.
 
-\
-
+<br>
 
 <div align="center"><figure><img src="../.gitbook/assets/image (123).png" alt=""><figcaption></figcaption></figure></div>
 

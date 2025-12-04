@@ -2,8 +2,8 @@
 
 ## Withdraw
 
-![Withdraw](diagrams/withdraw.drawio.svg)
+![Withdraw](../.gitbook/assets/withdraw.drawio.svg)
 
 ## Withdraw Locked
 
-![Withdraw Locked](diagrams/withdraw-locked.drawio.svg)
+![Withdraw Locked](../.gitbook/assets/withdraw-locked.drawio.svg)

@@ -6,7 +6,7 @@ _Smart contracts will be available on the mainnet following the completion of au
 
 Please note that the actual interactions are much more complicated and numerous. It is not the intention of this diagram to list them all, but merly to give an overview of the actors, contracts and interactions involved. A more detailed chronicle of these interactions can be found in the following subsections:
 
-- [Lending & Borrowing](contracts/lending-borrowing.md)
-- [Staking](contracts/staking.md)
+* [Lending & Borrowing](contracts/lending-borrowing.md)
+* [Staking](contracts/staking.md)
 
-![Contract Highover](contracts/diagrams/contract-overview.drawio.svg)
+![Contract Highover](.gitbook/assets/contract-overview.drawio.svg)
