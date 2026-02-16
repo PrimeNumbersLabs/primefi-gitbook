@@ -7,7 +7,7 @@
 The origin of the fees shared with NFT holders does not compromise the benefits of lenders or pLP providers since these fees come from the company income.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 The integration of NFTs will occur after the main features of the protocol are launched on the Mainnet.
