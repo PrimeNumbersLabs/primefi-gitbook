@@ -1,12 +1,10 @@
 # Testnet Faucets
 
-Welcome to the guide on how to get Faucet for each of the available networks in the PrimeFi Testnet.
+Welcome to the guide on getting test funds for the networks PrimeFi tests against.
 
-The currently available networks are:
+The currently relevant networks are:
 
-1. Hyperliquid Test
-2. Base Sepolia - ETH
-3. Arbitrum Sepolia - ETH
-4. BNB Chain Testnet - BNB
+1. **Hyperliquid Test**
+2. **Base Sepolia** — ETH
 
-In the following pages, you have access to each of the networks.
+The pages below cover both. (Arbitrum Sepolia and BNB Chain testnet entries from earlier docs have been retired — PrimeFi v2 no longer ships against those chains.)

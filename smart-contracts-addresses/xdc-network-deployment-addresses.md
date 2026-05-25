@@ -1,8 +1,8 @@
 # XDC Network Deployment Addresses
 
-### XDC Network — Contract Addresses
+PrimeFi v2 contract addresses on **XDC mainnet** (chain id `50`).
 
-_Last update: October 24, 2025_
+For the Fathom Lending (v3) deployment that also runs on XDC, see [Fathom v3 (XDC) Deployment Addresses](fathom-xdc-deployment-addresses.md).
 
 ***
 
@@ -15,23 +15,25 @@ _Last update: October 24, 2025_
 | **lendingPoolAddressesProviderRegistry** | `0xBfeE735e3868f8990787CCEAA4B920C9Ed162b07` |
 | **wethGateway**                          | `0x065fd3ba477c85503BFac48be7D1a2fcAdA02847` |
 | **walletBalanceProvider**                | `0xe1076Fd52bF1cA8Eca89d043cC815F2356D55131` |
-| **uiPoolDataProvider**                   | `0x7b6218B77127367B6Df46c80F469D22845bd4B7d` |
+| **uiPoolDataProvider**                   | `0x2774De10AA274bAf5b33B096c6F32dE65C114394` |
 | **aaveProtocolDataProvider**             | `0x2E6bA568aaebadb4db3E018313ee34baD0328988` |
 | **lendingPoolAddressProvider**           | `0xBC2adF6bEE6E8468f9E60DFC017D4E2Ce682be0C` |
+| **poolHelper**                           | `0x69A3c30A85aA1E22791466a08819c1080f0Aab7f` |
+| **baseAssetWrappedAddress (WXDC)**       | `0x951857744785E80e2De051c32EE7b25f9c458C42` |
+| **wrappedBaseDebtToken**                 | `0xC12bdD620A54149Df6B73Fad9726d387402a9066` |
 
 ***
 
 #### 💰 Token & Yield Management
 
-| Contract                    | Address                                      |
-| --------------------------- | -------------------------------------------- |
-| **prfiToken**               | `0x81B244d0be055EF3BEF1b09B7826Cc2b108B2cBD` |
-| **stakingToken**            | `0xffA04F091128fb89D3B1eCd0149DC677dfAe1C69` |
-| **compounder**              | `0x657290d1AeC8Ffe03198d5007D6e1F7D0F3859B9` |
-| **poolHelper**              | `0x69A3c30A85aA1E22791466a08819c1080f0Aab7f` |
-| **lpLockerList**            | `0x36aa7aDeeCa1d2fF802a1a5523250fFBF157183d` |
-| **baseAssetWrappedAddress** | `0x951857744785E80e2De051c32EE7b25f9c458C42` |
-| **wrappedBaseDebtToken**    | `0xC12bdD620A54149Df6B73Fad9726d387402a9066` |
+| Contract           | Address                                      |
+| ------------------ | -------------------------------------------- |
+| **prfiToken**      | `0x81B244d0be055EF3BEF1b09B7826Cc2b108B2cBD` |
+| **stakingToken**   | `0xffA04F091128fb89D3B1eCd0149DC677dfAe1C69` |
+| **compounder**     | `0x657290d1AeC8Ffe03198d5007D6e1F7D0F3859B9` |
+| **looper**         | `0x0DF687CCe1D00FA2DCB17198d49886CB4ae99693` |
+| **lpLockerList**   | `0x36aa7aDeeCa1d2fF802a1a5523250fFBF157183d` |
+| **flik**           | `0xc995bF07a1B6f8d06101C780925ffCFaeBB52217` |
 
 ***
 
@@ -51,7 +53,7 @@ _Last update: October 24, 2025_
 
 | Contract                        | Address                                      |
 | ------------------------------- | -------------------------------------------- |
-| **incentivesControllerDiamond** | `0x5aa0Ee7b5A183242Af53ad21306267571c54f80E` |
+| **chefIncentivesController**    | `0x5aa0Ee7b5A183242Af53ad21306267571c54f80E` |
 | **middleFeeDistribution**       | `0x9d96D06cB863B76B07670E98D86470407a965A9c` |
 | **multiFeeDistribution**        | `0x01E7cd81D3d7A4907815877e0C937a77dE537e99` |
 | **bountyManager**               | `0xb16aECAfA1310a1c51F66EbDF6Fb753BFa76450E` |
@@ -75,7 +77,6 @@ _Last update: October 24, 2025_
 | **stableAndVariableTokensHelper** | `0xfEBC15460a5Af7bd5C0f2D6746AAb00c9531747D` |
 | **aTokensAndRatesHelper**         | `0x01Fd17C9A7Fe764d1f3fd1997BA834032110B709` |
 | **multicall3**                    | `0x95d7A59C230D184F16B497c3c1bb834CA397C241` |
-| **looper**                        | `0x0DF687CCe1D00FA2DCB17198d49886CB4ae99693` |
 
 ***
 
@@ -89,6 +90,7 @@ _Last update: October 24, 2025_
 | **USDT**  | `0xcdA5b77E2E2268D9E09c874c1b9A4c3F07b37555` |
 | **WXDC**  | `0x951857744785E80e2De051c32EE7b25f9c458C42` |
 | **PSXDC** | `0x9B8e12b0BAC165B86967E771d98B520Ec3F665A6` |
+| **PRFI**  | `0x81B244d0be055EF3BEF1b09B7826Cc2b108B2cBD` |
 
 ***
 
@@ -116,23 +118,16 @@ _Last update: October 24, 2025_
 
 ***
 
-#### 📦 Other / Miscellaneous
-
-| Contract | Address                                      |
-| -------- | -------------------------------------------- |
-| **flik** | `0xc995bF07a1B6f8d06101C780925ffCFaeBB52217` |
-
 ### Notes
 
-* The XDC deployment uses **custom oracle feeds** tailored for the XDC network ecosystem, rather than direct reuse of the Base/Mainnet oracle configurations.
-* **Diamond architecture** in `incentivesControllerDiamond` centralizes reward and fee-distribution logic under a unified entry point.
+* The XDC deployment uses **custom oracle feeds** tailored for the XDC network ecosystem.
+* **Diamond architecture** in `chefIncentivesController` centralizes reward and fee-distribution logic under a unified entry point.
 * **Prefix legend:**
   * `p` → interest-bearing token (pToken)
   * `vd` → variable debt token
   * `ps` → staking derivative variant (e.g., psXDC)
-* **Bridged assets** include WXDC and PSXDC, representing wrapped and protocol-staked variants of the native XDC token.
-* **Cross-chain liquidity** support uses `stargateBorrow` and multiple `stargateRouter` endpoints, enabling omnichain borrowing across XDC and other supported networks.<br>
+* **Cross-chain liquidity** support uses `stargateBorrow` and multiple `stargateRouter` endpoints, enabling omnichain borrowing across XDC and other supported networks.
 
 {% hint style="warning" %}
-Always verify contract addresses with our official deployment page or in the tokens official page (This for all the tokens used that are not part of PrimeFi ecosystem) prior to integration or production use.
+Always verify contract addresses with our official deployment page or in the tokens' official page (this applies to all the tokens used that are not part of the PrimeFi ecosystem) prior to integration or production use.
 {% endhint %}

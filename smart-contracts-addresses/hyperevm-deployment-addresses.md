@@ -1,5 +1,7 @@
 # HyperEVM Deployment Addresses
 
+PrimeFi v2 contract addresses on **HyperEVM** (chain id `999`).
+
 ### Core Protocol
 
 | Component                            | Address                                    |
@@ -9,7 +11,7 @@
 | LendingPoolAddressesProviderRegistry | 0x69A3c30A85aA1E22791466a08819c1080f0Aab7f |
 | WETH Gateway                         | 0xac57f0D2f8ef17B8D26189Ba0Db353361374b2Ca |
 | PoolHelper                           | 0x58933Fab624Ed4e6B7eb9e64Cb470bB61bE4de6d |
-| Base Asset Wrapped (placeholder)     | 0x5555555555555555555555555555555555555555 |
+| Base Asset Wrapped (WHYPE)           | 0x5555555555555555555555555555555555555555 |
 | Wrapped Base Debt Token              | 0x9601C465c3c404465d968a2dda10FD807f2B2d5C |
 
 ### Token & Asset Managers
@@ -68,29 +70,44 @@
 | Symbol | Address                                    |
 | ------ | ------------------------------------------ |
 | USDC   | 0xb88339CB7199b77E23DB6E890353E22632Ba630f |
-| USDT0  | 0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb |
+| USDT₮0 | 0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb |
 | WHYPE  | 0x5555555555555555555555555555555555555555 |
 | UETH   | 0xBe6727B535545C67d5cAa73dEa54865B92CF7907 |
 | UBTC   | 0x9fdbda0a5e284c32744d2f17ee5c74b284993463 |
+| PRFI   | 0x7BBCf1B600565AE023a1806ef637Af4739dE3255 |
 
 #### Interest-Bearing pTokens
 
-{% embed url="https://docs.primefi.xyz/lend/ptokens/contract-addresses" %}
+| Symbol  | Address                                    |
+| ------- | ------------------------------------------ |
+| pUSDC   | 0x386f40C2A8485d6572Cb74a736A0763c0521095B |
+| pUSDT₮0 | 0x5Fc1737115eCB6850be0A4F0CE25B7F98231cAB9 |
+| pWHYPE  | 0xCF4642EF89683D0299B59738b1Cc3AC0177348Ba |
+| pUETH   | 0x6E811Aa146F961c918d14BE9Ed9C0Cd68F447a6e |
+| pUBTC   | 0x98b7056E0e0521b7bA32F4Ac8af8e1249789d2d6 |
+| pPRFI   | 0x07CB5Aa0c467Df9b3A38dF3fBfd465c454905690 |
 
 #### Variable Debt vdTokens
 
-{% embed url="https://docs.primefi.xyz/borrow/vdtokens/contract-addresses" %}
+| Symbol   | Address                                    |
+| -------- | ------------------------------------------ |
+| vdUSDC   | 0x009A18797c9C7eB06811D4cDc44881F3C5fA748a |
+| vdUSDT₮0 | 0xd00fe535B82F215989178609286610fe666E5365 |
+| vdWHYPE  | 0x9601C465c3c404465d968a2dda10FD807f2B2d5C |
+| vdUETH   | 0x71f719166c403aC15F55567BABdd19b7dA1E8817 |
+| vdUBTC   | 0xD218a5F74aF42d9b1a879e2349e751DEaFe3114C |
+| vdPRFI   | 0x182CFb49ad159F8C770ef7ad9Ff56F3E61b9A9fa |
 
 ### Notes
 
-* HyperEVM deployment leverages the EVM-compatible layer of the Hyperliquid ecosystem, with native access to its orderbooks and data infrastructure. [Messari+1](https://messari.io/copilot/share/understanding-hyperevm-852f32fb-bb9e-4aae-9eea-e2981faafe79?utm_source=chatgpt.com)
-* The protocol on HyperEVM uses its own oracle and feed architecture tailored for Hyperliquid’s liquidity environment (not simply a copy of Base or other network feeds).
+* HyperEVM deployment leverages the EVM-compatible layer of the Hyperliquid ecosystem, with native access to its orderbooks and data infrastructure.
+* The protocol on HyperEVM uses its own oracle and feed architecture tailored for Hyperliquid's liquidity environment (not simply a copy of Base or other network feeds).
 * **Prefix legend:**
   * `p` → interest-bearing token
   * `vd` → variable debt token
+* `USDT₮0` is the Hyperliquid-native bridged USDT (token symbol uses the ₮ character on-chain).
 * Ensure there are **no address collisions** when migrating or exporting values across networks — each network uses a distinct deployment namespace.
 
 {% hint style="warning" %}
-Always verify contract addresses with our official deployment page or in the tokens official page (This for all the tokens used that are not part of PrimeFi ecosystem) prior to integration or production use.
+Always verify contract addresses with our official deployment page or in the tokens' official page (this applies to all the tokens used that are not part of the PrimeFi ecosystem) prior to integration or production use.
 {% endhint %}
-
