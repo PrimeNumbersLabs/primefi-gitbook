@@ -21,6 +21,13 @@
 | Looper         | 0x515fBd7124a782818bA6719E48e94c489BA769F4 |
 | Price Provider | 0x04EDBF3904789d80B0C991e0B66577F2208A2bE6 |
 
+### PRFI NFT Staking
+
+| Component                | Address                                    |
+| ------------------------ | ------------------------------------------ |
+| PRFI NFT Collection      | 0x693A3A45Ff596024f844Be1cc6845d59F778dCF5 |
+| PRFI Token (stake/reward)| 0x7BBCf1B600565AE023a1806ef637Af4739dE3255 |
+
 ### Oracles & Data
 
 | Component                   | Address                                    |

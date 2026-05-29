@@ -16,6 +16,7 @@ Prime Numbers Labs has launched PrimeFi, the first omnichain lending and borrowi
 | **Deposit ≠ Loan**          | Use your collateral where you hold it and receive liquidity where you need it.                                        |
 | **Proven Security**         | Audited smart contracts and LayerZero architecture provide secure cross-chain messaging.                              |
 | **PRFI Rewards**            | Earn $PRFI tokens by providing liquidity, participating in liquidations, or holding NFTs from the PrimeFi collection. |
+| **PRFI NFT Staking**        | Stake $PRFI inside NFTs on Base to earn a share of a monthly reward pool, weighted by rarity and level. See [PRFI NFTs](prfi-staking/nft-staking-reward-system/prfi-staking-nfts/README.md). |
 | **Prime Numbers Ecosystem** | Direct synergies with PrimeStaking and PrimePort that multiply returns.                                               |
 
 ### Two protocol versions in the app
