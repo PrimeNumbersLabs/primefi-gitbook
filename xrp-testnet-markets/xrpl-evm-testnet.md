@@ -32,4 +32,4 @@ The non-native reserves are mintable test mocks dispensed by the in-app **Get te
 4. Mint USDC/USDT/WBTC/WETH with the in-app **Get test tokens** button.
 5. Supply XRP (or any reserve) and borrow against it.
 
-Full faucet walkthrough: [Testnet Faucets → XRPL EVM Testnet](../testnet-faucets/2.-base-sepolia.md).
+Full faucet walkthrough: [Testnet Faucets → XRPL EVM Testnet](../testnet-faucets/xrpl-evm-testnet.md).

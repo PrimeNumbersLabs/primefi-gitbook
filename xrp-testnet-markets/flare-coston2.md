@@ -46,4 +46,4 @@ The market ships an **XRP-correlated E-Mode category** so XRP-pegged assets can 
 3. Mint reserves with the in-app **Get test tokens** button.
 4. Supply FXRP (or any reserve) and borrow against it.
 
-Full faucet walkthrough: [Testnet Faucets → Flare Coston2](../testnet-faucets/1.-hyperliquid-test.md).
+Full faucet walkthrough: [Testnet Faucets → Flare Coston2](../testnet-faucets/flare-coston2.md).
