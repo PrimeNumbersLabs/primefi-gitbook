@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Introducing](README.md)
+* [What's new](whats-new.md)
 * [PrimeFi Features](primefi-features/README.md)
   * [Key Features of PrimeFi](primefi-features/key-features-of-primefi.md)
   * [Omnichain Lending & Borrowing](primefi-features/omnichain-lending-and-borrowing/README.md)
@@ -38,6 +39,9 @@
   * [pLP Pools](prime-liquidity-provider-plp/plp-pools.md)
   * [Sustaining Eligibility Status](prime-liquidity-provider-plp/sustaining-eligibility-status.md)
   * [Bounty for Disqualification](prime-liquidity-provider-plp/bounty-for-disqualification.md)
+* [XRP Testnet Markets](xrp-testnet-markets/README.md)
+  * [Flare Coston2](xrp-testnet-markets/flare-coston2.md)
+  * [XRPL EVM Testnet](xrp-testnet-markets/xrpl-evm-testnet.md)
 * [Fathom v3 (XDC)](fathom-v3/README.md)
 * [Know Your Algorithm](know-your-algorithm/README.md)
   * [Key Components](know-your-algorithm/key-components.md)
@@ -98,7 +102,7 @@
 * [Prime Numbers Labs Docs](https://docs.primenumbers.xyz/)
 * [PrimeFi Youtube Tutorial](primefi-youtube-tutorial.md)
 * [Testnet Faucets](testnet-faucets/README.md)
-  * [1.-Hyperliquid Test](testnet-faucets/1.-hyperliquid-test.md)
-  * [2.-Base Sepolia](testnet-faucets/2.-base-sepolia.md)
+  * [1.-Flare Coston2](testnet-faucets/1.-hyperliquid-test.md)
+  * [2.-XRPL EVM Testnet](testnet-faucets/2.-base-sepolia.md)
   * [In addition](testnet-faucets/in-addition.md)
 * [Launch App](https://app.primefi.xyz/)
