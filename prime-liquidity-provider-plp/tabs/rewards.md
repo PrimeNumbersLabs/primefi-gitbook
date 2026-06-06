@@ -1,14 +1,20 @@
 ---
-description: Claim platform fees, view activity history, and configure auto-compound.
+description: Claim platform fees, vest PRFI, view activity history, and configure auto-compound.
 ---
 
-# Rewards tab
+# Rewards & Vesting tab
 
-The **Rewards** tab is where you actually receive value back from your locked pLP — the protocol's share of borrowing interest, liquidation premiums and flash-loan fees, paid out as a basket of pTokens.
+The **Rewards & Vesting** tab is where you actually receive value back from your locked pLP — the protocol's share of borrowing interest, liquidation premiums and flash-loan fees, paid out as a basket of pTokens — and where you manage your PRFI vesting.
+
+{% hint style="info" %}
+This tab combines what earlier versions of the app split across separate **Rewards** and **Vesting** tabs. Lock management lives on the [Boost & Locks tab](boost.md).
+{% endhint %}
 
 ### What you can do on this tab
 
-* **Claim All** — sweep all claimable platform fees in one transaction.
+* **Claim All** — sweep all claimable platform fees in **a single transaction** (batched, so you only sign once even when claiming many positions).
+* **Lifetime PRFI earned** — a running total of all PRFI you have earned to date (ready-to-vest + currently vesting + ready-to-claim).
+* **Vesting** — start vesting earned PRFI, track maturation, and claim matured PRFI (see [Vesting tab](vesting.md) for the full mechanism).
 * **Activity log** — chronological record of every interaction with the protocol (deposit, borrow, withdraw, repay, relock, disqualification).
 * **Auto-compound** — automatically reinvest your claimable platform revenue into pLP.
 * **Protocol stats** — global protocol fees, your share, your historical payouts.

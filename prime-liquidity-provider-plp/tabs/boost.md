@@ -2,16 +2,21 @@
 description: Activate PRFI emissions on your deposits and borrows by locking pLP.
 ---
 
-# Boost tab
+# Boost & Locks tab
 
-The **Boost** tab is the entry point to the pLP system. It shows the gap between your current locked pLP value and the **5% threshold** required to start earning PRFI emissions on your deposits and borrows in the markets.
+The **Boost & Locks** tab is the entry point to the pLP system. It shows the gap between your current locked pLP value and the **5% threshold** required to start earning PRFI emissions on your deposits and borrows in the markets, and it is where you create, view and manage your locks.
+
+{% hint style="info" %}
+The pLP page is organised into **two** tabs: **Boost & Locks** (this page — eligibility, the emissions table, and lock management/calendar) and **Rewards & Vesting** (claiming platform fees, PRFI vesting, and protocol stats). Earlier versions of the app split these into four separate tabs.
+{% endhint %}
 
 ### What you see on this tab
 
 * **Boost progress bar** — how close you are to qualifying for emissions on your current open positions.
 * **Required pLP** — the USD value of pLP you still need to lock to reach 5% of your collateral.
 * **Flik into pLP** — one-click action that takes some of your supplied collateral, pairs it with PRFI, and locks the resulting pLP for you.
-* **Emissions table** — the PRFI emission rate per market, with a simulator showing how additional locked pLP changes your projected APR.
+* **Emissions table** — each market's slice of the single global PRFI budget, broken down per asset, plus a personalized **Your PRFI / day** column when an eligible wallet is connected. See [Maximum APR by asset → Per-market PRFI emissions](../maximum-apr-by-asset.md) for exactly how these numbers are derived.
+* **Your locks & lock-expiry calendar** — every active lock, its multiplier and unlock date, with relock / withdraw and auto-relock controls.
 
 ### Eligibility model
 

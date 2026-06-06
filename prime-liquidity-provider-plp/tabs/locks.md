@@ -2,9 +2,13 @@
 description: Lock pLP, manage active locks, relock or rely on auto-relock.
 ---
 
-# Locks tab
+# Locks
 
-The **Locks** tab is where you actively manage your pLP locks: create new locks, monitor active ones, relock expired positions, and toggle auto-relock.
+Lock management is where you actively manage your pLP locks: create new locks, monitor active ones, relock expired positions, and toggle auto-relock.
+
+{% hint style="info" %}
+In the current app, lock management lives inside the **[Boost & Locks tab](boost.md)** (it is no longer a separate top-level tab). The mechanics below are unchanged.
+{% endhint %}
 
 ### Top stats
 

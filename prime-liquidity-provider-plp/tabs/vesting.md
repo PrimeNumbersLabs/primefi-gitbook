@@ -2,9 +2,13 @@
 description: Vest earned PRFI emissions, or Flik them into pLP without paying the early-exit penalty.
 ---
 
-# Vesting tab
+# Vesting
 
-The **Vesting** tab is where the PRFI you earned from the lending markets (as boosted emissions) sits during its 90-day maturation period. You can let it vest in full, exit early with a penalty, or Flik it into a new pLP lock.
+Vesting is where the PRFI you earned from the lending markets (as boosted emissions) sits during its 90-day maturation period. You can let it vest in full, exit early with a penalty, or Flik it into a new pLP lock.
+
+{% hint style="info" %}
+In the current app, vesting lives inside the **[Rewards & Vesting tab](rewards.md)** (it is no longer a separate top-level tab). The mechanics below are unchanged.
+{% endhint %}
 
 ### Top stats
 
