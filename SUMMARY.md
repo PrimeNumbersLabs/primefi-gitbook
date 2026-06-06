@@ -120,7 +120,6 @@
 
 ## Resources
 
-* [RoadMap](roadmap.md)
 * [Prime Numbers Labs Docs](https://docs.primenumbers.xyz/)
 * [PrimeFi Youtube Tutorial](primefi-youtube-tutorial.md)
 * [Launch App](https://app.primefi.xyz/)
