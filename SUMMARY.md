@@ -2,6 +2,9 @@
 
 * [Introducing](README.md)
 * [What's new](whats-new.md)
+
+## Product
+
 * [PrimeFi Features](primefi-features/README.md)
   * [Key Features of PrimeFi](primefi-features/key-features-of-primefi.md)
   * [Omnichain Lending & Borrowing](primefi-features/omnichain-lending-and-borrowing/README.md)
@@ -39,19 +42,22 @@
   * [pLP Pools](prime-liquidity-provider-plp/plp-pools.md)
   * [Sustaining Eligibility Status](prime-liquidity-provider-plp/sustaining-eligibility-status.md)
   * [Bounty for Disqualification](prime-liquidity-provider-plp/bounty-for-disqualification.md)
+* [Liquid Staking Tokens](liquid-staking-tokens/README.md)
+  * [PrimeStakedXDC (psXDC)](liquid-staking-tokens/primestakedxdc-psxdc.md)
+
+## v3 Markets
+
 * [XRP Testnet Markets](xrp-testnet-markets/README.md)
   * [Flare Coston2](xrp-testnet-markets/flare-coston2.md)
   * [XRPL EVM Testnet](xrp-testnet-markets/xrpl-evm-testnet.md)
+* [Testnet Faucets](testnet-faucets/README.md)
+  * [Flare Coston2 faucet](testnet-faucets/flare-coston2.md)
+  * [XRPL EVM Testnet faucet](testnet-faucets/xrpl-evm-testnet.md)
+  * [In addition](testnet-faucets/in-addition.md)
 * [Fathom v3 (XDC)](fathom-v3/README.md)
-* [Know Your Algorithm](know-your-algorithm/README.md)
-  * [Key Components](know-your-algorithm/key-components.md)
-  * [Operational Flow](know-your-algorithm/operational-flow/README.md)
-    * [Deposit (Supply) Flow](know-your-algorithm/operational-flow/deposit-supply-flow.md)
-    * [Borrowing Flow](know-your-algorithm/operational-flow/borrowing-flow.md)
-    * [Repay and Withdraw Flow](know-your-algorithm/operational-flow/repay-and-withdraw-flow.md)
-    * [Liquidation Flow (Brief)](know-your-algorithm/operational-flow/liquidation-flow-brief.md)
-    * [Cross-Chain and Additional Features](know-your-algorithm/operational-flow/cross-chain-and-additional-features.md)
-  * [Risks & Assumptions](know-your-algorithm/risks-and-assumptions.md)
+
+## Rewards & Tokens
+
 * [PRFI](prfi/README.md)
   * [PRFI Token Pools](prfi/prfi-token-pools.md)
 * [PRFI NFTs](prfi-staking/nft-staking-reward-system/prfi-staking-nfts/README.md)
@@ -72,23 +78,18 @@
   * [Advanced User Rewards](primefi-reward-system/advanced-user-rewards/README.md)
     * [LP Provider Rewards](primefi-reward-system/advanced-user-rewards/lp-provider-rewards.md)
     * [PRFI NFT Holders Rewards](primefi-reward-system/advanced-user-rewards/prfi-nft-holders-rewards.md)
-* [Smart Contracts Addresses](smart-contracts-addresses/README.md)
-  * [Base Network Deployment Addresses](smart-contracts-addresses/base-network-deployment-addresses.md)
-  * [HyperEVM Deployment Addresses](smart-contracts-addresses/hyperevm-deployment-addresses.md)
-  * [XDC Network Deployment Addresses](smart-contracts-addresses/xdc-network-deployment-addresses.md)
-  * [Fathom v3 (XDC) Deployment Addresses](smart-contracts-addresses/fathom-xdc-deployment-addresses.md)
-* [Liquid Staking Tokens](liquid-staking-tokens/README.md)
-  * [PrimeStakedXDC (psXDC)](liquid-staking-tokens/primestakedxdc-psxdc.md)
-* [Audits](audits.md)
-* [Contracts](contracts.md)
-  * [Lending & Borrowing](contracts/lending-borrowing.md)
-    * [Flik Flow](contracts/flikflow.md)
-    * [Earnings](contracts/earnings.md)
-    * [Stargate Borrow](contracts/stargate.md)
-  * [Staking](contracts/stake.md)
-    * [Rewards](contracts/rewards.md)
-    * [Bounty System](contracts/bounty.md)
-* [Governance](governance.md)
+
+## Deep Dive
+
+* [Know Your Algorithm](know-your-algorithm/README.md)
+  * [Key Components](know-your-algorithm/key-components.md)
+  * [Operational Flow](know-your-algorithm/operational-flow/README.md)
+    * [Deposit (Supply) Flow](know-your-algorithm/operational-flow/deposit-supply-flow.md)
+    * [Borrowing Flow](know-your-algorithm/operational-flow/borrowing-flow.md)
+    * [Repay and Withdraw Flow](know-your-algorithm/operational-flow/repay-and-withdraw-flow.md)
+    * [Liquidation Flow (Brief)](know-your-algorithm/operational-flow/liquidation-flow-brief.md)
+    * [Cross-Chain and Additional Features](know-your-algorithm/operational-flow/cross-chain-and-additional-features.md)
+  * [Risks & Assumptions](know-your-algorithm/risks-and-assumptions.md)
 * [Strategies](strategies/README.md)
   * [XDC Network](strategies/xdc-network/README.md)
     * [PrimeFi Strategies on XDC (USDC, XDC, psXDC)](strategies/xdc-network/primefi-strategies-on-xdc-usdc-xdc-psxdc.md)
@@ -98,11 +99,28 @@
     * [Aggressive Strategies (Leveraged Loops)](strategies/xdc-network/aggressive-strategies-leveraged-loops.md)
     * [Liquidations as a Strategy (Advanced)](strategies/xdc-network/liquidations-as-a-strategy-advanced.md)
     * [Portfolio Bucketing & Final Notes](strategies/xdc-network/portfolio-bucketing-and-final-notes.md)
+
+## Reference
+
+* [Smart Contracts Addresses](smart-contracts-addresses/README.md)
+  * [Base Network Deployment Addresses](smart-contracts-addresses/base-network-deployment-addresses.md)
+  * [HyperEVM Deployment Addresses](smart-contracts-addresses/hyperevm-deployment-addresses.md)
+  * [XDC Network Deployment Addresses](smart-contracts-addresses/xdc-network-deployment-addresses.md)
+  * [Fathom v3 (XDC) Deployment Addresses](smart-contracts-addresses/fathom-xdc-deployment-addresses.md)
+* [Contracts](contracts.md)
+  * [Lending & Borrowing](contracts/lending-borrowing.md)
+    * [Flik Flow](contracts/flikflow.md)
+    * [Earnings](contracts/earnings.md)
+    * [Stargate Borrow](contracts/stargate.md)
+  * [Staking](contracts/stake.md)
+    * [Rewards](contracts/rewards.md)
+    * [Bounty System](contracts/bounty.md)
+* [Audits](audits.md)
+* [Governance](governance.md)
+
+## Resources
+
 * [RoadMap](roadmap.md)
 * [Prime Numbers Labs Docs](https://docs.primenumbers.xyz/)
 * [PrimeFi Youtube Tutorial](primefi-youtube-tutorial.md)
-* [Testnet Faucets](testnet-faucets/README.md)
-  * [1.-Flare Coston2](testnet-faucets/1.-hyperliquid-test.md)
-  * [2.-XRPL EVM Testnet](testnet-faucets/2.-base-sepolia.md)
-  * [In addition](testnet-faucets/in-addition.md)
 * [Launch App](https://app.primefi.xyz/)
