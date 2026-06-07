@@ -32,6 +32,7 @@ In the PrimeFi app, switch to **v3 → XRPL EVM Testnet**, connect your wallet, 
 | ----- | --------------- |
 | USDC  | 100,000 |
 | USDT  | 100,000 |
+| RLUSD | 100,000 |
 | WBTC  | 10 |
 | WETH  | 100 |
 

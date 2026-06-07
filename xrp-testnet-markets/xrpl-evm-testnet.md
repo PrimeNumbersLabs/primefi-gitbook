@@ -19,6 +19,7 @@ The XRPL EVM market is PrimeFi's XRP lending market on the **XRPL EVM Sidechain 
 * **XRP / WXRP** — native XRP (and its wrapped form) — your primary collateral
 * **USDC** — mintable test mock
 * **USDT** — mintable test mock
+* **RLUSD** (Ripple USD), priced live by Band Protocol — mintable test mock
 * **WBTC** — mintable test mock
 * **WETH** — mintable test mock
 
@@ -29,7 +30,7 @@ The non-native reserves are mintable test mocks dispensed by the in-app **Get te
 1. Switch to **v3 → XRPL EVM Testnet** in the app (see the [section overview](README.md)).
 2. Claim test **XRP** for gas from the [XRPL EVM faucet](https://faucet.xrplevm.org/) (up to 90 XRP).
 3. (Optional) Bridge test XRP from the XRPL testnet via [Squid testnet](https://testnet.xrpl.squidrouter.com/).
-4. Mint USDC/USDT/WBTC/WETH with the in-app **Get test tokens** button.
+4. Mint USDC/USDT/RLUSD/WBTC/WETH with the in-app **Get test tokens** button.
 5. Supply XRP (or any reserve) and borrow against it.
 
 Full faucet walkthrough: [Testnet Faucets → XRPL EVM Testnet](../testnet-faucets/xrpl-evm-testnet.md).
