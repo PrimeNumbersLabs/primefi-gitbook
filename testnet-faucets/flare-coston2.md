@@ -6,6 +6,10 @@ description: Get test C2FLR for gas and mint test reserves on the Flare Coston2 
 
 To test the [Flare Coston2 XRP market](../xrp-testnet-markets/flare-coston2.md) you need **C2FLR** for gas first, then the mintable reserve tokens.
 
+{% hint style="info" %}
+**Supported wallets:** connect with **MetaMask** or **Rabby**. If you use Bifrost, it may stay in developer mode on Coston2; switch the network manually in the wallet settings.
+{% endhint %}
+
 ### Step 1: Get C2FLR (gas)
 
 Claim test C2FLR from the official Coston2 faucet. Paste your wallet address and claim. You only need a small amount; it just pays transaction fees.

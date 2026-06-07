@@ -6,6 +6,10 @@ description: Get test XRP for gas and mint test reserves on the XRPL EVM testnet
 
 To test the [XRPL EVM XRP market](../xrp-testnet-markets/xrpl-evm-testnet.md) you need test **XRP** for gas first, then the mintable reserve tokens.
 
+{% hint style="info" %}
+**Supported wallets:** connect with **MetaMask** or **Rabby**. Bifrost and Xaman do not support the XRPL EVM testnet yet, so they cannot connect here.
+{% endhint %}
+
 ### Step 1: Get XRP (gas)
 
 Claim test XRP from the official XRPL EVM faucet (supports Testnet and Devnet). Paste your wallet address and claim up to 90 test XRP.
