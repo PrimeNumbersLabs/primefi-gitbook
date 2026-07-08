@@ -28,6 +28,6 @@ The incentive structure encourages third parties to participate in maintaining t
 
 The total liquidation penalty is 15%, with half (7.5%) allocated as a bonus to liquidators and the other half directed to the PrimeFi Treasury. This allocation allows the company to fund new initiatives without the need to sell PRFI tokens on the open market.
 
-Each asset within PrimeFi l has specific risk-related values that influence their supply and borrowing dynamics.
+Each asset within PrimeFi has specific risk-related values that influence its supply and borrowing dynamics.
 
 <figure><img src="../.gitbook/assets/PF-WP (5).jpg" alt=""><figcaption></figcaption></figure>

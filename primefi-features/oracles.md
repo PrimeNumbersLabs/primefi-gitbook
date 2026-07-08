@@ -16,6 +16,7 @@ On **XDC**, all price data is sourced via **eOracles / ePRICE feeds**, which int
 | USDC  | DataStream / DataFeed | Continuous feed or fallback feed as needed                     |
 | ETH   | DataStream / DataFeed | Redundancy through feed fallback                               |
 | PRFI  | DataLink              | Dedicated channel for PRFI-USD                                 |
+| psXDC | DataStream (XDC/USD)  | Priced at the XDC/USD Data Stream (1 psXDC ≈ 1 XDC)            |
 
 #### 2. HyperEVM
 
@@ -26,6 +27,7 @@ On **XDC**, all price data is sourced via **eOracles / ePRICE feeds**, which int
 | PRFI  | DataLink              | Consistent with Base network usage |
 | USDT0 | DataStream / DataFeed | Stream first, feed as fallback     |
 | UBTC  | DataStream / DataFeed | Equivalent to cbBTC in HyperEVM    |
+| psXDC | DataStream (XDC/USD)  | Priced at the XDC/USD Data Stream (1 psXDC ≈ 1 XDC) |
 
 #### 3. XDC Network
 

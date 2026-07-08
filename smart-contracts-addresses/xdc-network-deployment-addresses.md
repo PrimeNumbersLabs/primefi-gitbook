@@ -89,7 +89,7 @@ For the Fathom Lending (v3) deployment that also runs on XDC, see [Fathom v3 (XD
 | **USDC**  | `0xfA2958CB79b0491CC627c1557F441eF849Ca8eb1` |
 | **USDT**  | `0xcdA5b77E2E2268D9E09c874c1b9A4c3F07b37555` |
 | **WXDC**  | `0x951857744785E80e2De051c32EE7b25f9c458C42` |
-| **PSXDC** | `0x9B8e12b0BAC165B86967E771d98B520Ec3F665A6` |
+| **psXDC** | `0xDc74c0DaED82ae94486DeeF22991d2F54173c734` |
 | **PRFI**  | `0x81B244d0be055EF3BEF1b09B7826Cc2b108B2cBD` |
 
 ***
@@ -102,7 +102,7 @@ For the Fathom Lending (v3) deployment that also runs on XDC, see [Fathom v3 (XD
 | **pUSDT**  | `0x2a50Be4Df06202A239384e828D6e67F9F2fA954e` |
 | **pWXDC**  | `0x1fF5E0037B478547715a4CE337d9fcFF86A30401` |
 | **pPRFI**  | `0x3A577f9789FC81C2Ea0B81B9e02B6Dbc67158A37` |
-| **ppsXDC** | `0x834695A5d33967f8cC27E6d15684c0aA36cA4375` |
+| **ppsXDC** | `0x3Bd0183584185F8341B83dDefD73E6Eae1a64eeF` |
 
 ***
 
@@ -114,7 +114,7 @@ For the Fathom Lending (v3) deployment that also runs on XDC, see [Fathom v3 (XD
 | **vdUSDT**  | `0xaaE0D3C0b4aa454cEb5b5346ba1E95a86395D656` |
 | **vdWXDC**  | `0xC12bdD620A54149Df6B73Fad9726d387402a9066` |
 | **vdPRFI**  | `0xD9bA32E8a4955E4fbbbDD61F121b2f81ca7bBFE8` |
-| **vdpsXDC** | `0x47C4d740016411Bb8f5c9D9bDb3f866c9b46e0A4` |
+| **vdpsXDC** | `0xb2FdB307cdf1cf3c6bd8b1f35E180755c24c122f` |
 
 ***
 
@@ -127,6 +127,7 @@ For the Fathom Lending (v3) deployment that also runs on XDC, see [Fathom v3 (XD
   * `vd` → variable debt token
   * `ps` → staking derivative variant (e.g., psXDC)
 * **Cross-chain liquidity** support uses `stargateBorrow` and multiple `stargateRouter` endpoints, enabling omnichain borrowing across XDC and other supported networks.
+* **psXDC migrations:** the psXDC market has migrated through several token versions as the PrimeStaking vault was upgraded. Earlier psXDC reserves (`0x9B8e12b0…`, `0x98D916F5…`, `0xa7FD1c56…`) are **frozen** with LTV 0 — withdraw/repay only. The addresses above are the current, active psXDC market.
 
 {% hint style="warning" %}
 Always verify contract addresses with our official deployment page or in the tokens' official page (this applies to all the tokens used that are not part of the PrimeFi ecosystem) prior to integration or production use.

@@ -78,6 +78,8 @@
 | USDC   | 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 |
 | WETH   | 0x4200000000000000000000000000000000000006 |
 | CBBTC  | 0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf |
+| psXDC  | 0x98D916F5773Ac0482b49856f2659d6c32114C4Ba |
+| PRFI   | 0x7BBCf1B600565AE023a1806ef637Af4739dE3255 |
 
 #### Interest-Bearing pTokens
 
@@ -87,6 +89,7 @@
 | pWETH  | 0x2a50Be4Df06202A239384e828D6e67F9F2fA954e |
 | pcbBTC | 0x1fF5E0037B478547715a4CE337d9fcFF86A30401 |
 | pPRFI  | 0x834695A5d33967f8cC27E6d15684c0aA36cA4375 |
+| ppsXDC | 0x3A577f9789FC81C2Ea0B81B9e02B6Dbc67158A37 |
 
 #### Variable Debt vdTokens
 
@@ -96,6 +99,7 @@
 | vdWETH  | 0xaaE0D3C0b4aa454cEb5b5346ba1E95a86395D656 |
 | vdcbBTC | 0xC12bdD620A54149Df6B73Fad9726d387402a9066 |
 | vdPRFI  | 0x47C4d740016411Bb8f5c9D9bDb3f866c9b46e0A4 |
+| vdpsXDC | 0xD9bA32E8a4955E4fbbbDD61F121b2f81ca7bBFE8 |
 
 ### Notes
 
@@ -106,6 +110,7 @@
   * `vd` → variable debt token
   * `cb` → bridged/compound variant (e.g., cbBTC)
 * Multi-path routing and multi-version support are implied by multiple Stargate router addresses.
+* `psXDC` is the PrimeStaking liquid-staking XDC token, bridged to Base as a LayerZero OFT. It is priced at the XDC/USD feed (1 psXDC ≈ 1 XDC). See [PrimeStakedXDC (psXDC)](../liquid-staking-tokens/primestakedxdc-psxdc.md).
 
 {% hint style="warning" %}
 Always verify contract addresses with our official deployment page or in the tokens official page (This for all the tokens used that are not part of PrimeFi ecosystem) prior to integration or production use.

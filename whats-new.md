@@ -6,6 +6,10 @@ description: Recent additions and improvements to the PrimeFi app.
 
 A roundup of the latest user-facing changes in the PrimeFi app.
 
+### psXDC markets on Base and HyperEVM
+
+**psXDC** — PrimeStaking's liquid-staking XDC token — can now be supplied and borrowed on the **Base** and **HyperEVM** v2 markets, in addition to XDC. psXDC moves between chains natively as a LayerZero OFT, so you can bridge it from XDC and use it as collateral (20% LTV) where you need liquidity. See [PrimeStakedXDC (psXDC)](liquid-staking-tokens/primestakedxdc-psxdc.md) for details and addresses.
+
 ### XRP money markets (testnet)
 
 PrimeFi now has **XRP lending markets live on testnet** — Flare Coston2 and the XRPL EVM testnet — accessible from the app's **v3** toggle. Supply XRP (as FXRP on Flare, or native XRP on XRPL EVM) and borrow against it. See [XRP Testnet Markets](xrp-testnet-markets/README.md) and [Testnet Faucets](testnet-faucets/README.md).

@@ -2,7 +2,7 @@
 description: Managing liquidity risk through PrimeFi's borrow interest rate model
 ---
 
-# Insterest Rate Model
+# Interest Rate Model
 
 ## Interest Rates (APY) & Utilization&#x20;
 
@@ -27,6 +27,6 @@ $$
 \text{if } U > U_{\text{optimal}} : \quad R_t = R_0 + R_{\text{slope1}} + \frac{U_t - U_{\text{optimal}}}{1 - U_{\text{optimal}}} R_{\text{slope2}}
 $$
 
-Given that these elements of the Prime Finance smart contracts draw inspiration from Aave, kindly consult their documentation for the computation of Annual Percentage Yield (APY):
+Given that these elements of the PrimeFi smart contracts draw inspiration from Aave, kindly consult their documentation for the computation of Annual Percentage Yield (APY):
 
-[Link to Aave documentation on APY calculations](https://docs.aave.com/risk/liquidity-risk/borrow-interest-rate)
+[Link to Aave documentation on APY calculations](https://aave.com/docs/concepts/reserves#interest-rates)

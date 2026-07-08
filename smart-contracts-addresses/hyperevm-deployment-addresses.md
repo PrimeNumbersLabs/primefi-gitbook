@@ -75,6 +75,7 @@ PrimeFi v2 contract addresses on **HyperEVM** (chain id `999`).
 | UETH   | 0xBe6727B535545C67d5cAa73dEa54865B92CF7907 |
 | UBTC   | 0x9fdbda0a5e284c32744d2f17ee5c74b284993463 |
 | PRFI   | 0x7BBCf1B600565AE023a1806ef637Af4739dE3255 |
+| psXDC  | 0x98D916F5773Ac0482b49856f2659d6c32114C4Ba |
 
 #### Interest-Bearing pTokens
 
@@ -86,6 +87,7 @@ PrimeFi v2 contract addresses on **HyperEVM** (chain id `999`).
 | pUETH   | 0x6E811Aa146F961c918d14BE9Ed9C0Cd68F447a6e |
 | pUBTC   | 0x98b7056E0e0521b7bA32F4Ac8af8e1249789d2d6 |
 | pPRFI   | 0x07CB5Aa0c467Df9b3A38dF3fBfd465c454905690 |
+| ppsXDC  | 0x1952dD6d79A7ab0419321e0669B1BdF4dF1490E5 |
 
 #### Variable Debt vdTokens
 
@@ -97,6 +99,7 @@ PrimeFi v2 contract addresses on **HyperEVM** (chain id `999`).
 | vdUETH   | 0x71f719166c403aC15F55567BABdd19b7dA1E8817 |
 | vdUBTC   | 0xD218a5F74aF42d9b1a879e2349e751DEaFe3114C |
 | vdPRFI   | 0x182CFb49ad159F8C770ef7ad9Ff56F3E61b9A9fa |
+| vdpsXDC  | 0x11f7467591b3E9e7B4d97e0827dCAaE51e46d373 |
 
 ### Notes
 
@@ -106,6 +109,7 @@ PrimeFi v2 contract addresses on **HyperEVM** (chain id `999`).
   * `p` → interest-bearing token
   * `vd` → variable debt token
 * `USDT₮0` is the Hyperliquid-native bridged USDT (token symbol uses the ₮ character on-chain).
+* `psXDC` is the PrimeStaking liquid-staking XDC token, bridged to HyperEVM as a LayerZero OFT. It is priced at the XDC/USD feed (1 psXDC ≈ 1 XDC). See [PrimeStakedXDC (psXDC)](../liquid-staking-tokens/primestakedxdc-psxdc.md).
 * Ensure there are **no address collisions** when migrating or exporting values across networks — each network uses a distinct deployment namespace.
 
 {% hint style="warning" %}

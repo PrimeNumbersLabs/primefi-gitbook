@@ -2,7 +2,7 @@
 
 ## psXDC Deposits on the XDC Network
 
-**PrimeFi** now supports **psXDC** as a supply and borrow asset on the **XDC Network**.\
+**PrimeFi** now supports **psXDC** as a supply and borrow asset on the **XDC Network**, **Base** and **HyperEVM**.\
 **psXDC** is the liquid‑staking token (LST) from **PrimeStaking** that accrues XDC staking rewards while you hold it.
 
 When you deposit psXDC on PrimeFi, you receive **ppsXDC**, PrimeFi’s interest‑bearing receipt token. **ppsXDC is a rebase token**—its balance increases automatically as rewards are distributed.
@@ -13,10 +13,32 @@ When you deposit psXDC on PrimeFi, you receive **ppsXDC**, PrimeFi’s interest�
 
 ### Contracts & roles
 
-* **ppsXDC (receipt/rebase token):** `0x834695A5d33967f8cC27E6d15684c0aA36cA4375`\
-  Add this token to your wallet to watch your rebasing balance.
+* **psXDC (underlying, XDC):** `0xDc74c0DaED82ae94486DeeF22991d2F54173c734`
+* **ppsXDC (receipt token, XDC):** `0x3Bd0183584185F8341B83dDefD73E6Eae1a64eeF`\
+  Add this token to your wallet to watch your balance.
 * **PrimeStaking (primestaking.xyz):** liquid staking that mints **psXDC** from **XDC** and produces staking rewards.
 * **PrimeFi (primefi.xyz):** lending & borrowing that mints **ppsXDC** when you supply **psXDC** and routes rewards + incentives.
+
+{% hint style="info" %}
+Earlier psXDC token versions were migrated as the PrimeStaking vault was upgraded. Old psXDC reserves on PrimeFi are **frozen** (withdraw/repay only). If you still hold a deprecated version, withdraw and migrate at primestaking.xyz.
+{% endhint %}
+
+***
+
+### psXDC on Base and HyperEVM
+
+psXDC is a **LayerZero OFT**, so it also lives natively on **Base** and **HyperEVM** at the same address: `0x98D916F5773Ac0482b49856f2659d6c32114C4Ba`. Every psXDC on Base/HyperEVM is backed 1:1 by real psXDC locked on XDC.
+
+You can supply and borrow psXDC on both chains' PrimeFi markets:
+
+| Chain    | ppsXDC (receipt)                             | vdpsXDC (variable debt)                      |
+| -------- | -------------------------------------------- | -------------------------------------------- |
+| Base     | `0x3A577f9789FC81C2Ea0B81B9e02B6Dbc67158A37` | `0xD9bA32E8a4955E4fbbbDD61F121b2f81ca7bBFE8` |
+| HyperEVM | `0x1952dD6d79A7ab0419321e0669B1BdF4dF1490E5` | `0x11f7467591b3E9e7B4d97e0827dCAaE51e46d373` |
+
+* Collateral parameters on Base/HyperEVM: **LTV 20%**, liquidation threshold 80%, liquidation bonus 7.5%.
+* psXDC is priced at the **XDC/USD** feed on these chains (1 psXDC ≈ 1 XDC).
+* To move psXDC between chains, use the bridge at primestaking.xyz (LayerZero, \~2–5 min).
 
 ***
 
@@ -199,7 +221,7 @@ Ynet ≈ (3.33 × 9.5%) − (2.33 × 9.0%) = 31.7% − 21.0% ≈ +10.7%  (profit
 
 1. Connect wallet on **XDC Network** and hold psXDC (+ a small amount of XDC for gas).
 2. Approve and **supply psXDC** in the PrimeFi psXDC market.
-3. Receive **ppsXDC** (rebase). Optionally add `0x834695A5d33967f8cC27E6d15684c0aA36cA4375` to your wallet.
+3. Receive **ppsXDC** (rebase). Optionally add `0x3Bd0183584185F8341B83dDefD73E6Eae1a64eeF` to your wallet.
 4. Monitor the **Deposit APY** (LST effective yield + PRFI + platform/pLP).
 5. **Claim PRFI/platform rewards** from the app as they accrue (ppsXDC rebases automatically).
 6. **Withdraw** by redeeming ppsXDC for psXDC (subject to pool liquidity).
