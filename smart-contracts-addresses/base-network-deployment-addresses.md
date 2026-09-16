@@ -1,5 +1,9 @@
 # Base Network Deployment Addresses
 
+{% hint style="warning" %}
+Check [Market Status](../security/market-status.md) for current Base availability before interacting with these contracts.
+{% endhint %}
+
 ### Core Protocol
 
 | Component                            | Address                                    |
@@ -35,7 +39,15 @@
 | Aave Protocol Data Provider | 0x7b7Cd09465ff2cab67360D5CD24A3Cc3ad0C856a |
 | Aave Oracle                 | 0x2Bd11f0f5e36411D7587d8a8969f9db6C7022973 |
 | Lending Rate Oracle         | 0xd719084151F1F47B7dcB937bB33845656580b79d |
-| Data Stream Consumer        | 0x163A1e3cd4726F3C92EB005A942308029C27f64B |
+| Data Stream Consumer (psXDC) | 0xB27eAf8270b6039B791a687A575c224a771eFeD7 |
+
+#### Active Oracle Middleware
+
+| Price path | Middleware address |
+| ---------- | ------------------ |
+| psXDC / XDC-USD | 0x5760fa2cD1e47f8437bF6EFE930518966be649B1 |
+
+USDC, WETH, and cbBTC use native Chainlink Data Feeds. PRFI uses a separate owner-controlled source and currently has collateral LTV `0`.
 
 ### Incentives, Fees & Governance
 

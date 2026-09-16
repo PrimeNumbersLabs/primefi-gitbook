@@ -3,13 +3,16 @@
 * [Introducing](README.md)
 * [What's new](whats-new.md)
 
+## Security
+
+* [Market Status](security/market-status.md)
+
 ## Product
 
 * [PrimeFi Features](primefi-features/README.md)
   * [Key Features of PrimeFi](primefi-features/key-features-of-primefi.md)
   * [Omnichain Lending & Borrowing](primefi-features/omnichain-lending-and-borrowing/README.md)
     * [End-to-end workflow](primefi-features/omnichain-lending-and-borrowing/end-to-end-workflow.md)
-  * [Innovations in Lending and Borrowing](primefi-features/innovations-in-lending-and-borrowing.md)
   * [Rewards distribution and NFT Integration](primefi-features/rewards-distribution-and-nft-integration.md)
   * [Oracles](primefi-features/oracles.md)
   * [Omnichain Gas Deposit Mechanism for Incentives Synchronization](primefi-features/omnichain-gas-deposit-mechanism-for-incentives-synchronization.md)
@@ -26,7 +29,7 @@
   * [Loan Repayment](borrow/loan-repayment.md)
   * [Liquidations](borrow/liquidations.md)
   * [Flash Loans](borrow/flash-loans.md)
-  * [Interest Rate Model](borrow/insterest-rate-model.md)
+  * [Interest Rate Model](borrow/interest-rate-model.md)
   * [vdTokens](borrow/vdtokens/README.md)
     * [Contract Addresses](borrow/vdtokens/contract-addresses.md)
 * [Prime Liquidity Provider (pLP)](prime-liquidity-provider-plp/README.md)
@@ -41,11 +44,10 @@
   * [Maximum APR by asset](prime-liquidity-provider-plp/maximum-apr-by-asset.md)
   * [pLP Pools](prime-liquidity-provider-plp/plp-pools.md)
   * [Sustaining Eligibility Status](prime-liquidity-provider-plp/sustaining-eligibility-status.md)
-  * [Bounty for Disqualification](prime-liquidity-provider-plp/bounty-for-disqualification.md)
 * [Liquid Staking Tokens](liquid-staking-tokens/README.md)
   * [PrimeStakedXDC (psXDC)](liquid-staking-tokens/primestakedxdc-psxdc.md)
 
-## v3 Markets
+## v3 Market Family
 
 * [XRP Testnet Markets](xrp-testnet-markets/README.md)
   * [Flare Coston2](xrp-testnet-markets/flare-coston2.md)
@@ -54,27 +56,25 @@
   * [Flare Coston2 faucet](testnet-faucets/flare-coston2.md)
   * [XRPL EVM Testnet faucet](testnet-faucets/xrpl-evm-testnet.md)
   * [In addition](testnet-faucets/in-addition.md)
-* [Fathom v3 (XDC)](fathom-v3/README.md)
+* [Fathom on XDC (third party)](fathom-v3/README.md)
 
 ## Rewards & Tokens
 
 * [PRFI](prfi/README.md)
   * [PRFI Token Pools](prfi/prfi-token-pools.md)
-* [PRFI NFTs](prfi-staking/nft-staking-reward-system/prfi-staking-nfts/README.md)
-  * [Staking Design](products/prfi-staking-nfts/prime-numbers-staking-design/README.md)
-    * [User Overview](products/prfi-staking-nfts/prime-numbers-staking-design/user-overview.md)
-    * [Technical Overview](products/prfi-staking-nfts/prime-numbers-staking-design/prime-numbers-staking-design.md)
-  * [Staking Mechanics](prfi-staking/nft-staking-reward-system/prfi-staking-nfts/prfi-nfts-staking-mechanics.md)
-  * [Reward System](prfi-staking/nft-staking-reward-system/prfi-staking-nfts/prfi-nft-staking-reward-system.md)
-  * [How to Buy a PRFI NFT](prfi-staking/nft-staking-reward-system/prfi-staking-nfts/how-to-buy-a-prfi-nft.md)
-  * [How to Buy PRFI](prfi-staking/nft-staking-reward-system/prfi-staking-nfts/how-to-buy-usdprnt.md)
-  * [How to Use the Platform](prfi-staking/nft-staking-reward-system/how-to-use-the-staking-platform.md)
+* [PRFI Staking](prfi-staking/README.md)
+  * [NFT Staking Reward System](prfi-staking/nft-staking-reward-system/README.md)
+    * [PRFI NFTs](prfi-staking/nft-staking-reward-system/prfi-staking-nfts/README.md)
+      * [Staking Design](products/prfi-staking-nfts/prime-numbers-staking-design/README.md)
+        * [User Overview](products/prfi-staking-nfts/prime-numbers-staking-design/user-overview.md)
+        * [Technical Overview](products/prfi-staking-nfts/prime-numbers-staking-design/prime-numbers-staking-design.md)
+      * [Staking Mechanics](prfi-staking/nft-staking-reward-system/prfi-staking-nfts/prfi-nfts-staking-mechanics.md)
+      * [Reward System](prfi-staking/nft-staking-reward-system/prfi-staking-nfts/prfi-nft-staking-reward-system.md)
 * [PrimeFi Reward System](primefi-reward-system/README.md)
   * [Introduction](primefi-reward-system/introduction.md)
   * [General User Rewards](primefi-reward-system/general-user-rewards/README.md)
     * [Lenders](primefi-reward-system/general-user-rewards/lenders.md)
     * [Liquidators](primefi-reward-system/general-user-rewards/liquidators.md)
-  * [XDC NFT Holders](primefi-reward-system/xdc-nft-holders.md)
   * [Advanced User Rewards](primefi-reward-system/advanced-user-rewards/README.md)
     * [LP Provider Rewards](primefi-reward-system/advanced-user-rewards/lp-provider-rewards.md)
     * [PRFI NFT Holders Rewards](primefi-reward-system/advanced-user-rewards/prfi-nft-holders-rewards.md)
@@ -106,20 +106,18 @@
   * [Base Network Deployment Addresses](smart-contracts-addresses/base-network-deployment-addresses.md)
   * [HyperEVM Deployment Addresses](smart-contracts-addresses/hyperevm-deployment-addresses.md)
   * [XDC Network Deployment Addresses](smart-contracts-addresses/xdc-network-deployment-addresses.md)
-  * [Fathom v3 (XDC) Deployment Addresses](smart-contracts-addresses/fathom-xdc-deployment-addresses.md)
+  * [Fathom on XDC (third-party) Addresses](smart-contracts-addresses/fathom-xdc-deployment-addresses.md)
 * [Contracts](contracts.md)
   * [Lending & Borrowing](contracts/lending-borrowing.md)
     * [Flik Flow](contracts/flikflow.md)
-    * [Earnings](contracts/earnings.md)
     * [Stargate Borrow](contracts/stargate.md)
   * [Staking](contracts/stake.md)
     * [Rewards](contracts/rewards.md)
-    * [Bounty System](contracts/bounty.md)
 * [Audits](audits.md)
 * [Governance](governance.md)
 
 ## Resources
 
 * [Prime Numbers Labs Docs](https://docs.primenumbers.xyz/)
-* [PrimeFi Youtube Tutorial](primefi-youtube-tutorial.md)
+* [Historical PrimeFi Testnet Video Tutorials](primefi-youtube-tutorial.md)
 * [Launch App](https://app.primefi.xyz/)

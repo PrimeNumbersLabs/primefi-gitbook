@@ -1,16 +1,20 @@
-# PrimeFi Youtube Tutorial
+---
+description: Archived PrimeFi testnet videos retained for historical and conceptual reference.
+---
 
-As part of our commitment to **making DeFi more accessible**, we’ve created a series of **video tutorials** that break down **PrimeFi Testnet** and its key features in a simple, easy-to-follow format.
+# Historical PrimeFi Testnet Video Tutorials
 
-This YouTube series includes **9 short videos** (2-3 minutes each) designed for users of all experience levels, covering:
+This nine-video playlist was produced for an earlier **PrimeFi testnet** experience. It remains available as an educational archive for lending, borrowing and omnichain concepts, but its interface, networks, assets, parameters and transaction steps may differ from current deployments.
 
-🔹 **How PrimeFi Testnet works** and its role in the DeFi ecosystem.\
-🔹 **Key concepts of lending and borrowing in an omnichain environment**.\
-🔹 **The benefits of interoperability and integration with advanced blockchain networks**.
+{% hint style="warning" %}
+Do not use contract addresses, network settings or transaction instructions from these videos as current production guidance. Verify the active market and use the current documentation before approving a transaction.
+{% endhint %}
 
-Through this tutorial, we aim to lower the entry barriers to DeFi and provide an **accessible educational tool** for everyone interested in maximizing PrimeFi’s potential.
+For current information, use:
 
-Watch the full tutorial here:\
-▶️ [**PrimeFi YouTube Tutorial**](https://www.youtube.com/playlist?list=PLhJ8SNhjVjfmsBCc9Lti2yFzCWPdhKWHK)
+* [Market Status](security/market-status.md) for availability and operational notices.
+* [Lend](lend/README.md) and [Borrow](borrow/README.md) for current user concepts and flows.
+* [v3 Markets and Fathom on XDC](fathom-v3/README.md) to identify the selected market and its operator.
+* [Smart Contracts Addresses](smart-contracts-addresses/README.md) for deployment references.
 
-This is just the beginning. We’re committed to **expanding our educational content** **to drive DeFi adoption** and prepare for PrimeFi’s journey to Mainnet!
+Watch the historical playlist: [PrimeFi YouTube Tutorial](https://www.youtube.com/playlist?list=PLhJ8SNhjVjfmsBCc9Lti2yFzCWPdhKWHK).

@@ -1,53 +1,53 @@
 # Oracles
 
-PrimeFi leverages decentralized oracle networks to ensure that price data is **secure, reliable, and tamper-resistant**. In most chains, **DataStreams** deliver continuous updates with low latency, while **DataFeeds** provide historical precision and compatibility. For key ecosystem tokens (e.g. PRFI, HYPE), we employ **DataLink**, which offers a dedicated oracle channel.
+This page describes the lending price sources currently configured for PrimeFi v2. Oracle systems reduce reliance on any single market venue, but they introduce integration, freshness, access-control, and operational risks.
 
-On **XDC**, all price data is sourced via **eOracles / ePRICE feeds**, which integrate with the AggregatorV3Interface. [EO Docs](https://docs.eo.app/docs/eprice/feeds-addresses/price-feed-addresses/xdc-network)
+{% hint style="warning" %}
+See [Market Status](../security/market-status.md) for current availability. Oracle configuration can change; verify the live source, freshness, and risk parameters on-chain.
+{% endhint %}
 
-***
+## HyperEVM
 
-### Comparative Overview by Network & Assets
+The active HyperEVM Data Streams path uses consumer [`0x113CA34C26ebb6f2e23B43ce5316d0fc03dFcce3`](https://hyperevmscan.io/address/0x113CA34C26ebb6f2e23B43ce5316d0fc03dFcce3). Asset-specific middleware reads prices from that consumer for the lending oracle.
 
-#### 1. Base Network
+| Lending price path | Active middleware |
+| ------------------ | ----------------- |
+| WHYPE / HYPE-USD | `0xEB30d7A22d8A3F9dDdE69262e3717E2aC293D24C` |
+| UETH / ETH-USD | `0xF5e79f9ca2b30695AE9601ADfCd86dff7be42e25` |
+| UBTC / BTC-USD | `0x1bD0185230131300FCB288730725693c33F7FdF1` |
+| USDC / USD | `0x9231bfeb7541F6c34Bb57BC6a0172D42Ffb31AEd` |
+| USDT0 / USD | `0x7f5D3d3B983786ec27ab5C136fc00E5CB38d12aC` |
+| psXDC / XDC-USD | `0x2AD1fF28DD8C620AFD517691458182577f03AFF6` |
 
-| Asset | Oracle Type           | Notes                                                          |
-| ----- | --------------------- | -------------------------------------------------------------- |
-| cbBTC | DataStream / DataFeed | Flexible usage depending on latency or historical requirements |
-| USDC  | DataStream / DataFeed | Continuous feed or fallback feed as needed                     |
-| ETH   | DataStream / DataFeed | Redundancy through feed fallback                               |
-| PRFI  | DataLink              | Dedicated channel for PRFI-USD                                 |
-| psXDC | DataStream (XDC/USD)  | Priced at the XDC/USD Data Stream (1 psXDC ≈ 1 XDC)            |
+The consumer restricts report submission to approved keepers and rejects reports that fail its time-validity checks.
 
-#### 2. HyperEVM
+PRFI uses a separate owner-controlled price source rather than this Data Streams consumer. Its collateral loan-to-value ratio is currently `0`, so it cannot support new borrowing capacity.
 
-| Asset | Oracle Type           | Notes                              |
-| ----- | --------------------- | ---------------------------------- |
-| HYPE  | DataLink              | Specialized oracle for HYPE-USD    |
-| UETH  | DataStream / DataFeed | Similar logic to ETH               |
-| PRFI  | DataLink              | Consistent with Base network usage |
-| USDT0 | DataStream / DataFeed | Stream first, feed as fallback     |
-| UBTC  | DataStream / DataFeed | Equivalent to cbBTC in HyperEVM    |
-| psXDC | DataStream (XDC/USD)  | Priced at the XDC/USD Data Stream (1 psXDC ≈ 1 XDC) |
+## Base
 
-#### 3. XDC Network
+Base uses native Chainlink Data Feeds for USDC, WETH, and cbBTC.
 
-_All oracles on XDC use **eOracles / ePRICE feeds**._
+| Lending price path | Active source |
+| ------------------ | ------------- |
+| USDC / USD | Native Chainlink Data Feed |
+| WETH / ETH-USD | Native Chainlink Data Feed |
+| cbBTC / BTC-USD | Native Chainlink Data Feed |
+| psXDC / XDC-USD | Consumer `0xB27eAf8270b6039B791a687A575c224a771eFeD7`, exposed through middleware `0x5760fa2cD1e47f8437bF6EFE930518966be649B1` |
 
-| Asset | Oracle Type           | Notes                                 |
-| ----- | --------------------- | ------------------------------------- |
-| XDC   | eOracle / ePRICE Feed | Price via eOracles                    |
-| psXDC | eOracle / ePRICE Feed | Synthetic / pegged derivative on XDC  |
-| USDC  | eOracle / ePRICE Feed | Stablecoin feed via eOracle           |
-| USDT0 | eOracle / ePRICE Feed | ePRICE feed for USDT0                 |
-| PRFI  | eOracle / ePRICE Feed | Treated as standard asset feed in XDC |
+PRFI uses a separate owner-controlled price source and has collateral LTV `0`.
 
-***
+## XDC
 
-### Technical Rationale
+XDC uses **Plugin/GoPlugin aggregators funded in PLI** for its principal market price paths. It does **not** use eOracle/ePRICE for the current lending prices.
 
-* **DataStreams** → Ideal for low-latency continuous updates (real-time trading).
-* **DataFeeds** → Offer dependable historical data and broad compatibility.
-* **DataLink** → Reserved for strategic tokens needing dedicated oracle infrastructure.
-* **eOracles / ePRICE feeds (XDC only)** → Provide on-chain price feeds in the XDC ecosystem, integrated via AggregatorV3Interface. [EO Docs](https://docs.eo.app/docs/eprice/feeds-addresses/price-feed-addresses/xdc-network)
+| Price path | Active Plugin/GoPlugin aggregator |
+| ---------- | --------------------------------- |
+| USDC / USD | `0xe5c7E623Aca88aCf0fe050BEE4F29B9deDedb9E2` |
+| USDT / USD | `0x708307Fc1038fc922363bc3aeC4E3E2F93d25B33` |
+| XDC / USD | `0x0b41e008E66c98788a25c952ff1a8c0cb2290f8C` |
 
-By combining these methods appropriately per network and asset, PrimeFi ensures the optimal balance of **performance, reliability, and accuracy**.
+PRFI uses a custom price source. The XDC `dataStreamConsumer` listed on the deployment-address page is not used by current lending prices.
+
+## Integration guidance
+
+Oracle configuration can change through protocol administration. Before integrating, verify the source configured in the network's lending oracle, the source contract, its latest update, and the current [market status](../security/market-status.md) on-chain.

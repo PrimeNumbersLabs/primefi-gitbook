@@ -1,12 +1,12 @@
 # PRFI Token Pools
 
+Pool availability, versions, liquidity, and incentives can change independently of PrimeFi lending markets. Verify the token pair, DEX, pool contract, and current liquidity before interacting.
+
 #### 1. Regular pools
 
 **Base**
 
-* PRFI-ETH v4 (concentrated, fees only)\
-  \
-  (Note: The old v4 of Base no longer exists. The new v4 is not yet indexed, it will be added manually with an official link later.)
+No current Base concentrated-pool address is published on this page. Use only a pool verified through the token contracts and the relevant DEX interface.
 
 **HyperEVM**
 
@@ -16,14 +16,9 @@
 
 **XDC Network**
 
-* PRFI-psXDC v3 Xswap (concentrated, fees only)\
-  Geckoterminal: [https://www.geckoterminal.com/es/xdc/pools/0x2e45c4f9dca38911cb961e8041fd7c4bf76a0141](https://www.geckoterminal.com/es/xdc/pools/0x2e45c4f9dca38911cb961e8041fd7c4bf76a0141)
-* PRFI-wXDC v3 Xswap (concentrated, fees only)\
-  Geckoterminal: [https://www.geckoterminal.com/es/xdc/pools/0x4f07ab51fa5eda6dc6c9a53b154f9f3cf6b647f5](https://www.geckoterminal.com/es/xdc/pools/0x4f07ab51fa5eda6dc6c9a53b154f9f3cf6b647f5)
-
-
+Previous concentrated-pool links were removed because they no longer resolve. Verify any current PRFI/psXDC or PRFI/WXDC concentrated pool directly with XSwap before use.
 
 #### 2. pLP Pools
 
-{% embed url="https://docs.primefi.xyz/prime-liquidity-provider-plp/plp-pools" %}
+See [pLP Pools](../prime-liquidity-provider-plp/plp-pools.md) for the currently documented pLP-eligible pools.
 

@@ -1,14 +1,15 @@
-# Rewards distribution and NFT Integration
+# Rewards Distribution and NFT Integration
 
-* A distinctive aspect of PrimeFi is the 40% of the borrowing fee distribution is offered to PRFI token holders who stake their tokens with Prime Numbers NFTs.
-* This integration of lending and borrowing with NFTs, coupled with the platform's comprehensive approach to yield optimization and asset management, underscores PrimeFi's commitment to innovation and versatility in the rapidly evolving DeFi ecosystem.
+PrimeFi includes a live PRFI NFT staking program in which qualifying participants stake PRFI through Prime Numbers NFTs under the currently configured staking rules.
+
+A separate future concept has been described as allocating 40% of PrimeFi lending-and-borrowing protocol profits to qualifying PRFI NFT participants. That revenue-share component is **planned and not documented as an active on-chain distribution**.
 
 {% hint style="info" %}
-The origin of the fees shared with NFT holders does not compromise the benefits of lenders or pLP providers since these fees come from the company income.
+Do not treat the planned percentage as a current entitlement or yield. Before activation, PrimeFi must publish the definition of profits, exclusions, eligibility, distribution period, responsible contract, and verifiable on-chain configuration.
 {% endhint %}
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
-The integration of NFTs will occur after the main features of the protocol are launched on the Mainnet.
+PRFI NFT staking is live and is separate from using an NFT as lending collateral. NFT-as-lending-collateral and related lending-market integration remain planned features and should not be treated as currently available unless a current deployment notice and the live app explicitly show otherwise.
 {% endhint %}

@@ -1,17 +1,22 @@
 # How to Deposit?
 
-In the **Markets** tab, under the **Stats Overview** section, you’ll find the **Base Network Assets** section. Here, you can select an asset from your preference and start interacting with it.
+{% hint style="danger" %}
+Check [Market Status](../security/market-status.md) first. Deposits cannot be made while a market is paused.
+{% endhint %}
 
-Let’s say you’ve chosen USDC. The initial setup will display the option to deposit.
+1. Open **Markets** and select the network you intend to use: Base, HyperEVM, or XDC.
+2. Confirm that your wallet is connected to the same network and that the selected market is operational.
+3. Choose the asset and select **Deposit**.
+4. Enter the amount. Review the live supply rate, available liquidity, collateral setting, and transaction details.
 
-Enter the amount of USDC you want to deposit and press **Deposit USDC**.
+For example, after selecting USDC, enter the amount and press **Deposit USDC**.
 
 <figure><img src="../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
 
 
 
-Next, you’ll see a prompt that says **“Approve”**. If you haven’t used this protocol before, you’ll need to approve the token, granting the protocol permission to manage this asset within your wallet. Click **“Approve”,** this is a simple signing transaction.
+If the lending pool does not have sufficient token allowance, the app first asks for an **Approve** transaction. This approval authorizes the specified contract to transfer up to the displayed allowance; verify the spender and amount in your wallet before confirming.
 
-Now, wait for the approval to complete. Once it’s done, press **“Confirm Deposit”** and accept the subsequent transaction to deposit your USDC into the protocol. In return, you’ll receive an p\_Token\_ that tracks the interest you earn as a _lender_.
+After approval confirms, select **Confirm Deposit** and review the supply transaction. A successful supply mints the corresponding pToken, which represents your accounting claim on the reserve and accrues interest according to the reserve's liquidity index. Withdrawals remain subject to available liquidity, market status, and protocol risk.
 
 <figure><img src="../.gitbook/assets/image (100).png" alt=""><figcaption></figcaption></figure>

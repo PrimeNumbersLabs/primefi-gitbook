@@ -2,6 +2,10 @@
 
 PrimeFi v2 contract addresses on **HyperEVM** (chain id `999`).
 
+{% hint style="warning" %}
+Check [Market Status](../security/market-status.md) for current HyperEVM availability before interacting with these contracts.
+{% endhint %}
+
 ### Core Protocol
 
 | Component                            | Address                                    |
@@ -30,7 +34,18 @@ PrimeFi v2 contract addresses on **HyperEVM** (chain id `999`).
 | Aave Protocol Data Provider | 0x3Bc108Ca0202739FC65bf453A255E5c49Ba6544a |
 | Aave Oracle                 | 0x8Bd82c5f94d2CAFF3F980f0137f16aDD71E98dfb |
 | Lending Rate Oracle         | 0x7169Bf0CCfb949D2Fa78A8BDaEe0410fBd617632 |
-| Data Stream Consumer        | 0x04EDBF3904789d80B0C991e0B66577F2208A2bE6 |
+| Data Stream Consumer | 0x113CA34C26ebb6f2e23B43ce5316d0fc03dFcce3 |
+
+#### Active Oracle Middleware
+
+| Price path | Middleware address |
+| ---------- | ------------------ |
+| WHYPE / HYPE-USD | 0xEB30d7A22d8A3F9dDdE69262e3717E2aC293D24C |
+| UETH / ETH-USD | 0xF5e79f9ca2b30695AE9601ADfCd86dff7be42e25 |
+| UBTC / BTC-USD | 0x1bD0185230131300FCB288730725693c33F7FdF1 |
+| USDC / USD | 0x9231bfeb7541F6c34Bb57BC6a0172D42Ffb31AEd |
+| USDT0 / USD | 0x7f5D3d3B983786ec27ab5C136fc00E5CB38d12aC |
+| psXDC / XDC-USD | 0x2AD1fF28DD8C620AFD517691458182577f03AFF6 |
 
 ### Incentives, Fees & Distribution
 

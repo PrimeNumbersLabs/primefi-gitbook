@@ -3,7 +3,7 @@
 > ⚠️ **High Risk – Advanced Users Only**\
 > The strategies on this page involve **leveraged looping**.\
 > They can amplify both gains and losses and are highly sensitive to APR changes,\
-> coverage ratios, and price volatility. Liquidation can happen quickly.\
+> available liquidity, psXDC vault value, and price volatility. Liquidation can happen quickly.\
 > This is not financial advice. Only consider these if you fully understand the risks.
 
 ***
@@ -12,7 +12,7 @@
 
 To reason about loops, it helps to define:
 
-* `c` = target collateral ratio (LTV as a fraction, e.g. 0.6).
+* `c` = target collateral ratio (LTV as a fraction). It must remain below the reserve's current maximum; psXDC was configured at 0.20 when this page was reviewed.
 * `L = 1 / (1 − c)` = effective leverage on **supplied** assets.
 * `B = c / (1 − c)` = effective leverage on **borrowed** assets.
 * `Ydep` = deposit APY (e.g. psXDC effective APY).
@@ -44,8 +44,8 @@ These expressions are simplified and ignore path‑dependent effects, liquidatio
 **Why this is often&#x20;**_**not**_**&#x20;optimal:**
 
 * Each loop increases psXDC utilization, which may **push psXDC borrow APR up**.
-* The **coverage ratio** between psXDC and underlying staked XDC can fall, reducing effective yield.
-* In many realistic cases, same‑asset psXDC looping produces **negative** net APY once you factor in borrowing costs and dilution.
+* PrimeFi reserve liquidity can fall even though psXDC's own vault/share mechanics continue independently.
+* Same‑asset psXDC looping can produce **negative** net APY once borrowing costs, incentives, liquidity, and transaction frictions are included.
 
 This kind of loop should only be considered when:
 
@@ -79,7 +79,7 @@ Often more interesting than same‑asset loops when conditions are right.
 
 * XDC price volatility (big drops can rapidly compress HF).
 * XDC borrow APR may spike if utilization increases.
-* psXDC coverage ratio changes can reduce yield for everyone, including you.
+* psXDC vault/share value, available PrimeFi liquidity, and incentive funding can change independently.
 * Complexification of your risk: more steps, more things to watch.
 
 ***

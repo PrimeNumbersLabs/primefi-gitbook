@@ -6,13 +6,10 @@ This functionality is the reverse of making a deposit. To use it, follow the sam
 
 Select the desired amount and submit the transaction.
 
-Ensure there is sufficient available liquidity in the protocol to complete the withdrawal. If not, you’ll need to wait for more liquidity to be provided by depositors or for borrowers to repay their loans before you can withdraw the desired amount.
+The transaction succeeds only if the reserve has enough available liquidity, the market is not paused for withdrawals, and all contract validations pass. If liquidity is insufficient, additional supplies or borrower repayments may make a later withdrawal possible, but availability is not guaranteed.
 
-You can withdraw your collateralized assets as long as:
+If you have active debt, you may still withdraw collateral that is not required to keep the position valid. The contract recalculates the position using on-chain reserve and oracle state and blocks a withdrawal that would make the Health Factor invalid.
 
-* The assets are not currently being used to secure any active loans.
-* The withdrawal does not trigger a liquidation of your loans.
-
-The platform will always notify you if any of your actions jeopardize your Health Factor. It is not possible to withdraw deposits if doing so would negatively impact your Health Factor due to your loans.
+Health Factor values and warnings in the UI are informational estimates. They are not guaranteed to appear or remain current before execution; the contract's validation at transaction time is authoritative. A withdrawal can also fail because the reserve was paused, liquidity changed, prices moved, or another validation condition changed.
 
 <figure><img src="../.gitbook/assets/image (67).png" alt="" width="303"><figcaption></figcaption></figure>

@@ -1,19 +1,22 @@
 # Liquidators
 
-In the same way mentioned previously, any user can obtain the role of liquidator and receive the benefit of liquidating a position that meets the liquidation requirements.
+Liquidation is permissionless: a user, bot, or smart contract may submit a liquidation for a position that meets the on-chain requirements. There is no separate liquidator role to obtain.
 
 ## Rewards for liquidators
 
-Liquidators can be individual users, automated bots, or smart contracts participating in the liquidation process to gain profits by acquiring assets at favorable prices.
+Liquidators repay an allowed amount of debt and receive collateral valued at the repayment amount plus the liquidator's share of the selected collateral reserve's configured liquidation bonus. The contract sends the other share of that bonus to the protocol.
 
-Liquidation is a crucial component of lending and borrowing protocols as it contributes to the stability and security of the ecosystem by ensuring that obligations are met, and risks are effectively managed.
+The percentage is **not fixed across PrimeFi**. Liquidation parameters are set per reserve:
 
-PrimeFi rewards liquidators with a fixed 7,5% liquidation bonus for the collateral asset liquidated.
+* A reserve with a 15% total bonus yields a 7.5% liquidator share and a 7.5% protocol share.
+* The psXDC reserve has a 7.5% total bonus, yielding 3.75% to the liquidator and 3.75% to the protocol.
+
+Liquidators should check the current on-chain configuration and account for close-factor limits, gas, slippage, liquidity, oracle movement, and transaction failure.
 
 <figure><img src="../../.gitbook/assets/Copia de PF Whitepaper (5).jpg" alt="" width="563"><figcaption></figcaption></figure>
 
-### Examples
+### Example
 
-Bob lends 10 ETH and borrows USDT equivalent to 5 ETH. If Bob’s Health Factor drops below 1, his loan becomes eligible for liquidation.&#x20;
+Assume Bob supplies 10 ETH, borrows USDT worth 5 ETH, and his Health Factor later falls below 1. Also assume the ETH collateral reserve has a 15% total bonus and the applicable close-factor logic permits repayment of half the debt.
 
-A liquidator can repay up to 50% of the borrowed amount (2.5 ETH worth of USDT). In return, the liquidator receives a portion of the collateral in ETH with a 7.5% bonus. Thus, for repaying 2.5 ETH worth of USDT, the liquidator claims 2.6875 ETH (2.5 ETH + 0.1875 ETH bonus) as a reward.
+A liquidator who repays USDT worth 2.5 ETH receives ETH worth `2.5 × (1 + 7.5%) = 2.6875 ETH`; the protocol receives ETH worth `2.5 × 7.5% = 0.1875 ETH`. This example applies only to a reserve with that configuration and does not establish a universal liquidator reward.

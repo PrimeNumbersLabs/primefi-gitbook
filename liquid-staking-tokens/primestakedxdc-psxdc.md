@@ -1,262 +1,111 @@
 # PrimeStakedXDC (psXDC)
 
-## psXDC Deposits on the XDC Network
-
-**PrimeFi** now supports **psXDC** as a supply and borrow asset on the **XDC Network**, **Base** and **HyperEVM**.\
-**psXDC** is the liquid‑staking token (LST) from **PrimeStaking** that accrues XDC staking rewards while you hold it.
-
-When you deposit psXDC on PrimeFi, you receive **ppsXDC**, PrimeFi’s interest‑bearing receipt token. **ppsXDC is a rebase token**—its balance increases automatically as rewards are distributed.
-
-> **Important:** If you deposit psXDC into PrimeFi, you **will not** claim staking rewards directly at primestaking.xyz. Instead, the PrimeFi psXDC pool claims those rewards **on‑chain** and **redistributes** them to **ppsXDC holders** via rebases. You still earn the underlying staking yield—plus PrimeFi incentives.
-
-***
-
-### Contracts & roles
-
-* **psXDC (underlying, XDC):** `0xDc74c0DaED82ae94486DeeF22991d2F54173c734`
-* **ppsXDC (receipt token, XDC):** `0x3Bd0183584185F8341B83dDefD73E6Eae1a64eeF`\
-  Add this token to your wallet to watch your balance.
-* **PrimeStaking (primestaking.xyz):** liquid staking that mints **psXDC** from **XDC** and produces staking rewards.
-* **PrimeFi (primefi.xyz):** lending & borrowing that mints **ppsXDC** when you supply **psXDC** and routes rewards + incentives.
-
-{% hint style="info" %}
-Earlier psXDC token versions were migrated as the PrimeStaking vault was upgraded. Old psXDC reserves on PrimeFi are **frozen** (withdraw/repay only). If you still hold a deprecated version, withdraw and migrate at primestaking.xyz.
+{% hint style="danger" %}
+Check [Market Status](../security/market-status.md) for current availability. Configuration details below do not imply transaction availability on a paused market.
 {% endhint %}
 
-***
+## What psXDC is
 
-### psXDC on Base and HyperEVM
+psXDC is PrimeStaking's liquid-staking vault token for XDC. Its economic value comes from the PrimeStaking vault and its current share-to-XDC exchange mechanics.
 
-psXDC is a **LayerZero OFT**, so it also lives natively on **Base** and **HyperEVM** at the same address: `0x98D916F5773Ac0482b49856f2659d6c32114C4Ba`. Every psXDC on Base/HyperEVM is backed 1:1 by real psXDC locked on XDC.
+PrimeFi does not harvest psXDC staking rewards and redistribute them through a special ppsXDC rebase. Instead:
 
-You can supply and borrow psXDC on both chains' PrimeFi markets:
+1. **psXDC vault value:** staking accrual is reflected through PrimeStaking's psXDC vault/share mechanics.
+2. **PrimeFi supplier interest:** supplying psXDC mints an interest-bearing PrimeFi pToken (`ppsXDC`). Its accounted balance follows PrimeFi's reserve liquidity index.
+3. **Separate incentives:** PRFI or pLP incentives, where enabled and funded, are separate reward programs and are not part of psXDC's vault exchange rate.
 
-| Chain    | ppsXDC (receipt)                             | vdpsXDC (variable debt)                      |
-| -------- | -------------------------------------------- | -------------------------------------------- |
-| Base     | `0x3A577f9789FC81C2Ea0B81B9e02B6Dbc67158A37` | `0xD9bA32E8a4955E4fbbbDD61F121b2f81ca7bBFE8` |
+These are distinct return sources with distinct risks. Neither psXDC appreciation, PrimeFi interest, nor incentive rewards are guaranteed.
+
+## Current contracts
+
+### XDC current psXDC v4 reserve
+
+* **psXDC underlying:** `0xDc74c0DaED82ae94486DeeF22991d2F54173c734`
+* **ppsXDC pToken:** `0x3Bd0183584185F8341B83dDefD73E6Eae1a64eeF`
+* **vdpsXDC variable debt:** `0xb2FdB307cdf1cf3c6bd8b1f35E180755c24c122f`
+
+Earlier XDC psXDC reserves (`0x9B8e12b0…`, `0x98D916F5…`, and `0xa7FD1c56…`) are frozen with LTV `0`. They remain relevant for existing withdraw/repay or migration workflows but should not be treated as the current v4 reserve.
+
+### Base and HyperEVM
+
+The cross-chain psXDC token uses the same address on Base and HyperEVM:
+
+`0x98D916F5773Ac0482b49856f2659d6c32114C4Ba`
+
+| Chain | ppsXDC pToken | vdpsXDC variable debt |
+| --- | --- | --- |
+| Base | `0x3A577f9789FC81C2Ea0B81B9e02B6Dbc67158A37` | `0xD9bA32E8a4955E4fbbbDD61F121b2f81ca7bBFE8` |
 | HyperEVM | `0x1952dD6d79A7ab0419321e0669B1BdF4dF1490E5` | `0x11f7467591b3E9e7B4d97e0827dCAaE51e46d373` |
 
-* Collateral parameters on Base/HyperEVM: **LTV 20%**, liquidation threshold 80%, liquidation bonus 7.5%.
-* psXDC is priced at the **XDC/USD** feed on these chains (1 psXDC ≈ 1 XDC).
-* To move psXDC between chains, use the bridge at primestaking.xyz (LayerZero, \~2–5 min).
+Moving psXDC between chains uses PrimeStaking's LayerZero-based bridge workflow and introduces smart-contract, messaging, endpoint, and operational risk.
 
-***
+## Current lending configuration
 
-### What you earn when you deposit psXDC
+As verified on 16 September 2026:
 
-Your psXDC deposit on PrimeFi earns **three** streams of yield, all accruing to **ppsXDC holders**:
+* Base psXDC LTV: `20%`
+* HyperEVM psXDC LTV: `20%`
+* Liquidation threshold: `80%`
+* Total liquidation bonus: `7.5%`
+* Stable-rate borrowing: disabled
 
-1. **LST base yield (from psXDC)**\
-   The psXDC inside the PrimeFi pool continues to generate XDC staking rewards via PrimeStaking. PrimeFi **claims** those rewards and **rebases** them to ppsXDC.
-2. **Extra PRFI incentive (3–4% APY, variable)**\
-   An additional reward paid in **PRFI** for psXDC suppliers.
-3. **Platform & pLP incentives (variable)**\
-   Additional incentives are shown in the app UI. These change with program parameters and utilization.
+These parameters are administrative and can change. Check current on-chain configuration before calculating borrowing capacity.
 
-> Live APYs are variable—always rely on the rate shown in the PrimeFi app.
+PrimeFi currently values psXDC on Base and HyperEVM through the XDC/USD oracle path for lending accounting. This is an oracle convention and should not be interpreted as a guaranteed market redemption price or permanent peg.
 
-***
+## Supplying psXDC
 
-### Why ppsXDC yield can change: Coverage Ratio
+Where the market is operational:
 
-Only the **psXDC actually held by the PrimeFi pool contract** generates staking rewards for rebase. If users **borrow psXDC** out of the pool or **loop** by re‑depositing borrowed psXDC (minting more ppsXDC), then **ppsXDC supply can exceed psXDC in the pool**. That dilutes the LST component of the deposit APY.
+1. Select the correct network and verify the psXDC contract.
+2. Review current market status, available reserve liquidity, supply rate, utilization, and collateral parameters.
+3. Approve only the displayed lending-pool spender and intended allowance.
+4. Supply psXDC to mint the corresponding ppsXDC pToken.
 
-**Coverage Ratio**
+ppsXDC is PrimeFi's indexed lending receipt. Internally, PrimeFi stores a scaled balance; the externally reported balance applies the reserve's current liquidity index. This accounts for supplier interest generated by reserve borrowing. It is separate from any change in psXDC's own vault exchange rate.
 
-```
-Coverage Ratio = (psXDC balance in the PrimeFi pool contract) / (total ppsXDC supply)
-```
+## Borrowing and liquidity
 
-* **1.00** → ppsXDC captures \~100% of psXDC’s base LST yield.
-* **0.85** → ppsXDC captures \~85% of psXDC’s base LST yield (diluted).
+Where enabled, psXDC can be borrowed at a variable rate. Borrowing removes available psXDC liquidity from the reserve and can:
 
-**Total Deposit APY (simplified)**
+* increase utilization and variable borrow rates;
+* reduce the amount immediately available for supplier withdrawals; and
+* increase liquidation risk for borrowers using collateral.
 
-```
-Total Deposit APY ≈ [Base psXDC APY × Coverage Ratio] + [PRFI APY] + [platform/pLP APY]
-```
+Borrowing and re-supplying psXDC can create leveraged exposure, but it does not change psXDC's underlying vault yield through a separate PrimeFi redistribution formula. The ratio between pToken supply and reserve cash describes lending liquidity, not how PrimeStaking allocates staking accrual.
 
-> Because looping can increase ppsXDC supply and reduce Coverage Ratio, heavy looping **lowers** the LST portion of yield for **everyone** (including the looper).
->
-> Users can **borrow psXDC** and **re‑deposit** it, minting additional ppsXDC. Because borrowed psXDC is no longer held by the pool, the Coverage Ratio drops, so the **6%+ LST yield gets diluted** across more ppsXDC.
+Any looping strategy must use the reserve's actual current LTV. The current Base and HyperEVM psXDC LTV is only 20%, so examples based on 70% leverage do not apply.
 
-***
+## Withdrawing
 
-### Supported assets (XDC market)
+A withdrawal burns the applicable ppsXDC and requests psXDC from the reserve. Execution depends on:
 
-As shown in the current market: **XDC, psXDC, USDC, USDT, PRFI**.\
-Supply/borrow caps, APYs, and utilization are visible in the app and change over time.
+* available psXDC liquidity;
+* market and reserve pause/freeze state;
+* the user's remaining collateral and Health Factor;
+* oracle availability; and
+* all contract validations at execution.
 
-***
+ppsXDC accounting does not guarantee immediate redemption.
 
-### How deposits, rewards, and withdrawals work
+## Rewards
 
-1. **Deposit psXDC → receive ppsXDC**
-   * Connect on **XDC Network** and approve psXDC.
-   * Supplying psXDC mints **ppsXDC 1:1** (subject to the vault’s current exchange mechanics). ppsXDC is **rebase**: your balance increases as rewards are distributed.
-2. **Rewards distribution**
-   * The pool contract **claims psXDC staking rewards** from PrimeStaking and re‑distributes them to **ppsXDC holders** via rebase.
-   * **PRFI incentives** and **platform/pLP incentives** are added on top (see the Rewards panel in the UI for your accrued amounts).
-3. **Withdraw**\
-   Redeem ppsXDC to withdraw psXDC (subject to pool liquidity). Because ppsXDC rebases, you don’t need to claim the LST portion—your **ppsXDC balance grows** over time and you redeem more psXDC.
+Potential returns should be evaluated separately:
 
-_Wallet tip:_ Some wallets refresh rebase balances only on activity. If your ppsXDC display looks stale, a tiny self‑transfer can refresh it. Gas is paid in **XDC**.
+* **PrimeStaking vault accrual:** governed by psXDC's own vault/share mechanics.
+* **PrimeFi supplier interest:** determined by reserve utilization, debt performance, reserve factor, and the liquidity index.
+* **PRFI/pLP incentives:** configurable, independently claimable programs available only where enabled and funded.
 
-***
+Do not add fixed staking, PRFI, or platform APY percentages together unless each value is current, independently verified, and applicable to the selected market.
 
-### Borrowing, looping, and strategies
+## Principal risks
 
-PrimeFi is a **lending & borrowing** protocol. You can deposit psXDC, borrow against it, and optionally **loop** (lever up) by re‑depositing what you borrow. This increases your exposure to deposit APY but also increases **borrow costs** and **liquidation risk**. Because psXDC is intended to be \~1:1 with XDC, same‑asset loops reduce price risk but **do not remove** interest‑rate or depeg risk.
+* psXDC vault/share and XDC market-value risk.
+* PrimeFi smart-contract and administrative risk.
+* Oracle and XDC/USD pricing-convention risk.
+* High-utilization and withdrawal-liquidity risk.
+* Variable borrow-rate and liquidation risk.
+* Cross-chain OFT/messaging risk on Base and HyperEVM.
+* Incentive eligibility, funding, and token-price risk.
 
-> **Critical:** Looping often **lowers** the LST portion of your deposit APY for everyone by pushing down the **Coverage Ratio** (see above). It can also make **borrow APR** spike when utilization is high. Always check live rates.
-
-#### Common loop patterns
-
-**A) psXDC → borrow psXDC → re‑deposit (same‑asset loop)**
-
-1. Deposit psXDC.
-2. Borrow psXDC against it.
-3. Re‑deposit the borrowed psXDC to mint more ppsXDC.
-4. Repeat until you reach your target health factor/risk.
-
-* **Pros:** Simple; minimizes price basis mismatch.
-* **Cons:** Pushes Coverage Ratio down (diluting everyone’s LST yield, including yours) and exposes you to **psXDC borrow APR** spikes. If psXDC briefly trades away from its intended peg, you can face unexpected PnL or collateral value changes.
-
-**B) psXDC → borrow XDC → stake to psXDC → deposit (cross‑asset loop)**
-
-1. Deposit psXDC.
-2. Borrow **XDC**.
-3. Stake the borrowed XDC at **PrimeStaking** to mint psXDC.
-4. Deposit the new psXDC back into PrimeFi.
-
-* **Pros:** May be attractive if **XDC borrow APR** is lower than **psXDC borrow APR**.
-* **Cons:** Adds **staking/unstaking frictions**, extra transactions and gas, and potential **timing/price basis** risk between XDC and psXDC. Still reduces Coverage Ratio once the added psXDC is re‑deposited.
-
-***
-
-### Loop math & break‑even&#x20;
-
-Let:
-
-```
-c    = collateral factor / target LTV (e.g., 70% = 0.70)
-L    = 1 / (1 - c)                  # supply leverage
-B    = c / (1 - c)                  # borrow leverage
-Ydep = (Base psXDC APY × Coverage Ratio) + PRFI APY + platform/pLP APY − frictions
-Yb   = borrow APR on the asset you borrow (psXDC or XDC)
-```
-
-**Break‑even condition**
-
-```
-Looping is profitable  ⇔  Ydep > (c × Yb)
-```
-
-**Approximate net APY on your equity**
-
-```
-Ynet ≈ (L × Ydep) − (B × Yb)
-```
-
-***
-
-### Worked examples (illustrative only)
-
-**Example 1 — Same‑asset loop (psXDC → psXDC)**
-
-Assumptions:
-
-* `c = 70%` → `L = 3.33×`, `B = 2.33×`
-* Base psXDC APY `= 6.0%`
-* Coverage Ratio `= 0.85`
-* PRFI APY `= 3.5%`
-* platform/pLP APY `= 1.0%`
-* psXDC borrow APR `Yb = 16.0%`
-
-Calculations:
-
-```
-Ydep = (6.0% × 0.85) + 3.5% + 1.0% = 9.6%
-Break-even: c × Yb = 0.70 × 16.0% = 11.2%  → not met
-Ynet ≈ (3.33 × 9.6%) − (2.33 × 16.0%) = 32.0% − 37.3% ≈ −5.3%  (unprofitable)
-```
-
-**Takeaway:** With high psXDC borrow APR and diluted Coverage Ratio, looping loses versus a simple deposit.
-
-***
-
-**Example 2 — Cross‑asset loop (psXDC → borrow XDC → stake to psXDC → deposit)**
-
-Assumptions:
-
-* `c = 70%` → `L = 3.33×`, `B = 2.33×`
-* Base psXDC APY `= 6.0%`
-* Coverage Ratio `= 0.92` after adding new psXDC
-* PRFI APY `= 3.5%`, platform/pLP APY `= 1.0%`, frictions `= 0.5%`
-* **XDC** borrow APR `Yb = 9.0%`
-
-Calculations:
-
-```
-Ydep = (6.0% × 0.92) + 3.5% + 1.0% − 0.5% = 9.5%
-Break-even: c × Yb = 0.70 × 9.0% = 6.3%  → met
-Ynet ≈ (3.33 × 9.5%) − (2.33 × 9.0%) = 31.7% − 21.0% ≈ +10.7%  (profitable under these inputs)
-```
-
-**Takeaway:** When **XDC borrow APR** is materially below psXDC’s and frictions are small, a cross‑asset loop can work. Small changes in borrow APR or incentives can erase this edge—stress‑test before levering up.
-
-***
-
-### Practical looping tips
-
-* **Keep a safety buffer.** Health factor can fall from price moves, parameter changes, or rising borrow APRs.
-* **Watch Coverage Ratio.** The **Deposit APY in the app already reflects** Coverage Ratio and incentives—use it as your ground truth.
-* **Borrow APR is dynamic.** Utilization spikes can push APR higher and flip a positive spread negative.
-* **Mind frictions.** Cross‑asset loops add transactions, gas, staking time, and potential slippage/peg risk.
-* **Stress‑test.** If `borrow APR +5–10%` or `incentives −2–3%`, do you stay positive? If not, de‑leverage.
-
-***
-
-### Step‑by‑step: deposit psXDC and earn
-
-1. Connect wallet on **XDC Network** and hold psXDC (+ a small amount of XDC for gas).
-2. Approve and **supply psXDC** in the PrimeFi psXDC market.
-3. Receive **ppsXDC** (rebase). Optionally add `0x3Bd0183584185F8341B83dDefD73E6Eae1a64eeF` to your wallet.
-4. Monitor the **Deposit APY** (LST effective yield + PRFI + platform/pLP).
-5. **Claim PRFI/platform rewards** from the app as they accrue (ppsXDC rebases automatically).
-6. **Withdraw** by redeeming ppsXDC for psXDC (subject to pool liquidity).
-
-***
-
-### FAQ
-
-**Does ppsXDC supply sometimes exceed psXDC in the pool?**\
-Yes. Borrowers can re‑deposit psXDC and mint **more ppsXDC** while the borrowed psXDC leaves the pool. This reduces **Coverage Ratio** and dilutes the LST component.
-
-**Why is psXDC deposit APY sometimes below \~6%?**\
-Because **Coverage Ratio < 1** when psXDC is heavily borrowed/looped; the base LST yield is spread across more ppsXDC.
-
-**Why is my ppsXDC balance increasing without claims?**\
-ppsXDC is a **rebase** token. Staking rewards from PrimeStaking and pool incentives are applied as **supply increases** to ppsXDC.
-
-**Do PRFI incentives compound into ppsXDC?**\
-No. PRFI is a separate incentive you claim in the app. The LST portion compounds via **ppsXDC rebases**.
-
-**Can I withdraw anytime?**\
-Yes—subject to **pool liquidity**. High utilization may require waiting for liquidity to free up or repaying borrows.
-
-***
-
-### Risks & disclaimers
-
-APYs/APRs are **variable** and depend on utilization, incentives, and market conditions. Risks include interest‑rate risk (borrow APR spikes), liquidation risk, psXDC/XDC peg deviations, incentive program changes, and liquidity constraints on withdrawal. Nothing here is financial advice.
-
-***
-
-### TL;DR
-
-* Deposit **psXDC** → receive **ppsXDC** (rebase).
-* PrimeFi claims psXDC staking rewards and **distributes them to ppsXDC holders**.
-* You also earn **PRFI (3–4% APY)** + **platform/pLP** incentives.
-* **ppsXDC can exceed psXDC in the pool** due to borrowing/looping, which **dilutes** the LST portion (Coverage Ratio ↓).
-* Looping only makes sense when **Deposit APY > (collateral factor × borrow APR)**, and it increases risk.
+See [Oracles](../primefi-features/oracles.md), [pTokens](../lend/ptokens/README.md), and [Market Status](../security/market-status.md) before interacting.

@@ -1,34 +1,38 @@
 ---
-description: Available on Mainnet
+description: Flash-loan mechanics; availability depends on market status and reserve liquidity.
 ---
 
 # Flash Loans
 
-Flash loans allow a user to borrow any liquid asset in the PrimeFi pools without posting collateral, as long as the loan is opened and fully repaid within the same blockchain transaction (i.e., within one block).\
-If the repayment plus a small fee does not arrive before the transaction ends, the entire operation is automatically cancelled and the chain reverts to its previous state, so the pool remains intact and depositors stay protected.
+{% hint style="danger" %}
+Check [Market Status](../security/market-status.md). Flash loans are unavailable while the relevant lending market is paused.
+{% endhint %}
 
-**Why Flash Loans Exist**
+Flash loans allow a caller to borrow available liquidity without posting collateral, provided the principal and configured premium are returned before the same transaction finishes. If repayment fails, the transaction reverts.
+
+Atomic repayment protects the flash-loan leg from becoming unsecured debt. It does not make the caller's strategy, integrated protocols, oracle inputs, or the reserve itself risk-free.
+
+## Why Flash Loans Exist
 
 * **Arbitrage:** Momentarily source large liquidity to buy an asset where it is under-priced and sell where it is over-priced.
-* **Collateral Swaps / Debt Restructuring:** Replace volatile collateral with a stable asset, or migrate a loan between protocols, without needing upfront capital.
+* **Collateral swaps and debt restructuring:** Replace collateral or migrate debt between supported protocols without providing the full capital up front.
 * **Automated Liquidations:** Bots can cover an under-collateralised position, seize its collateral at a discount, repay the flash loan, and keep the difference, helping the protocol stay solvent.
 
-**Operating Principles**
+## Operating Principles
 
 1. **Atomicity** – Borrow, use the funds, and repay (amount + fee) all happen in a single, indivisible transaction.
-2. **No Counterparty Risk** – Because the transaction reverts if repayment fails, the pool never carries outstanding debt.
-3. **Fee Structure** – A predefined premium (e.g., 0.05 %) is added to the repayment; the fee is shared between liquidity providers and the protocol treasury.
-4. **Liquidity Cap** – The maximum that can be borrowed equals the pool’s unused liquidity at that moment, ensuring ordinary lenders and borrowers are never starved of funds.
+2. **Repayment enforcement** – A successful flash loan leaves no outstanding flash-loan principal. This protection does not cover losses caused through another protocol action or vulnerability in the same transaction.
+3. **Fee structure** – A configured premium is added to the repayment and distributed according to the deployment's current configuration. Callers should read the on-chain parameters rather than assume a fixed fee.
+4. **Liquidity bound** – The requested amount cannot exceed the reserve's available liquidity at execution time. Flash-loan demand still uses that liquidity during the transaction and can compete with other transactions.
 
+## Risks and Controls
 
+| Concern | What atomicity does—and does not—protect |
+| --- | --- |
+| **Failed repayment** | The entire transaction reverts if the principal and premium are not returned. |
+| **Oracle or market manipulation** | A single transaction can borrow, trade, alter manipulable market state, call an oracle-dependent action, and repay. Flash liquidity can therefore amplify oracle, pricing, and composability exploits, especially in low-liquidity markets. |
+| **Smart-contract and integration risk** | PrimeFi inherits Aave v2 concepts, but inherited code, PrimeFi-specific changes, callbacks, and external integrations can still contain vulnerabilities. Atomic repayment does not undo losses in a vulnerable protocol if the overall transaction succeeds. |
+| **Liquidity and execution risk** | Capacity is limited by available reserve liquidity and can change before execution. Transactions may fail or be affected by slippage, ordering, or MEV. |
+| **Administrative parameters** | Premiums and related controls are configurable by authorised roles. Users and integrators should verify current on-chain settings. |
 
-**Risk & Mitigations**
-
-| Potential Concern           | Safeguard                                                                                            |
-| --------------------------- | ---------------------------------------------------------------------------------------------------- |
-| **Pool Drain**              | Loans are bounded by the pool’s real-time free liquidity.                                            |
-| **Smart-contract exploits** | The underlying flash-loan logic is inherited from Aave v2, which has been extensively audited.       |
-| **Market manipulation**     | The single-block window gives no time to influence oracle prices or markets before repayment is due. |
-| **Fee manipulation**        | Premiums are configurable only by authorised governance and are displayed to users up-front.         |
-
-Flash loans are a specialised tool intended for developers and sophisticated users who can author smart-contract logic and understand the atomicity requirement. They add capital efficiency and arbitrage-driven price alignment to the PrimeFi ecosystem without compromising lender safety.
+Flash loans are intended for developers and sophisticated users who can evaluate smart-contract, oracle, liquidity, and transaction-ordering risk. Their atomic repayment property is narrow and should not be treated as a general safety guarantee.

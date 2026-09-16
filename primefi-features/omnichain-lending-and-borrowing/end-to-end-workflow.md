@@ -14,22 +14,22 @@ You have **ETH collateral on HyperEVM** and want to **borrow USDC on Base**.
    * **Borrow asset**: USDC
    * **Destination chain**: Base
    * **Amount**: e.g., 5,000 USDC
-   * Optional safety params: **minAmountOut**, **slippage bps**, **deadline**
 2. Confirm the transaction on **HyperEVM**.\
-   The UI quotes **interest + LayerZero/Stargate fees** before you sign.
+   Review the variable borrow rate, Health Factor estimate, protocol fee, and quoted Stargate/LayerZero messaging cost before signing.
 
 #### What happens on-chain
 
 1. **Origin checks (HyperEVM)**
-   * LendingPool validates your **health factor**, LTV and caps.
+   * LendingPool validates your **health factor**, LTV, reserve state, borrowing configuration, and available liquidity.
    * Your **variable debt** is minted on HyperEVM for the borrowed amount.
-2. **Cross-chain messaging**
-   * PrimeFi’s **Borrow OApp** sends a LayerZero message with borrow details.
-   * In parallel, a **Stargate** instruction moves 5,000 USDC liquidity to **Base**.
+2. **Cross-chain delivery**
+   * `StargateBorrow` deducts any configured cross-chain borrow fee.
+   * It asks Stargate for the expected received amount and uses that quote as `minAmountLD`.
+   * It quotes the native messaging fee and calls the configured Stargate router's `sendToken`.
 3. **Destination delivery (Base)**
-   * Stargate **delivers 5,000 USDC** to your wallet on Base.
+   * If messaging and destination execution succeed, Stargate delivers the quoted USDC amount to your wallet on Base.
    * Your **collateral and debt remain on HyperEVM**.
 
-Result: you now **hold USDC on Base** while your **debt accrues on HyperEVM** against your ETH collateral.
+Result after successful delivery: you hold USDC on Base while your debt accrues on HyperEVM against your origin-chain collateral.
 
-> Tip: You don’t need to switch networks during the borrow. PrimeFi handles the bridge leg via Stargate.
+> PrimeFi submits the Stargate delivery leg from the origin transaction. This reduces manual steps but does not guarantee delivery or remove messaging, liquidity, configuration, or destination-execution risk.

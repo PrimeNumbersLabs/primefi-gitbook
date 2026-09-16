@@ -1,10 +1,14 @@
 ---
-description: Fathom Lending (Aave v3) contract addresses on XDC mainnet — used by the v3 toggle in the PrimeFi UI.
+description: Fathom Lending contract addresses for the third-party Fathom market in the app's v3 family.
 ---
 
 # Fathom v3 (XDC) Deployment Addresses
 
-The PrimeFi app's **v3** toggle routes calls to **Fathom Lending**, an Aave v3 fork **operated by Fathom Protocol** on XDC mainnet (chain id `50`). **PrimeFi does not operate, own, or audit these contracts.**
+This page covers only **Fathom Lending on XDC mainnet** (chain ID `50`). Fathom is one market in the app's [v3 market family](../fathom-v3/README.md), alongside PrimeFi-operated XRP testnets on Flare Coston2 and XRPL EVM Testnet. When Fathom is selected, the frontend interacts with an Aave v3 deployment operated by **Fathom Protocol**. PrimeFi does not operate or own these contracts.
+
+{% hint style="warning" %}
+**Do not confuse these addresses with PrimeFi v2 on XDC.** Both markets use XDC, but they have different operators and contracts. Verify that the app shows **v3 / Fathom** and cross-check the exact address before transacting or integrating.
+{% endhint %}
 
 {% hint style="warning" %}
 The canonical, always-up-to-date source for Fathom Lending addresses is Fathom's own documentation. Always cross-check before integrating: [docs.fathom.fi/lending/deployments/xdc-network](https://docs.fathom.fi/lending/deployments/xdc-network).
@@ -18,9 +22,11 @@ The canonical, always-up-to-date source for Fathom Lending addresses is Fathom's
 * Outcome: **0 Critical / 0 High / 0 Medium / 6 Informational**
 * Audited commit: `91574f41` · Remediation commit: `5072265`
 
+An audit is a point-in-time review of a specific code version; it does not guarantee that a deployment is free of vulnerabilities or operational risk.
+
 ### Addresses the PrimeFi UI calls on XDC mainnet
 
-These are the entry-point contracts the PrimeFi frontend wires up for the v3 toggle. The reserve list itself is discovered at runtime by calling `Pool.getReservesList()`.
+These are the entry-point contracts the PrimeFi frontend uses when **v3 / Fathom on XDC** is selected. They do not apply to the other v3 markets. The reserve list itself is discovered at runtime by calling `Pool.getReservesList()`.
 
 #### Core
 
@@ -52,6 +58,6 @@ These are the entry-point contracts the PrimeFi frontend wires up for the v3 tog
 
 ### Where PrimeFi-specific contracts apply
 
-PrimeFi's pLP boost, MultiFeeDistribution, ChefIncentivesController, Compounder, Flik and Stargate Borrow contracts **do not exist on Fathom**. The v3 surface inside the PrimeFi UI deliberately hides those features because they have no on-chain counterpart in Fathom's deployment.
+PrimeFi's pLP boost, MultiFeeDistribution, ChefIncentivesController, Compounder, Flik and Stargate Borrow contracts **do not exist on Fathom**. The Fathom market surface inside the PrimeFi UI hides those features because they have no on-chain counterpart in Fathom's deployment.
 
 For incentive details on Fathom, refer to Fathom's documentation: [docs.fathom.fi/lending](https://docs.fathom.fi/lending/).
