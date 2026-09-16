@@ -4,8 +4,8 @@ description: Welcome to PrimeFi, the omnichain lending and borrowing DeFi protoc
 
 # Introducing PrimeFi
 
-{% hint style="danger" %}
-**Current market status (16 September 2026): HyperEVM and Base are temporarily paused; XDC remains operational.** See [Market Status](security/market-status.md).
+{% hint style="success" %}
+**Current market status (16 September 2026): PrimeFi v2 markets on HyperEVM, Base, and XDC are operational.** See [Market Status](security/market-status.md).
 {% endhint %}
 
 PrimeFi is an omnichain platform designed to streamline borrowing and lending across supported networks. LayerZero messaging supports cross-chain workflows, but smart contracts, oracles, liquidity, cross-chain messaging, and operational controls all involve risk.

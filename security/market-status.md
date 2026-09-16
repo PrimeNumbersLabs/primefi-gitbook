@@ -4,16 +4,16 @@ description: Current operating status of PrimeFi lending markets.
 
 # Market Status
 
-{% hint style="warning" %}
-**HyperEVM and Base are temporarily paused. XDC remains operational.**
+{% hint style="success" %}
+**PrimeFi v2 markets on HyperEVM, Base, and XDC are operational.**
 {% endhint %}
 
 **Last updated:** 16 September 2026
 
 | Network | Status | User guidance |
 | --- | --- | --- |
-| **HyperEVM** | **Paused** | Lending-market actions are temporarily unavailable while maintenance and final verification are completed. |
-| **Base** | **Paused** | Lending-market actions are temporarily unavailable while maintenance and final verification are completed. |
+| **HyperEVM** | **Operational** | Verify current reserve liquidity, oracle updates, risk parameters, and app state before interacting. |
+| **Base** | **Operational** | Verify current reserve liquidity, oracle updates, risk parameters, and app state before interacting. |
 | **XDC** | **Operational** | Verify current reserve liquidity, oracle updates, risk parameters, and app state before interacting. |
 
 The configured presence of a market or contract address does not guarantee that deposits, borrows, repayments, liquidations, or withdrawals are currently available.
