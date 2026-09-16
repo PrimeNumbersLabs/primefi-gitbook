@@ -6,13 +6,13 @@ description: Recent additions and improvements to the PrimeFi app.
 
 A roundup of the latest user-facing changes in the PrimeFi app.
 
-{% hint style="danger" %}
-**Market status — 16 September 2026:** HyperEVM and Base are temporarily paused. XDC remains operational. Read [Market Status](security/market-status.md) before interacting with a market.
+{% hint style="success" %}
+**Market status — 16 September 2026:** PrimeFi v2 markets on HyperEVM, Base, and XDC are operational. Read [Market Status](security/market-status.md) before interacting with a market.
 {% endhint %}
 
 ### psXDC markets on Base and HyperEVM
 
-**psXDC** — PrimeStaking's liquid-staking XDC token — is configured as a reserve on the **Base** and **HyperEVM** v2 markets, in addition to XDC. It moves between chains as a LayerZero OFT and is configured with 20% LTV on Base and HyperEVM. Those two markets are currently paused, so this announcement does not indicate present transaction availability. See [PrimeStakedXDC (psXDC)](liquid-staking-tokens/primestakedxdc-psxdc.md) for details and addresses.
+**psXDC** — PrimeStaking's liquid-staking XDC token — is configured as a reserve on the **Base** and **HyperEVM** v2 markets, in addition to XDC. It moves between chains as a LayerZero OFT and is configured with 20% LTV on Base and HyperEVM. See [PrimeStakedXDC (psXDC)](liquid-staking-tokens/primestakedxdc-psxdc.md) for current mechanics, risks, and addresses.
 
 ### XRP money markets (testnet)
 
