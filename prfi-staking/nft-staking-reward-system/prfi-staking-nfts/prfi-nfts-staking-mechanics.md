@@ -1,6 +1,6 @@
 # Staking Mechanics
 
-Stake PRFI tokens inside your NFT to earn rewards. The NFT's value and earning potential grow as it levels up.
+The live staking flow lets users deposit PRFI tokens into a PRFI NFT and participate in configured reward distributions. Leveling up changes the NFT's reward weighting; it does not guarantee rewards or an increase in the NFT's market value. This flow is separate from the planned use of NFTs as lending collateral.
 
 ***
 
@@ -8,17 +8,19 @@ Stake PRFI tokens inside your NFT to earn rewards. The NFT's value and earning p
 
 ### 1. Stake PRFI
 
-Deposit PRFI tokens into your NFT. This increases the NFT's level and activates its reward multiplier.
+Deposit PRFI tokens into your NFT. This increases the NFT's level and activates its reward multiplier under the current staking configuration.
 
-### 2. Earn Rewards
+### 2. Participate in Rewards
 
-Your NFT earns from multiple sources:
+Qualifying NFTs may receive distributions from multiple sources:
 
 | Source                | Description                                             |
 | --------------------- | ------------------------------------------------------- |
-| **PRFI Rewards Pool** | 100,000 PRFI distributed monthly across all staked NFTs |
-| **NFT Royalties**     | Share of PrimePort marketplace royalties                |
-| **PrimeFi Profits**   | 40% of PrimeFi protocol profits                         |
+| **PRFI Rewards Pool** | Published schedule at the time of writing: 100,000 PRFI per month across qualifying staked NFTs |
+| **NFT Royalties**     | Eligible share of PrimePort marketplace royalties under current terms |
+| **PrimeFi profit sharing** | Planned component; not documented as an active on-chain distribution |
+
+A future concept has been described as allocating 40% of PrimeFi lending-and-borrowing protocol profits to qualifying PRFI NFT participants. Treat it as **planned and inactive** until an activation notice, precise terms, distribution contract, and verifiable on-chain configuration are published. Live staking rewards and claimable amounts can change; no payout, APR, or yield is guaranteed.
 
 ### 3. Level Up
 
@@ -44,17 +46,19 @@ As you stake more PRFI, your NFT progresses through levels (1–20). Each level 
 
 | Action             | Description                                                                                                                         |
 | ------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
-| **Stake**          | Deposit PRFI into the NFT to earn rewards and level up.                                                                             |
+| **Stake**          | Deposit PRFI into the NFT to participate in configured rewards and level up.                                                        |
 | **Get Surplus**    | Withdraw PRFI above 41,490 for free once the NFT reaches max level.                                                                 |
 | **Burn to Redeem** | Destroy the NFT to withdraw all staked PRFI.                                                                                        |
 | **Transfer**       | Move the NFT to another wallet.                                                                                                     |
 | **Withdraw PRFI**  | Remove PRFI below the 41,490 threshold. A 20% fee applies, redistributed to other holders. Use **Get Surplus** first to avoid fees. |
-| **Claim PRFI**     | Claim monthly rewards.                                                                                                              |
+| **Claim PRFI**     | Claim any available PRFI rewards.                                                                                                   |
 | **Sell**           | List or auction the NFT on [OpenSea](https://opensea.io/collection/primenumbers-prfi-onft) (Base).                                  |
 | **Merge**          | Combine two same-rarity NFTs into a higher-rarity NFT.                                                                              |
+
+The thresholds, fees, lock options, and available actions shown above reflect the published configuration at the time of writing. Confirm the live interface and on-chain values before submitting a transaction.
 
 ***
 
 ## Growth
 
-As your NFT levels up, it earns a progressively larger share of the reward pool. Rewards are available at the end of each month and contribute to the long-term value of your NFT.
+As an NFT levels up, its relative weighting in the published formula increases. Any available rewards follow the current distribution schedule and eligibility rules; they do not guarantee long-term value or a particular return.

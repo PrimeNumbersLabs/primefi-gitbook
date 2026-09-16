@@ -28,6 +28,6 @@ Alternatively, if you have deposited collateral, you can borrow directly from th
 
 <figure><img src="../../.gitbook/assets/image (118).png" alt=""><figcaption></figcaption></figure>
 
-Be mindful of your Health Factor and the risk of liquidation before borrowing. Fliking will never lower your Health Factor below 1.1.
+Be mindful of your Health Factor and liquidation risk before borrowing. The app may target a safety buffer when building the transaction, but prices, accrued interest, slippage, and state changes can reduce Health Factor. Review the projected and resulting position rather than relying on a guaranteed `1.1` floor.
 
 The lock periods function the same way as in the manual pLP.

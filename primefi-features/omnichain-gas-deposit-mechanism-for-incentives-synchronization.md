@@ -1,44 +1,48 @@
-# Omnichain Gas Deposit Mechanism for Incentives Synchronization
+# Omnichain Gas Deposit for Incentive Synchronization
 
-#### Abstract
+## Purpose
 
-Incentive distribution across multiple blockchains requires a unified accounting system. To address this, PrimeFi introduces an **Omnichain Gas Deposit Mechanism** that allows users to seamlessly synchronize their activity on sidechains (e.g., HyperEVM) with the **Mainchain Incentives Controller** (e.g., Base). This design ensures that all user actions, such as deposits, borrows, transfers, and repayments, are consistently reflected in the global rewards calculation, independent of the originating chain.
+PrimeFi's reward architecture can mirror eligible activity from a sidechain incentives controller to the Base mainchain incentives controller. Cross-chain message delivery requires native gas on the sending side.
 
-#### Motivation
+The omnichain gas-deposit mechanism lets a user prefund expected messaging costs. It funds relay attempts; it does **not** guarantee delivery, ordering, completeness, timeliness, or reward eligibility.
 
-As DeFi ecosystems become increasingly multichain, sidechains and rollups provide scalability and cost efficiency, yet incentive programs must remain **globally coherent**. Without cross-chain aggregation, rewards distribution risks becoming fragmented, undermining fairness and efficiency. Our mechanism addresses this gap by enabling users to prefund the cost of cross-chain execution through a dedicated gas deposit, ensuring reliable and timely synchronization of incentive, related activity.
+## Intended flow
 
-#### System Overview
+1. A user performs an eligible action on a supported sidechain market.
+2. The relevant controller prepares a LayerZero message representing the reward-accounting update.
+3. Available prepaid gas funds the message-delivery attempt.
+4. If LayerZero delivers and the destination call succeeds, the Base controller applies the corresponding accounting update.
 
-1. **User Action on Sidechain**
-   * A user performs an action (deposit, borrow, transfer, repay) on the Sidechain Incentives Controller (e.g., HyperEVM).
-   * This action must be registered on the Mainchain Incentives Controller (e.g., Base) to update the global rewards ledger.
-2. **Gas Deposit for Omnichain Execution**
-   * The user deposits a small amount of gas into the protocol.
-   * This reserve is dedicated to omnichain message delivery, guaranteeing that sidechain actions can be transmitted and executed on the mainchain.
-3. **Omnichain Message Relay**
-   * The protocol packages the user’s action into a cross-chain message.
-   * Using the deposited gas, the message is relayed from the sidechain to the mainchain.
-   * The Mainchain Incentives Controller executes the mirrored action, updating the global rewards state.
-4. **Global Rewards Consistency**
-   * Regardless of the originating chain, the mainchain maintains the **single source of truth** for rewards.
-   * Users benefit from a unified and fair incentive program across all supported networks.
+Actual behavior depends on the deployed controller version, peer configuration, available gas, LayerZero endpoint behavior, destination execution, pause state, and reward-program configuration.
 
-#### Key Benefits
+## Failure and reconciliation risk
 
-* **User-Friendly Participation:** Users only need to deposit gas once; the protocol automates the complexity of cross-chain execution.
-* **Fair Rewards Distribution:** All user actions, regardless of chain, are accounted for in the global rewards ledger.
-* **Scalability:** High-volume activity occurs on sidechains, while the mainchain preserves a consolidated and lightweight reward state.
-* **Security:** By centralizing reward accounting on the mainchain, the system prevents inconsistencies or double-counting across chains.
+Synchronization can be delayed or fail because of:
 
-#### Example Flow
+* insufficient prepaid gas;
+* incorrect peer, endpoint, or chain configuration;
+* source or destination pauses;
+* network congestion or messaging outages;
+* destination execution failure;
+* duplicate, delayed, or out-of-order operational events; or
+* unsupported actions or inactive reward pools.
 
-* Alice deposits a small amount of gas into the omnichain mechanism.
-* She provides liquidity on HyperEVM.
-* The protocol relays her deposit action to the Mainchain Incentives Controller on Base.
-* The mainchain updates Alice’s rewards balance in the global ledger.
-* Alice’s contribution is now recognized in parity with users across all supported chains.
+Users should not assume that every lending action immediately creates a Base reward update. A failed or delayed message may require retry or operator reconciliation, depending on the deployed contracts and upstream messaging system.
 
-#### Conclusion
+## Costs and user checks
 
-The **Omnichain Gas Deposit Mechanism** is a cornerstone of PrimeFi’s multichain architecture. It ensures that user actions on sidechains are faithfully represented in the global rewards system, combining the **scalability of sidechains** with the **consistency of a mainchain-based incentive model**.
+Before an action that uses synchronization:
+
+* check whether the selected market and reward program are active;
+* review the quoted or requested gas deposit;
+* maintain enough native gas for the local transaction;
+* verify the transaction destination and network; and
+* confirm the resulting reward state rather than relying only on a submitted message.
+
+Unused-balance withdrawal, retry, refund, and reconciliation behavior must be verified against the currently deployed controller and app. They are not guaranteed by this overview.
+
+## Relationship to lending
+
+This mechanism concerns **reward-accounting synchronization**. It does not secure the lending position, replace oracle checks, or execute the cross-chain borrow-delivery leg. Lending collateral, debt, Health Factor, and liquidation remain governed by the origin market's contracts and oracle configuration.
+
+See [Omnichain Lending & Borrowing](omnichain-lending-and-borrowing/README.md), [Market Status](../security/market-status.md), and [Risks & Assumptions](../know-your-algorithm/risks-and-assumptions.md).

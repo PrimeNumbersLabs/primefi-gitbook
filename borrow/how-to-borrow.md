@@ -4,7 +4,11 @@ description: Maximize the potential of your capital
 
 # How to Borrow
 
-To leverage borrowing, an asset must be pledged as collateral. This function allows you to borrow any of the assets available in the protocol.
+{% hint style="danger" %}
+Check [Market Status](../security/market-status.md) first. Borrowing is unavailable while a market is paused.
+{% endhint %}
+
+To borrow, you need sufficient enabled collateral and a reserve that currently permits borrowing and has available liquidity. Not every listed or supplied asset is necessarily borrow-enabled.
 
 After securing collateral, navigate to the Markets section to assess borrowing availability and yields.
 

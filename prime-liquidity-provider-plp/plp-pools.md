@@ -6,7 +6,7 @@ PrimeFi supports two liquidity-pool types per network. Only one of them is eligi
 
 * **v2 pool (eligible for pLP):**\
   This is the pool used by pLP. Create your position with **Flik** or add liquidity manually. pLP emissions are distributed **only** to v2 LP tokens.
-* **v3 / v4 pools (concentrated liquidity):**\
+* **DEX v3 / v4 pools (concentrated liquidity; unrelated to the PrimeFi app's v2/v3 market selector):**\
   For active LPs who want custom price ranges. These positions **do not** qualify for pLP emissions and earn **swap fees only**.
 
 > Always verify pool addresses **inside the PrimeFi app** before adding liquidity.
@@ -14,6 +14,8 @@ PrimeFi supports two liquidity-pool types per network. Only one of them is eligi
 ***
 
 ### Mainnet pools (live)
+
+External DEX pools can remain live independently of PrimeFi lending-market status. A PrimeFi pause may still disable Flik, borrowing, or other protocol-assisted pLP workflows. Check [Market Status](../security/market-status.md) before using those features.
 
 #### Base
 
@@ -23,9 +25,11 @@ PrimeFi supports two liquidity-pool types per network. Only one of them is eligi
 
 #### HyperEVM
 
-* **PRFI–HYPE on PrjX (pLP-eligible via Flik/manual v2-style LP)**\
-  Add liquidity: [https://www.prjx.com/deposit?tokenA=0x0000000000000000000000000000000000000000\&tokenB=0x7bbcf1b600565ae023a1806ef637af4739de3255\&fee=3000](https://www.prjx.com/deposit?tokenA=0x0000000000000000000000000000000000000000\&tokenB=0x7bbcf1b600565ae023a1806ef637af4739de3255\&fee=3000)\
-  Dexscreener: [https://dexscreener.com/hyperevm/0xfae262d0384b3e1c58abe28ce8ac5678af874354](https://dexscreener.com/hyperevm/0xfae262d0384b3e1c58abe28ce8ac5678af874354)
+* **PRFI-WHYPE configured pLP staking token (pLP-eligible):** `0x981F145a71Da6DF4A7cBe892807782c9CC9a5515`\
+  [HyperEVMScan](https://hyperevmscan.io/address/0x981F145a71Da6DF4A7cBe892807782c9CC9a5515)\
+  [Dexscreener](https://dexscreener.com/hyperevm/0x981f145a71da6df4a7cbe892807782c9cc9a5515)
+
+The concentrated PrjX pool at `0xfae262d0384b3e1c58abe28ce8ac5678af874354` is **not** the configured pLP staking token and does not qualify for pLP emissions.
 
 #### **XDC Network**
 

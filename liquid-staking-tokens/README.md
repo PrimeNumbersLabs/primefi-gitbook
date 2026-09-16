@@ -1,6 +1,8 @@
 # Liquid Staking Tokens
 
-Liquid staking tokens (LSTs) let you earn staking rewards while keeping your capital liquid and usable in DeFi. PrimeFi supports LSTs from the Prime Numbers ecosystem as first-class collateral: supply them, borrow against them, and keep earning the underlying staking yield the whole time.
+Liquid staking tokens (LSTs) can continue accruing staking rewards while remaining usable in DeFi. PrimeFi supports selected LST reserves, subject to each market's current collateral parameters, available liquidity, pause state, oracle configuration, and smart-contract risk.
+
+Check [Market Status](../security/market-status.md) and the live asset configuration before supplying or borrowing.
 
 Currently supported:
 

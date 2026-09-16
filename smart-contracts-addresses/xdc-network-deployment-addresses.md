@@ -4,6 +4,10 @@ PrimeFi v2 contract addresses on **XDC mainnet** (chain id `50`).
 
 For the Fathom Lending (v3) deployment that also runs on XDC, see [Fathom v3 (XDC) Deployment Addresses](fathom-xdc-deployment-addresses.md).
 
+{% hint style="info" %}
+XDC uses a separate Plugin/GoPlugin oracle architecture. Check [Market Status](../security/market-status.md) for current availability.
+{% endhint %}
+
 ***
 
 #### ⚙️ Core Protocol
@@ -45,7 +49,10 @@ For the Fathom Lending (v3) deployment that also runs on XDC, see [Fathom v3 (XD
 | **lendingRateOracle**       | `0x6681155c2eDC50f79535D8E4861C3Fdb1d4Da856` |
 | **priceProvider**           | `0xb78af56B6d09EEE9a157e7f28f9a16ef1845f324` |
 | **eligibilityDataProvider** | `0x819Cc713B5DC3323Dd013D754b8011BD41Ad1a62` |
-| **dataStreamConsumer**      | `0xAb008ABd38aC3fB371D8C442d48E10225cd46DB6` |
+| **USDC Plugin/GoPlugin aggregator (active)** | `0xe5c7E623Aca88aCf0fe050BEE4F29B9deDedb9E2` |
+| **USDT Plugin/GoPlugin aggregator (active)** | `0x708307Fc1038fc922363bc3aeC4E3E2F93d25B33` |
+| **XDC/USD Plugin/GoPlugin aggregator (active)** | `0x0b41e008E66c98788a25c952ff1a8c0cb2290f8C` |
+| **dataStreamConsumer (not used by current lending prices)** | `0xAb008ABd38aC3fB371D8C442d48E10225cd46DB6` |
 
 ***
 
@@ -120,7 +127,7 @@ For the Fathom Lending (v3) deployment that also runs on XDC, see [Fathom v3 (XD
 
 ### Notes
 
-* The XDC deployment uses **custom oracle feeds** tailored for the XDC network ecosystem.
+* Current XDC lending prices use **Plugin/GoPlugin PLI-funded aggregators**, not eOracle/ePRICE. PRFI uses a custom source.
 * **Diamond architecture** in `chefIncentivesController` centralizes reward and fee-distribution logic under a unified entry point.
 * **Prefix legend:**
   * `p` → interest-bearing token (pToken)

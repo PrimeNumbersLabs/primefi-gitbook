@@ -8,9 +8,13 @@ On the Markets Page, users have the ability to assess the Maximum pLP Locking AP
 
 <figure><img src="../.gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="warning" %}
+Displayed APRs, emission rates, and lock multipliers are variable estimates, not guaranteed yield. Check the live [PrimeFi app](https://app.primefi.xyz/) and the current on-chain configuration before relying on a value.
+{% endhint %}
+
 #### Maximum Lock APR:
 
-This is determined as the highest APR achievable when pLP is locked for a one-year period.
+This is the interface's estimated maximum APR for a one-year pLP lock under the displayed assumptions.
 
 **Formula:**
 
@@ -18,7 +22,7 @@ This is determined as the highest APR achievable when pLP is locked for a one-ye
 
 #### 1-Month Locking APR:
 
-This represents the current APR for locking your pLP tokens for a one-month period.
+This represents the interface's current estimated APR for locking pLP tokens for one month.
 
 **Formula:**
 
@@ -49,9 +53,9 @@ The pLP page shows a **Per-market emissions** table that breaks the protocol's P
 
 #### 1. There is a single, global emission budget
 
-PRFI emissions are **one protocol-wide budget**, not a separate budget per chain. The `rewardsPerSecond` rate lives on the **Base mainchain** `ChefIncentivesController`. Activity on the sidechains (HyperEVM, XDC) is synchronized back to Base over LayerZero through the [Omnichain Gas Deposit Mechanism](../primefi-features/omnichain-gas-deposit-mechanism-for-incentives-synchronization.md), so the mainchain holds the **single source of truth** and the budget is **never duplicated per chain**.
+The published architecture uses **one Base mainchain emission source**, not an independently configured full budget for each chain. The `rewardsPerSecond` rate lives on the Base `ChefIncentivesController`. Sidechain activity can be synchronized back to Base over LayerZero through the [Omnichain Gas Deposit Mechanism](../primefi-features/omnichain-gas-deposit-mechanism-for-incentives-synchronization.md). Correct cross-chain accounting still depends on successful message delivery, configuration, and reconciliation; users should verify actual on-chain allocations and accrued rewards.
 
-At the current rate this global budget is ≈ **0.1614 PRFI/sec (~13.9K PRFI/day)**, shared across every market on every chain.
+The global rate is configurable and changes over time. Use the live pLP interface and the Base mainchain `ChefIncentivesController.rewardsPerSecond` on-chain value rather than a hard-coded documentation snapshot.
 
 #### 2. Each pool earns a share proportional to its allocation points
 
@@ -63,7 +67,7 @@ poolEmissionsPerSec = globalRewardsPerSec
                       ÷ TOTAL allocPoint across ALL pools on ALL chains
 ```
 
-> **Important:** the denominator is the allocation total summed across **all** PrimeFi v2 chains (Base + HyperEVM + XDC), not just the chain you are currently viewing. Dividing by a single chain's local total would imply that chain alone distributes the entire 13.9K PRFI/day, over-counting the one global budget several times over and inflating every displayed APR.
+> **Important:** the denominator is the allocation total summed across **all** PrimeFi v2 chains (Base + HyperEVM + XDC), not just the chain you are currently viewing. Dividing by a single chain's local total would assign the full global budget to each chain, over-counting emissions and inflating every displayed APR.
 
 By default each non-PRFI asset is given an **equal** allocation, so within a market the listed assets emit the same PRFI/day; the PRFI pool itself is given a deliberately small allocation. Allocation points are an on-chain governance parameter and can be re-weighted per asset at any time — the UI follows whatever is configured on-chain.
 
@@ -71,4 +75,4 @@ By default each non-PRFI asset is given an **equal** allocation, so within a mar
 
 When a reward-eligible wallet is connected, the table adds a **Your PRFI / day** column: each pool's emissions multiplied by your live pro-rata share of that pool (`yourBalance ÷ poolTotalSupply`). Pools where you hold no position show `—`. Sub-cent USD values are rendered as `<$0.01` rather than `$0.00`.
 
-Remember that these emissions only flow to wallets that maintain pLP eligibility (a locked pLP value ≥ 5% of deposits); see [Sustaining Eligibility Status](sustaining-eligibility-status.md).
+These emissions only flow to wallets that satisfy the currently configured pLP eligibility ratio. It was 5% at the time of writing but is adjustable; see [Sustaining Eligibility Status](sustaining-eligibility-status.md) and verify the live value.

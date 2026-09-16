@@ -1,6 +1,6 @@
 # PRFI NFTs
 
-PRFI NFTs are yield-bearing collectibles on the **Base** network. Stake PRFI tokens inside your NFT to earn a share of the **100,000 PRFI monthly reward pool**, plus royalties and PrimeFi profits.
+PRFI NFTs are staking-enabled collectibles on the **Base** network. The live staking flow lets qualifying users deposit PRFI into an NFT and participate in available reward distributions. It is separate from the planned use of NFTs as collateral in PrimeFi lending markets.
 
 ---
 
@@ -9,14 +9,16 @@ PRFI NFTs are yield-bearing collectibles on the **Base** network. Stake PRFI tok
 | | |
 | --- | --- |
 | **Token staked** | PRFI |
-| **Monthly reward pool** | 100,000 PRFI distributed across all staked NFTs |
-| **Additional rewards** | NFT marketplace royalties + 40% of PrimeFi profits |
+| **Published monthly reward pool** | 100,000 PRFI at the time of writing, distributed across qualifying staked NFTs under the active rules |
+| **Additional reward sources** | Any currently funded marketplace-royalty distributions under active terms; PrimeFi profit sharing remains planned |
 | **Reward frequency** | Monthly |
 | **Max level** | 20 |
 | **Merge system** | Combine two same-rarity NFTs into a higher tier |
 | **Marketplace** | [OpenSea](https://opensea.io/collection/primenumbers-prfi-onft) |
 
-Higher rarity = higher base multiplier = larger share of the monthly reward pool.
+Higher rarity means a higher base multiplier and therefore a larger relative share of any available pool under the active rules.
+
+A future component has been described as allocating 40% of PrimeFi lending-and-borrowing protocol profits to qualifying PRFI NFT participants. It is **planned and inactive** until an activation notice and verifiable distribution configuration are published. Current reward pools and claimable amounts can change; no payout, APR, or yield is guaranteed.
 
 → [Staking Mechanics](prfi-nfts-staking-mechanics.md)
 → [Reward System](prfi-nft-staking-reward-system.md)
@@ -87,7 +89,7 @@ Prime numbers were generated sequentially at mint time, starting from the 16th u
 
 ## Rarity System
 
-Each NFT's global rarity is determined by averaging the rarity scores of its five art elements (rounded up). The rarity tier sets the NFT's **base multiplier** for staking rewards.
+Each NFT's global rarity is determined by averaging the rarity scores of its five art elements (rounded up). The rarity tier sets the NFT's **base multiplier** for staking reward calculations.
 
 **Example:**
 - Vegetation: Mythic (7), Figure: Epic (5), Shape: Legendary (6), Lines: Rare (4), Background: Godly (8)
@@ -95,4 +97,4 @@ Each NFT's global rarity is determined by averaging the rarity scores of its fiv
 
 <figure><img src="../../../.gitbook/assets/PRFINFTSRARITY.jpg" alt=""><figcaption></figcaption></figure>
 
-Higher rarity = higher base multiplier = larger share of the monthly reward pool.
+Higher rarity means a higher base multiplier and a larger relative share of any available monthly reward pool under the active rules.

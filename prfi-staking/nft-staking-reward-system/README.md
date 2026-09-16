@@ -1,18 +1,18 @@
 # Staking Reward System
 
-The PRFI Staking Reward System transforms NFTs from static collectibles into yield-bearing assets. By depositing PRFI tokens into NFTs, users activate reward mechanisms tied to each NFT's rarity and level.
+The live PRFI Staking Reward System lets users deposit PRFI tokens into NFTs and participate in reward mechanisms tied to each NFT's rarity and level. This token-in-NFT staking system is separate from the planned use of NFTs as lending collateral.
 
 ---
 
 ## Core Concept
 
-Users stake PRFI tokens into their NFTs. The NFT acts as a staking vehicle, generating rewards proportional to:
+Users stake PRFI tokens into their NFTs. The NFT acts as a staking vehicle whose reward weighting reflects:
 
 - The **amount staked**
 - The NFT's **rarity tier** (base multiplier)
 - The NFT's **level** (added multiplier)
 
-Rewards are calculated and distributed monthly.
+The published design uses monthly reward periods. Actual eligibility, timing, and claimable amounts follow the current app and on-chain configuration.
 
 ---
 
@@ -20,20 +20,26 @@ Rewards are calculated and distributed monthly.
 
 | Feature | Description |
 | --- | --- |
-| **Token-to-NFT Staking** | Deposit PRFI into NFTs to activate yield based on rarity and level. |
+| **Token-to-NFT Staking** | Deposit PRFI into NFTs to participate in rewards weighted by rarity and level. |
 | **Level Progression** | NFTs progress through levels 1–20 as stake increases, boosting the added multiplier. |
-| **Reward Accumulation** | NFTs earn PRFI from the monthly reward pool, royalties, and PrimeFi profits. |
+| **Reward Accumulation** | Qualifying NFTs may accrue PRFI from currently funded reward sources under the active configuration. |
 | **Omnichain Support** | NFTs can be bridged between Base and other supported chains via LayerZero. |
 | **Merge System** | Combine two same-rarity NFTs into a higher-rarity NFT. |
 
 ---
 
+## Planned PrimeFi profit sharing
+
+A future component has been described as allocating 40% of PrimeFi lending-and-borrowing protocol profits to qualifying PRFI NFT participants. It is **planned and not documented here as active**. Before activation, PrimeFi must publish the precise profit definition, exclusions, period, eligibility, distribution contract, and verifiable on-chain configuration. No current entitlement, payout, APR, or yield is implied.
+
+---
+
 ## Benefits
 
-- **Active financial utility** - NFTs generate income, not just sit in a wallet.
-- **Scalable returns** - Rewards scale with staking input, level, and rarity.
-- **Transparent distribution** - All reward logic is on-chain and auditable.
-- **Secure architecture** - Built on audited, upgradeable smart contracts (Diamond Standard / EIP-2535).
+- **Active staking utility** - NFTs can be used to participate in the configured staking program.
+- **Weighted participation** - Any available rewards are weighted by staking input, level, and rarity.
+- **Inspectable contracts** - Deployed on-chain logic and configuration can be reviewed, subject to proxy, operator, and upgrade risk.
+- **Upgradeable architecture** - Uses Diamond Standard / EIP-2535 components; upgradeability is an administrative trust boundary, not a security guarantee.
 
 ---
 
