@@ -12,7 +12,7 @@ This page gives a conceptual view of the **PrimeFi v2** lending and borrowing co
 
 Cross-chain borrowing, where enabled, adds Stargate liquidity or routing and LayerZero messaging to this local-market flow; see [Stargate Borrow](stargate.md). Integrators should verify the selected network, current configuration and deployed address under [Smart Contracts Addresses](../smart-contracts-addresses/README.md).
 
-The app's **v3** family uses separate Aave v3 deployments. The XRP testnets are PrimeFi-operated, while Fathom on XDC is third-party; see the [v3 market boundary](../fathom-v3/README.md).
+The app's **v3** family uses separate Aave v3 deployments: PrimeFi-operated XRP testnets on Flare Coston2 and XRPL EVM Testnet; see [XRP Testnet Markets](../xrp-testnet-markets/README.md).
 
 ## Contract overview
 

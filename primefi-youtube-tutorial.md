@@ -14,7 +14,7 @@ For current information, use:
 
 * [Market Status](security/market-status.md) for availability and operational notices.
 * [Lend](lend/README.md) and [Borrow](borrow/README.md) for current user concepts and flows.
-* [v3 Markets and Fathom on XDC](fathom-v3/README.md) to identify the selected market and its operator.
+* [XRP Testnet Markets](xrp-testnet-markets/README.md) for the v3 markets in the app.
 * [Smart Contracts Addresses](smart-contracts-addresses/README.md) for deployment references.
 
 Watch the historical playlist: [PrimeFi YouTube Tutorial](https://www.youtube.com/playlist?list=PLhJ8SNhjVjfmsBCc9Lti2yFzCWPdhKWHK).

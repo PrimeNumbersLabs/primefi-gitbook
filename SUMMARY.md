@@ -56,7 +56,6 @@
   * [Flare Coston2 faucet](testnet-faucets/flare-coston2.md)
   * [XRPL EVM Testnet faucet](testnet-faucets/xrpl-evm-testnet.md)
   * [In addition](testnet-faucets/in-addition.md)
-* [Fathom on XDC (third party)](fathom-v3/README.md)
 
 ## Rewards & Tokens
 
@@ -106,7 +105,6 @@
   * [Base Network Deployment Addresses](smart-contracts-addresses/base-network-deployment-addresses.md)
   * [HyperEVM Deployment Addresses](smart-contracts-addresses/hyperevm-deployment-addresses.md)
   * [XDC Network Deployment Addresses](smart-contracts-addresses/xdc-network-deployment-addresses.md)
-  * [Fathom on XDC (third-party) Addresses](smart-contracts-addresses/fathom-xdc-deployment-addresses.md)
 * [Contracts](contracts.md)
   * [Lending & Borrowing](contracts/lending-borrowing.md)
     * [Flik Flow](contracts/flikflow.md)

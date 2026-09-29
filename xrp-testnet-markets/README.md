@@ -21,7 +21,7 @@ These markets are in **testnet phase**. Balances, rewards, and prices are test-o
 
 ### These markets are "v3" in the app
 
-The PrimeFi app header has a **v2 / v3** toggle. The XRP markets live under **v3** (the Aave v3 stack). Unlike the third-party [Fathom v3 (XDC)](../fathom-v3/README.md) market, **the XRP markets are PrimeFi's own** — we operate the pool, oracle and rewards.
+The PrimeFi app header has a **v2 / v3** toggle. The XRP markets live under **v3** (the Aave v3 stack), and **they are PrimeFi's own** — we operate the pool, oracle and rewards.
 
 ### How they compare to PrimeFi v2
 

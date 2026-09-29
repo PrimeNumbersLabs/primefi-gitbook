@@ -28,10 +28,6 @@ Prime Numbers Labs operates PrimeFi v2 markets on HyperEVM, Base, and XDC.
 Inside the PrimeFi app you'll see a **v2 / v3** toggle in the header:
 
 * **v2 — PrimeFi** (Base, HyperEVM, XDC). Prime Numbers Labs operates these Aave v2-based markets. pLP boosts, PRFI emissions and cross-chain delivery are available only where enabled and funded.
-* **v3 — Aave v3 market family.** This selector includes both **PrimeFi-operated XRP testnets** (Flare Coston2 and XRPL EVM) and **Fathom Lending on XDC mainnet**, a third-party market operated by Fathom Protocol. The responsible operator, contracts, incentives, and support channel depend on the selected market.
+* **v3 — Aave v3 markets.** PrimeFi-operated **XRP testnets** on Flare Coston2 and XRPL EVM Testnet. Tokens and rewards in these markets are test-only.
 
-See [XRP Testnet Markets](xrp-testnet-markets/README.md) for PrimeFi-operated testnets and [Fathom v3 (XDC)](fathom-v3/README.md) for the third-party Fathom market.
-
-{% hint style="warning" %}
-On XDC, PrimeFi v2 and Fathom v3 use different contracts despite sharing chain ID `50`. Confirm the selected market and operator before signing a transaction.
-{% endhint %}
+See [XRP Testnet Markets](xrp-testnet-markets/README.md) for the v3 markets.
