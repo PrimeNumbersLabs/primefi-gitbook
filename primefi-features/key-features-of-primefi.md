@@ -1,12 +1,11 @@
 # Key Features of PrimeFi
 
-PrimeFi combines lending markets, cross-chain workflows and token incentives in one interface. The interface also exposes markets with different operators, so users should confirm the selected version and market before transacting.
+PrimeFi combines lending markets, cross-chain workflows and token incentives in one interface. Users should confirm the selected version and market before transacting.
 
 ## Lending markets
 
 * **PrimeFi v2:** PrimeFi-operated, over-collateralised lending and borrowing markets on Base, HyperEVM and XDC.
 * **PrimeFi XRP testnets:** PrimeFi-operated Aave v3 markets on Flare Coston2 and XRPL EVM Testnet. Tokens and rewards in these markets are test-only. See [XRP Testnet Markets](../xrp-testnet-markets/README.md).
-* **Fathom on XDC:** a third-party market operated by Fathom Protocol and surfaced in the app's v3 family. PrimeFi does not operate the Fathom contracts. See [v3 Markets and Fathom on XDC](../fathom-v3/README.md).
 
 Collateral factors, borrowing limits, interest rates and liquidation thresholds are configured per market and reserve. A position's health factor can change as prices, debt and interest change; interface warnings cannot prevent liquidation.
 
@@ -20,7 +19,7 @@ Some PrimeFi v2 workflows require a user-funded gas balance to pay destination-c
 
 ## Incentives and pLP
 
-PrimeFi v2 can provide PRFI incentives, pLP boosts, locking and vesting where those modules are enabled. These features are not automatically available in every market and do not apply to third-party Fathom contracts or to the XRP testnet markets unless explicitly stated.
+PrimeFi v2 can provide PRFI incentives, pLP boosts, locking and vesting where those modules are enabled. These features are not automatically available in every market and do not apply to the XRP testnet markets unless explicitly stated.
 
 ## NFT status
 
@@ -30,7 +29,7 @@ Using NFTs as collateral in the lending market, NFT-backed borrowing and an inte
 
 ## Controls, audits and risk
 
-Pause, upgrade and configuration capabilities are controlled by the operator and administrative roles for the selected market. This creates operator and upgrade risk; the responsible operator is Prime Numbers Labs for PrimeFi markets and Fathom Protocol for the Fathom market.
+Pause, upgrade and configuration capabilities are controlled by the operator and administrative roles for the selected market. This creates operator and upgrade risk; the responsible operator for PrimeFi markets is Prime Numbers Labs.
 
 Published [audits](../audits.md) are point-in-time reviews of specified code and scope. They do not guarantee that contracts, integrations or deployments are free of vulnerabilities. Check [Market Status](../security/market-status.md), verify contract addresses and understand liquidation, oracle, cross-chain and administrative risks before using a market.
 

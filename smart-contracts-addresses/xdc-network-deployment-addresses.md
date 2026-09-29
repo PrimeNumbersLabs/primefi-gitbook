@@ -2,8 +2,6 @@
 
 PrimeFi v2 contract addresses on **XDC mainnet** (chain id `50`).
 
-For the Fathom Lending (v3) deployment that also runs on XDC, see [Fathom v3 (XDC) Deployment Addresses](fathom-xdc-deployment-addresses.md).
-
 {% hint style="info" %}
 XDC uses a separate Plugin/GoPlugin oracle architecture. Check [Market Status](../security/market-status.md) for current availability.
 {% endhint %}
