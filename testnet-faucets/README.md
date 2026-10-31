@@ -18,4 +18,4 @@ Every testnet wallet needs two things:
 **Get test tokens** lives on the XRP market screens, above the markets table. Connect your wallet, switch to the market's chain, then mint any single token or **Mint all** at once. Each minted token is offered to your wallet so it shows up immediately.
 {% endhint %}
 
-The pages below cover each testnet. (The earlier Hyperliquid Test, Base Sepolia, Arbitrum Sepolia and BNB Chain testnet entries have been retired — PrimeFi no longer ships test markets against those chains.)
+The pages below cover each testnet. For the five **PrimeFi v3** testnets (Base Sepolia, Ethereum Sepolia, Arbitrum Sepolia, XDC Apothem and HyperEVM testnet), see [Getting test tokens](../primefi-v3-testnets/README.md#getting-test-tokens).
