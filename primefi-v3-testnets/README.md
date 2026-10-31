@@ -104,6 +104,8 @@ Example: Ana supplies 10,000 USDC on Base Sepolia v3. She needs at least $450 of
 
 The contracts' source code is verified on [Sourcify](https://sourcify.dev/), and explorers that read from it show the code.
 
+The **Testnet status** page in the app (sidebar, in v3) shows every testnet price with how long ago it was updated, and when the keepers last ran.
+
 ### Feedback
 
-Found a bug, or something unclear? Tell us in the PrimeFi community channels, with the testnet, your wallet address and what you tried. Screenshots help.
+Found a bug, or something unclear? Click the **Feedback** tab on the right edge of the app: pick Bug, Idea or Question and describe what happened. The app sends the page and market you're on, and your wallet address unless you untick it. Add a Telegram handle or email if you'd like a reply.
