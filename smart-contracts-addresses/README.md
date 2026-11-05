@@ -6,4 +6,4 @@ PrimeFi v2 is deployed on three EVM chains, each with its own set of contracts. 
 * [HyperEVM Deployment Addresses](hyperevm-deployment-addresses.md) — chain id `999`
 * [XDC Network Deployment Addresses](xdc-network-deployment-addresses.md) — chain id `50`
 
-The app's **v3** selector contains PrimeFi's XRP testnet markets on Flare Coston2 and XRPL EVM Testnet; see [XRP Testnet Markets](../xrp-testnet-markets/README.md).
+PrimeFi v3 testnet addresses are listed under [PrimeFi v3 Testnets](../primefi-v3-testnets/README.md#contract-addresses).
