@@ -5,7 +5,7 @@ PrimeFi combines lending markets, cross-chain workflows and token incentives in 
 ## Lending markets
 
 * **PrimeFi v2:** PrimeFi-operated, over-collateralised lending and borrowing markets on Base, HyperEVM and XDC.
-* **PrimeFi XRP testnets:** PrimeFi-operated Aave v3 markets on Flare Coston2 and XRPL EVM Testnet. Tokens and rewards in these markets are test-only. See [XRP Testnet Markets](../xrp-testnet-markets/README.md).
+* **PrimeFi v3 testnets:** PrimeFi v3 (Aave v3.7) markets on five testnets, ahead of the mainnet launch. Tokens and rewards in these markets are test-only. See [PrimeFi v3 Testnets](../primefi-v3-testnets/README.md).
 
 Collateral factors, borrowing limits, interest rates and liquidation thresholds are configured per market and reserve. A position's health factor can change as prices, debt and interest change; interface warnings cannot prevent liquidation.
 
@@ -19,7 +19,7 @@ Some PrimeFi v2 workflows require a user-funded gas balance to pay destination-c
 
 ## Incentives and pLP
 
-PrimeFi v2 can provide PRFI incentives, pLP boosts, locking and vesting where those modules are enabled. These features are not automatically available in every market and do not apply to the XRP testnet markets unless explicitly stated.
+PrimeFi v2 can provide PRFI incentives, pLP boosts, locking and vesting where those modules are enabled. These features are not automatically available in every market and work differently on the PrimeFi v3 testnets, as described on that page.
 
 ## NFT status
 

@@ -1,0 +1,14 @@
+root: ./
+
+structure:
+  readme: README.md
+  summary: SUMMARY.md
+
+redirects:
+  v3-market-family/xrp-testnet-markets: primefi-v3-testnets/README.md
+  v3-market-family/xrp-testnet-markets/flare-coston2: primefi-v3-testnets/README.md
+  v3-market-family/xrp-testnet-markets/xrpl-evm-testnet: primefi-v3-testnets/README.md
+  v3-market-family/testnet-faucets: primefi-v3-testnets/README.md
+  v3-market-family/testnet-faucets/flare-coston2: primefi-v3-testnets/README.md
+  v3-market-family/testnet-faucets/xrpl-evm-testnet: primefi-v3-testnets/README.md
+  v3-market-family/testnet-faucets/in-addition: primefi-v3-testnets/README.md

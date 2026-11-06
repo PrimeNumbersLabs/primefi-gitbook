@@ -49,13 +49,7 @@
 
 ## v3 Market Family
 
-* [XRP Testnet Markets](xrp-testnet-markets/README.md)
-  * [Flare Coston2](xrp-testnet-markets/flare-coston2.md)
-  * [XRPL EVM Testnet](xrp-testnet-markets/xrpl-evm-testnet.md)
-* [Testnet Faucets](testnet-faucets/README.md)
-  * [Flare Coston2 faucet](testnet-faucets/flare-coston2.md)
-  * [XRPL EVM Testnet faucet](testnet-faucets/xrpl-evm-testnet.md)
-  * [In addition](testnet-faucets/in-addition.md)
+* [PrimeFi v3 Testnets](primefi-v3-testnets/README.md)
 
 ## Rewards & Tokens
 
