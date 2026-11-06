@@ -36,7 +36,7 @@ v3 also brings **E-Mode** categories (higher borrowing power for correlated asse
 
 ### Start testing
 
-1. Open the PrimeFi beta app at [beta.primefi.xyz](https://beta.primefi.xyz/), where the testnets live, and connect your wallet.
+1. Open the [PrimeFi app](https://app.primefi.xyz/) and connect your wallet.
 2. Open the market selector, choose **Browse all markets** and pick a market marked **Testnet** (for example **Base Sepolia v3**). The app asks your wallet to switch to, and if needed add, the network.
 3. Get gas for that network from its faucet (below).
 4. On the dashboard, click **Get test tokens** and mint test assets, test PRFI and test pLP.

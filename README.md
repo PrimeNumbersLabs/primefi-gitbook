@@ -25,7 +25,9 @@ Prime Numbers Labs operates PrimeFi v2 markets on HyperEVM, Base, and XDC.
 
 ### Two protocol versions in the app
 
-* **v2 — PrimeFi** (Base, HyperEVM, XDC), at [app.primefi.xyz](https://app.primefi.xyz/). Prime Numbers Labs operates these Aave v2-based markets. pLP boosts, PRFI emissions and cross-chain delivery are available only where enabled and funded.
-* **v3 — PrimeFi v3** (Aave v3.7), live on five testnets at [beta.primefi.xyz](https://beta.primefi.xyz/) before its mainnet launch. There, a **v2 / v3** toggle in the header switches between the two. Tokens and rewards on the testnets are test-only.
+Inside the [PrimeFi app](https://app.primefi.xyz/), a **v2 / v3** toggle in the header switches between:
+
+* **v2 — PrimeFi** (Base, HyperEVM, XDC). Prime Numbers Labs operates these Aave v2-based markets. pLP boosts, PRFI emissions and cross-chain delivery are available only where enabled and funded.
+* **v3 — PrimeFi v3** (Aave v3.7), live on five testnets before its mainnet launch. Tokens and rewards on the testnets are test-only.
 
 See [PrimeFi v3 Testnets](primefi-v3-testnets/README.md) for the v3 markets.
