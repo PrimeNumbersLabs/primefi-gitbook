@@ -12,3 +12,19 @@ redirects:
   v3-market-family/testnet-faucets/flare-coston2: primefi-v3-testnets/README.md
   v3-market-family/testnet-faucets/xrpl-evm-testnet: primefi-v3-testnets/README.md
   v3-market-family/testnet-faucets/in-addition: primefi-v3-testnets/README.md
+  v3-markets/xrp-testnet-markets: primefi-v3-testnets/README.md
+  v3-markets/xrp-testnet-markets/flare-coston2: primefi-v3-testnets/README.md
+  v3-markets/xrp-testnet-markets/xrpl-evm-testnet: primefi-v3-testnets/README.md
+  v3-markets/testnet-faucets: primefi-v3-testnets/README.md
+  v3-markets/testnet-faucets/flare-coston2: primefi-v3-testnets/README.md
+  v3-markets/testnet-faucets/xrpl-evm-testnet: primefi-v3-testnets/README.md
+  v3-markets/testnet-faucets/in-addition: primefi-v3-testnets/README.md
+  testnet-faucets: primefi-v3-testnets/README.md
+  testnet-faucets/1.-base-sepolia: primefi-v3-testnets/README.md
+  testnet-faucets/1.-hyperliquid-test: primefi-v3-testnets/README.md
+  testnet-faucets/2.-arbitrum-sepolia: primefi-v3-testnets/README.md
+  testnet-faucets/2.-base-sepolia: primefi-v3-testnets/README.md
+  testnet-faucets/3.-arbitrum-sepolia: primefi-v3-testnets/README.md
+  testnet-faucets/3.-bnb-chain-testnet: primefi-v3-testnets/README.md
+  testnet-faucets/4.-bnb-chain-testnet: primefi-v3-testnets/README.md
+  testnet-faucets/in-addition: primefi-v3-testnets/README.md
